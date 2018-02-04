@@ -1,0 +1,139 @@
+@font-family
+
+body{
+	background-color : #ECE8E8;
+	overflow: fixed;
+    padding-top: 255px;
+	font-family: Segoe Print;
+}
+
+.glyphicon-envelope:after {
+  margin-right: 5px;
+}
+
+.container .acount-icon a{
+	display:block;
+	color: black;
+	font-size:18px;
+	padding:5px;
+	text-decoration:none;
+}
+.container .social-icon a{
+	display:inline-block;
+	color: black;
+	font-size:25px;
+	padding:5px;
+}
+
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color: #FFFFFF;
+}
+#login-dp .help-block{
+    font-size:12px   
+}
+#login-dp .bottom{
+    background-color: #FFFFFF;
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+.navbar-custom a {
+    color: #ECECEC;
+}
+
+.dropdown1:hover .dropdown-menu {
+    display: block;
+}
+.dropdown2:hover .dropdown-menu {
+    display: block;
+}
+
+.footer {
+    padding: 50px 0 20px 0;
+	background: url('../img/petbg.jpg') repeat;
+    background-color: #ECE8E8;
+	border-top: 1px solid #666;
+    color: black;
+}
+.footer .title{
+	text-align: left;
+	color: black;
+	font-size:25px;
+}
+.footer .social-icon{
+	padding:0px;
+	margin:0px;
+}
+.footer .social-icon a{
+	display:inline-block;
+	color: black;
+	font-size:25px;
+	padding:10px;
+}
+.footer .acount-icon a{
+	display:block;
+	color: black;
+	font-size:18px;
+	padding:5px;
+	text-decoration:none;
+}
+.footer .acount-icon .fa{
+	margin-right: 0px;
+}
+.footer .category a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 1px;
+    border-radius:4px;
+    margin-top: 6px;
+    background-color: black;
+    border: solid 1px #fff;
+}
+#sub-floor {
+    color: #ccc;
+	border-top: 1px solid #666;
+    background: #1e1e1e; none repeat scroll 0% 0%;
+    padding: 10px 0px;
+}
+
