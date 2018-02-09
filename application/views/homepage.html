@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/homepage.css">
+	<link rel="stylesheet" href="../../assets/css/homepage.css">
 	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,11 +19,11 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
     <title>Pet Lovers Community</title>
-	<link rel="icon" href="img/logo.png"/>
+	<link rel="icon" href="../../assets/img/logo.png"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <style type="text/css">
-   body { background: #EEEBE9; } 
+   body { background: #EEEBE9; font-family: segoe ui; } 
 </style>
 <body>
   
@@ -39,10 +39,11 @@
 	
 	<!--NavBar-->
 
+<div class="container-fluid">
 <nav class="navbar navbar-custom" style="background-color: #FF8C00;">
   <div class="container">
-	<p class="navbar-text" style="color: black;"><em>EVERY PET DESERVES A HOME, BUT NOT EVERY HOME DESERVES A PET</em></p>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<p class="navbar-text header" style="color: black;">EVERY PET DESERVES A HOME, BUT NOT EVERY HOME DESERVES A PET</p>
+    <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>LOGIN</b> <span class="caret"></span></a>
@@ -84,20 +85,22 @@
 			</ul>
         </li>
       </ul>
+	  
 	<ul class="nav navbar-nav navbar-right">
-		<li class="active"><a href="https://petloverscommunity/HOME/">HOME</a></li>
-		<li><a href="https://petloverscommunity/DONATIONS/">DONATIONS</a></li>
+			<li class="active"><a href="https://petloverscommunity/HOME/">HOME</a></li>
+			<li><a href="https://petloverscommunity/DONATIONS/">DONATIONS</a></li>
 	</ul>  
     </div>
   </div>
- </nav> 
-
-	
+</nav> 
+</div>
+<!-- End of first navbar-->
+<div class="container-fluid">	
     <div class="container navcont">
 	<div class="logo_container col-sm-6">
 		<span class="logo_helper"></span>
 			<a href="https:/petloverscommunity.com">
-				<img src="img/logo.png"   alt="Pet Lovers Community" id="logo" width="500" /></a>
+				<img src="../../assets/img/logo.png"   alt="Pet Lovers Community" id="logo" width="500" /></a>
 	</div>
 	    <div class="col-sm-3">
             <h4 class="title">Call Us</h4>
@@ -109,8 +112,7 @@
         </div>
 		<div class="col-sm-3">
             <h4 class="title">&emsp; Follow Us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p>
-            <ul class="social-icon">
+            <ul class="social-icon" style="font-size: 36px;">
                 <a href="https://www.facebook.com/petloverscommunity" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href="https://www.twitter.com/petloverscommunity" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/petloverscommunity" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -145,106 +147,92 @@
 			<div class="form-group">
 				<input type="text" class="form-control" placeholder="Search">
 			</div>
-		<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-user"></span></button>
+		<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 		</form>
 	</div>
-	</div>
 </nav>
+</div>
+
 	
 	<!--Body-->
-	
+<div class="container-fluid">
 	<div id="contbody1">
 	<div class="container contbody1">
-		<div class="col-sm-5">
-			<div class="container cont1"><span class="border">
-				<img src="img/dogcat.jpg" class="img-thumbnail" alt="DogCat" width="330" height="330">
-			</div>
-		</div>
-		<div class="col-sm-7">
-			<div class="container textbody" style="background-color: #FF8C00;">
-				<h1 class="title"> Make a Difference - Adopt</h1>
-				<p class="lead"> Open your heart and your home to pet that needs your help. They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!</p>
-			</div>
+		<div class="container textbody" style="background-color: rgba(255,145,0,0.4);;">
+			<h1 class="title"> Make a Difference - Adopt</h1>
+			<p class="lead"> Open your heart and your home to pet that needs your help. They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!</p>
+			<a href="#" class="btn btn-learn" role="button">LEARN MORE</a>
 		</div>
 	</div>
 	</div>
 
 	<div id="contbody2">
-		<div class="container feat">
-          <p class="lead"> FEATURED PET</p>
+		<div class="container-fluid">
+          <h3><strong> FEATURED PET</strong></h3>
 		</div>		
 	</div>	
 	
-
+<!--FeaturedPet-->
 <div class="contbody3">
   <div class="box">
-    <div class="profile"><img src="img/Rengar.jpg" alt="cat"/></div>
+    <div class="profile"><img src="../../assets/img/Rengar.jpg" alt="cat"/></div>
     <div class="info">
       <div class="bio btn">
         <div class="head"><a href="#">Type of Pet</a></div>
       </div>
       <h1><em>Rengar</em></h1>
-      <p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. </p><button class="btn-bio">Full Bio</button>
+      <p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. </p>
+	  <button class="btn-bio">Full Bio</button>
     </div>
   </div>
 </div>		
-
-	
-	<div id="contbody4">
+<!--End of FeaturedPet-->
+	<div id="contbody4" >
 	<div class="container">
-		<div class="textbody3 col-sm-8">
+		<div class="col-xs-5 col-md-7">
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. Sed nec pulvinar lacus. Morbi euismod scelerisque accumsan. Vestibulum pretium ut tellus at feugiat. Pellentesque venenatis sem quis tellus rhoncus lacinia. Etiam ultrices turpis et eros eleifend, vel molestie tortor ornare.</p>
 		</div>
-		<div class="col-sm-4">
-			<div class="container cont">
-				<img src="img/paws.png" alt="Paws" id="logo" width="330" height="330"/></a>
-			</div>
+		<div class="col-xs-11 col-md-1">
+			<img src="../../assets/img/paws.png" alt="Paws" id="logo" width="320" height="320"/></a>
 		</div>
 	</div>	
 	</div>
-	<!--End of Body-->
-
+</div>
+	<!--End of Body-->		
 	
-
-		
 	<!--Footer-->
-	<footer class="footer">
+<div class="container-fluid">
+	<footer class="footer panel-footer" style="border-top: 2px solid #666">
     <div class="container">
         <div class="row">
+		 <div class="col-sm-3 category">
+            <br/><h4><a href="#">About Us</a></h4>
+            <h4><a href="#">Donate</a></h4>
+        </div>
+		 <div class="col-sm-3">
+            <h4 class="title">Category</h4>
+            <div class="category">	
+				<a href="#" class="btn btn-change" role="button">Cat</a>
+				<a href="#" class="btn btn-change" role="button">Dog</a>
+				<a href="#" class="btn btn-change" role="button">Other pets</a>
+            </div>
+        </div>
+		<div class="col-sm-3">
+            <h4 class="title">Contact Us</h4>
+			<span class="acount-icon"> 
+			<a href="#"><i class="fa fa-address-book fa-fw" aria-hidden="true"></i>09123456789</a>
+			<a href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>plc@gmail.com</a>
+        </div>
         <div class="col-sm-3">
             <h4 class="title">Follow Us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p>
             <ul class="social-icon">
                 <a href="https://www.facebook.com/petloverscommunity" class="social"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
                 <a href="https://www.twitter.com/petloverscommunity" class="social"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/petloverscommunity" class="social"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
                 <a href="https://plus.google.com/plc" class="social"><i class="fa fa-google fa-fw" aria-hidden="true"></i></a>
             </ul>
-        </div>
-        <div class="col-sm-3">
-            <h4 class="title">About Us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p>
-        </div>
-        <div class="col-sm-3">
-            <h4 class="title">Category</h4>
-            <div class="category">
-                <a href="#">Cat</a>
-                <a href="#">Dog</a>
-                <a href="#">Bird</a>
-                <a href="#">Lion</a>
-                <a href="#">Tigers</a>
-                <a href="#">Bear</a>
-                <a href="#">Panda</a>
-                <a href="#">Shark</a>
-                <a href="#">Spider</a>          
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <h4 class="title">Contact Us</h4>
-			<span class="acount-icon"> 
-			<a href="#"><i class="fa fa-address-book fa-fw" aria-hidden="true"></i>09123456789</a>
-			<a href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>plc@gmail.com</a>
-        </div>
+        </div>           
+        
         </div>
 
     </div>	
@@ -252,10 +240,15 @@
 	<!--End of Footer-->
 
 	<!--Sub-floor-->
-      <div id="sub-floor">
-        <div class="container">
+      <div class="footer-copyright copyright">
+        <div class="container-fluid copyright">
              Copyright ©2018 petloverscommunity.com All rights reserved
          </div>
       </div> 
+</div>	  
+
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
