@@ -20,11 +20,11 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
     <title>Pet Lovers Community</title>
-	<link rel="icon" href="../../assets/img/logo.png"/>
+	<link rel="icon" href="../../assets/img/cologo.png"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <style type="text/css">
-   body { background: #EEEBE9; } 
+   body { background: #EEEBE9; font-family: segoe ui;} 
 </style>
 <body>
   
@@ -40,15 +40,56 @@
 	
 	<!--NavBar-->
 
-<nav class="navbar navbar-custom" style="background-color: #FF8C00;">
-  <div class="container">
-	<p class="navbar-text" style="color: black;">EVERY PET DESERVES A HOME, BUT NOT EVERY HOME DESERVES A PET</p>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>LOGIN</b> <span class="caret"></span></a>
-			<ul id="login-dp" class="dropdown-menu">
-				<li>
+	<nav class="navbar navbar-custom mega-nav" style="background-color: #FB7E09;">
+        <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" style="background-color: white;" data-toggle="collapse" data-target="#MainMenu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> Menu
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="MainMenu">
+			<ul class="nav navbar-nav navbar-left">
+				<a href="#">
+					<img src="../../assets/img/cologo.png"   alt="Pet Lovers Community" id="logo" width="50" height="50" />
+				</a>
+			</ul> 
+            <ul class="nav navbar-nav menu-list">
+				
+                <li class="dropdown list-adoptapet">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Adopt a Pet <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>  
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li><a href="#">Name</a></li>
+                        <li><a href="#">Pet type</a></li>
+                        <li><a href="#">Recently Post</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">View all</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown list-services">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Services <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>  
+                    <ul class="dropdown-menu mega-dropdown-menu">
+                        <li><a href="#">Veterinary</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Pet Sitting</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">View all</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Meet N' Breed</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>	
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
+				<ul id="login-dp" class="dropdown-menu">
+					<li>
 					 <div class="row">
 							<div class="col-md-12">
 								Login via
@@ -65,7 +106,7 @@
 										<div class="form-group">
 											 <label class="sr-only" for="exampleInputPassword2">Password</label>
 											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                             <div class="help-block text-right"><a href="#">Forget the password ?</a></div>
 										</div>
 										<div class="form-group">
 											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
@@ -81,75 +122,28 @@
 								New here ? <a href="#"><b>Join Us</b></a>
 							</div>
 					 </div>
+					</li>
+				</ul>
 				</li>
 			</ul>
-        </li>
-      </ul>
-	<ul class="nav navbar-nav navbar-right">
-		<li class="active"><a href="https://petloverscommunity/HOME/">HOME</a></li>
-		<li><a href="https://petloverscommunity/DONATIONS/">DONATIONS</a></li>
-	</ul>  
-    </div>
-  </div>
- </nav> 
-
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Donations</a></li>
+			</ul> 		
+            <form id="mega-search" class="navbar-form navbar-right">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+        </div>
+    </nav>		
 	
-    <div class="container navcont">
-	<div class="logo_container col-sm-6">
-		<span class="logo_helper"></span>
-			<a href="https:/petloverscommunity.com">
-				<img src="../../assets/img/logo.png"   alt="Pet Lovers Community" id="logo" width="500" /></a>
-	</div>
-	    <div class="col-sm-3">
-            <h4 class="title">Call Us</h4>
-			<span class="acount-icon"> 
-			<a href="#"><i class="fa fa-address-book fa-fw" aria-hidden="true"></i>09123456789</a>
-			<h4 class="title">Email Us</h4>
-			<span class="acount-icon"> 
-			<a href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>plc@gmail.com</a>
-        </div>
-		<div class="col-sm-3">
-            <h4 class="title">&emsp; Follow Us</h4>
-            <ul class="social-icon">
-                <a href="https://www.facebook.com/petloverscommunity" class="social"><i class="fa fa-facebook" style="font-size:36px" aria-hidden="true"></i></a>
-                <a href="https://www.twitter.com/petloverscommunity" class="social"><i class="fa fa-twitter" style="font-size:36px" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/petloverscommunity" class="social"><i class="fa fa-instagram" style="font-size:36px" aria-hidden="true"></i></a>
-                <a href="https://plus.google.com/plc" class="social"><i class="fa fa-google" style="font-size:36px" aria-hidden="true"></i></a>
-            </ul>
-        </div>
-	</div>	
- <nav class="navbar navbar-custom" style="background-color: #FB7E09;">
-	<div class="container">
-		<ul class="nav navbar-nav">
-			<li class="dropdown1">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#">ADOPT A PET
-			<span class="caret"></span></a>
-			<ul class="dropdown-menu">
-				<li><a href="#">Name</a></li>
-			</ul>
-			</li>
-		<li class="dropdown2">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES
-        <span class="caret"></span></a>
-			<ul class="dropdown-menu">
-				<li><a href="https://petloverscommunity/SERVICES/VETERINARY">VETERINARY</a></li>
-				<li><a href="https://petloverscommunity/SERVICES/TRAINING">TRAINING</a></li>
-				<li><a href="https://petloverscommunity/SERVICES/GROOMING">GROOMING</a></li>
-				<li><a href="https://petloverscommunity/SERVICES/PET SITTING">PET SITTING</a></li>
-			</ul>
-		</li>
-		<li><a href="https://petloverscommunity/MEET N' BREED">MEET N' BREED</a></li>
-		<li><a href="https://petloverscommunity/COMMUNITY">COMMUNITY</a></li>
-		</ul>
-		<form class="navbar-form navbar-right" action="/action_page.php">
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search">
-			</div>
-		<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-		</form>
-	</div>
-	</div>
-</nav>
 	<!--End of NavBar-->
 	
 	<!--Start-->
@@ -194,7 +188,7 @@
  <!-- /container -->  
 
 	<!--End of Profile-->
-		<!--Footer-->
+	<!--Footer-->
 	<footer class="footer panel-footer" style="border-top: 2px solid #666">
     <div class="container">
         <div class="row">
@@ -204,10 +198,10 @@
         </div>
 		 <div class="col-sm-3">
             <h4 class="title">Category</h4>
-            <div class="category">
-                <a href="#">Cat</a>
-                <a href="#">Dog</a><br/>
-                <a href="#">Other Pets</a>          
+            <div class="category">	
+				<a href="#" class="btn btn-change" role="button">Cat</a>
+				<a href="#" class="btn btn-change" role="button">Dog</a>
+				<a href="#" class="btn btn-change" role="button">Other pets</a>
             </div>
         </div>
 		<div class="col-sm-3">
@@ -238,6 +232,8 @@
              Copyright ©2018 petloverscommunity.com All rights reserved
          </div>
       </div>  
-	  
+	
+	<script type="text/javascript" src="../../assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/script.js"></script>
   </body>
 </html>

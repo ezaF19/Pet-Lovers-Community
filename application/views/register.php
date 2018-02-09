@@ -19,7 +19,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
     <title>Pet Lovers Community</title>
-	<link rel="icon" href="../../assets/img/logo.png"/>
+	<link rel="icon" href="../../assets/img/cologo.png"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <style type="text/css">
@@ -48,7 +48,13 @@
             </button>
         </div>
         <div class="collapse navbar-collapse" id="MainMenu">
+			<ul class="nav navbar-nav navbar-left">
+				<a href="#">
+					<img src="../../assets/img/cologo.png"   alt="Pet Lovers Community" id="logo" width="50" height="50" />
+				</a>
+			</ul> 
             <ul class="nav navbar-nav menu-list">
+				
                 <li class="dropdown list-adoptapet">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Adopt a Pet <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -77,7 +83,7 @@
                 <li><a href="#">Meet N' Breed</a></li>
                 <li><a href="#">Community</a></li>
             </ul>	
-						<ul class="nav navbar-nav navbar-right">
+			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
 				<ul id="login-dp" class="dropdown-menu">
@@ -98,7 +104,7 @@
 										<div class="form-group">
 											 <label class="sr-only" for="exampleInputPassword2">Password</label>
 											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
-                                             <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                             <div class="help-block text-right"><a href="#">Forget the password ?</a></div>
 										</div>
 										<div class="form-group">
 											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
@@ -121,7 +127,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="#">Donations</a></li>
-			</ul> 
+			</ul> 		
             <form id="mega-search" class="navbar-form navbar-right">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search...">
@@ -241,7 +247,7 @@
   
 
 
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="../../assets/js/script.js"></script>
   </body>
 </html>
