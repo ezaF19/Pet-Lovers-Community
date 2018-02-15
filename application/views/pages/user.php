@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <?php $user = $this->session->userdata('username'); ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -43,7 +44,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="DashUserDropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?= $username; ?> <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $user; ?><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#"> Profile </span></a></li>
             <li class="divider"></li>
@@ -57,7 +58,7 @@
             <li class="divider"></li>
 			<li><a href="#"> Help</span></a></li>
 			<li><a href="#"> Settings</span></a></li>
-            <li><a href="#"> Log Out</span></a></li>
+            <li><a href='<?php echo base_url(); ?>logout'> Log Out</span></a></li>
           </ul>
         </li>
       </ul>

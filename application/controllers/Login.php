@@ -3,17 +3,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
 	public function index(){
-		$data['title'] = 'Login';
+		if ( $_SERVER['REQUEST_METHOD']=='POST' ){
+			$name = $this->input->post('username');
 
-		$result = $this->login_model->check_em();
-		$user['username'] = $result;
-		if($result === 'Mismatch!'){
-			echo $result;
-		}
-		else{
-			$this->load->view('template/header');
-			$this->load->view('pages/user', $user);
-			$this->load->view('template/footer');
+			$this->session->set_userdata('username', $name);
+			$result = $this->login_model->check_em($name);
+			$user['username'] = $result;
+			if($result === 'Mismatch!'){
+				echo $result;
+			}
+			else{
+				$this->load->view('template/header');
+				redirect('user');
+				$this->load->view('template/footer');
+			}
 		}
 	}
 }
