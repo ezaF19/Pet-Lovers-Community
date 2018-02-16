@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <?php $user = $this->session->userdata('username'); ?>
+	<?php $user = $this->session->userdata('username'); ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/user.css">
-
+	<link rel="stylesheet" href="../../assets/css/homepage.css">
+	<link rel="stylesheet" href="../../assets/css/user.css">
+	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -18,14 +19,17 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+	
     <title>Pet Lovers Community</title>
-	<link rel="icon" href="img/PLC.jpg"/>
+	<link rel="icon" href="../../assets/img/logo.png"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
-
-
+  <style type="text/css">
+   body { background: #EEEBE9; font-family: segoe ui; } 
+</style>
+<body>
+  
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -33,70 +37,92 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
+	
+	
 	<!--NavBar-->
 
-<nav class="navbar navbar-custom" style="background-color: #A9A9A9;">
+<div class="container-fluid">
+<nav class="navbar navbar-custom" style="background-color: #FF8C00;">
   <div class="container">
-
-	<p class="navbar-text" style="color: #ECECEC;">EVERY PET DESERVES A HOME, BUT NOT EVERY HOME DESERVES A PET</p>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li class="DashUserDropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $user; ?><span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#"> Profile </span></a></li>
-            <li class="divider"></li>
-            <li><a href="#"> My Posts </span></a></li>
-			<li><a href="#"> My Donations </span></a></li>
-            <li class="divider"></li>
-            <li><a href="#"> Messages <span class="badge pull-right"> 42 </span></a></li>
-            <li class="divider"></li>
-            <li><a href="#"> Favorite Posts </span></a></li>
-			<li><a href="#"> Recent Activities </span></a></li>
-            <li class="divider"></li>
-			<li><a href="#"> Help</span></a></li>
-			<li><a href="#"> Settings</span></a></li>
-            <li><a href='<?php echo base_url(); ?>logout'> Log Out</span></a></li>
-          </ul>
-        </li>
-      </ul>
+	<p class="navbar-text header" style="color: black;">EVERY PET DESERVES A HOME, BUT NOT EVERY HOME DESERVES A PET</p>
+    <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span> 
+                        <strong><?php echo $user; ?></strong>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="text-left"><strong>Name</strong></p>
+                                        <p class="text-left small">yourname@email.com</p>
+                                        <p class="text-left">
+                                            <a href="#" class="btn btn-primary btn-block btn-sm">Settings</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="navbar-login navbar-login-session">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>
+                                            <a href="#" class="btn btn-danger btn-block"><a href='<?php echo base_url(); ?>logout'> Log Out</span></a></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+			
 	<ul class="nav navbar-nav navbar-right">
-		<li class="active"><a href="#">HOME</a></li>
-		<li><a href="#">DONATIONS</a></li>
-	</ul>
+			<li class="active"><a href="https://petloverscommunity/HOME/">HOME</a></li>
+			<li><a href="https://petloverscommunity/DONATIONS/">DONATIONS</a></li>
+	</ul>  
     </div>
   </div>
- </nav>
-
-
-    <div class="container" style="background-color: white;">
-	<div class="logo_container col-sm-7">
+</nav> 
+</div>
+<!-- End of first navbar-->
+<div class="container-fluid">	
+    <div class="container navcont">
+	<div class="logo_container col-sm-6">
 		<span class="logo_helper"></span>
-			<a href="#">
-				<img src="https://paawarren.org/media/paaw-logo-header.png"  alt="Pet Adoption Alternative of Warren (PAAW) - Pet Rescue Organization - Michigan" id="logo" data-height-percentage="40"  /></a>
+			<a href="https:/petloverscommunity.com">
+				<img src="../../assets/img/logo.png"   alt="Pet Lovers Community" id="logo" width="500" /></a>
 	</div>
-	    <div class="col-sm-2">
+	    <div class="col-sm-3">
             <h4 class="title">Call Us</h4>
-			<span class="acount-icon">
+			<span class="acount-icon"> 
 			<a href="#"><i class="fa fa-address-book fa-fw" aria-hidden="true"></i>09123456789</a>
 			<h4 class="title">Email Us</h4>
-			<span class="acount-icon">
+			<span class="acount-icon"> 
 			<a href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>plc@gmail.com</a>
         </div>
 		<div class="col-sm-3">
-            <h4 class="title">Follow Us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p>
-            <ul class="social-icon">
-                <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+            <h4 class="title">&emsp; Follow Us</h4>
+            <ul class="social-icon" style="font-size: 36px;">
+                <a href="https://www.facebook.com/petloverscommunity" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com/petloverscommunity" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/petloverscommunity" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://plus.google.com/plc" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
             </ul>
         </div>
-	</div>
- <nav class="navbar navbar-custom" style="background-color: #F87C09;">
+	</div>	
+ <nav class="navbar navbar-custom" style="background-color: #FB7E09;">
 	<div class="container">
 		<ul class="nav navbar-nav">
 			<li class="dropdown1">
@@ -110,77 +136,286 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">SERVICES
         <span class="caret"></span></a>
 			<ul class="dropdown-menu">
-				<li><a href="#">VETERINARY</a></li>
-				<li><a href="#">TRAINING</a></li>
-				<li><a href="#">GROOMING</a></li>
-				<li><a href="#">PET SITTING</a></li>
+				<li><a href="https://petloverscommunity/SERVICES/VETERINARY">VETERINARY</a></li>
+				<li><a href="https://petloverscommunity/SERVICES/TRAINING">TRAINING</a></li>
+				<li><a href="https://petloverscommunity/SERVICES/GROOMING">GROOMING</a></li>
+				<li><a href="https://petloverscommunity/SERVICES/PET SITTING">PET SITTING</a></li>
 			</ul>
 		</li>
-		<li><a href="#">MEET N' BREED</a></li>
-		<li><a href="#">COMMUNITY</a></li>
+		<li><a href="https://petloverscommunity/MEET N' BREED">MEET N' BREED</a></li>
+		<li><a href="https://petloverscommunity/COMMUNITY">COMMUNITY</a></li>
 		</ul>
 		<form class="navbar-form navbar-right" action="/action_page.php">
 			<div class="form-group">
 				<input type="text" class="form-control" placeholder="Search">
 			</div>
-		<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-user"></span></button>
+		<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 		</form>
 	</div>
-	</div>
 </nav>
-	<!--End of NavBar-->
+</div>
 
-	<!--Start-->
+<div class="container">
+    <div class="plc-profile">
+        <img align="left" class="plc-image-lg img-responsive" src="../../assets/img/dog.jpg"   alt="Pet Lovers Community" id="logo"/>
+        <img align="left" class="plc-image-profile thumbnail img-circle" src="../../assets/img/rengar.jpg" alt="Profile image example"/>
+        <div class="plc-profile-text">
+            <h1>Rengar</h1>
+            <p>WSWSWSWSWSWSWSWSWSWSW</p>
+			<button type="button" class="btn btn-warning btn-xs">Edit Profile</button>
+			<button type="button" class="btn btn-warning btn-lg btn pull-right">Post</button>			
+        </div>
+    </div>
+</div>
+<div id="contbody1">
+ <div class="col-lg-4 col-sm-4">           
+               <div class="user-bio">
+                 <h2 class="user-bio-text">User Bio</h2>
+                   <!-- <div class="content-widget-sidebar"> -->
+                    <ul>
+                     <p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. </p>                      
+                         
+                        
+					<!-- </div> -->
+				</div>
+</div>
 
-	<!--End of Profile-->
-	<footer class="footer">
+ <div class="col-lg-8 col-sm-8">           
+               <div class="user-bio">
+                 <h2 class="user-bio-text">Post</h2>
+                   <!-- <div class="content-widget-sidebar"> -->
+                    <ul>
+                     <p class="bio-text">No Recent Post </p>                      
+                         
+                        
+					<!-- </div> -->
+				</div>
+</div>
+
+</div>
+
+    <div class="carousel slide" id="myCarousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                    <ul class="thumbnails">
+                        <li class="col-sm-3">
+    						<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide1 --> 
+            <div class="item">
+                    <ul class="thumbnails">
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide2 --> 
+            <div class="item">
+                    <ul class="thumbnails">
+                        <li class="col-sm-3">	
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                        <li class="col-sm-3">
+							<div class="fff">
+								<div class="thumbnail">
+									<a href="#"><img src="http://placehold.it/360x240" alt=""></a>
+								</div>
+								<div class="caption">
+									<h4>Pet Name</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+									<a class="btn btn-mini" href="#">» Read More</a>
+								</div>
+                            </div>
+                        </li>
+                    </ul>
+              </div><!-- /Slide3 --> 
+        </div>
+        
+       
+	   <nav>
+			<ul class="control-box pager">
+				<li><a data-slide="prev" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-left"></i></a></li>
+				<li><a data-slide="next" href="#myCarousel" class=""><i class="glyphicon glyphicon-chevron-right"></i></li>
+			</ul>
+		</nav>
+	   <!-- /.control-box -->   
+                              
+    </div><!-- /#myCarousel -->
+		
+<!--Footer-->
+
+<div class="container-fluid">
+	<footer class="footer panel-footer" style="border-top: 2px solid #666">
     <div class="container">
         <div class="row">
-        <div class="col-sm-3">
-            <h4 class="title">Follow Us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p>
-            <ul class="social-icon">
-                <a href="#" class="social"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
-                <a href="#" class="social"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
-                <a href="#" class="social"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
-                <a href="#" class="social"><i class="fa fa-google fa-fw" aria-hidden="true"></i></a>
-            </ul>
+		 <div class="col-sm-3 category">
+            <br/><h4><a href="#">About Us</a></h4>
+            <h4><a href="#">Donate</a></h4>
         </div>
-        <div class="col-sm-3">
-            <h4 class="title">About Us</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p>
-        </div>
-        <div class="col-sm-3">
+		 <div class="col-sm-3">
             <h4 class="title">Category</h4>
-            <div class="category">
-                <a href="#">Cat</a>
-                <a href="#">Dog</a>
-                <a href="#">Bird</a>
-                <a href="#">Lion</a>
-                <a href="#">Tigers</a>
-                <a href="#">Bear</a>
-                <a href="#">Panda</a>
-                <a href="#">Shark</a>
-                <a href="#">Spider</a>
+            <div class="category">	
+				<a href="#" class="btn btn-change" role="button">Cat</a>
+				<a href="#" class="btn btn-change" role="button">Dog</a>
+				<a href="#" class="btn btn-change" role="button">Other pets</a>
             </div>
         </div>
-        <div class="col-sm-3">
+		<div class="col-sm-3">
             <h4 class="title">Contact Us</h4>
-			<span class="acount-icon">
+			<span class="acount-icon"> 
 			<a href="#"><i class="fa fa-address-book fa-fw" aria-hidden="true"></i>09123456789</a>
 			<a href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>plc@gmail.com</a>
         </div>
+        <div class="col-sm-3">
+            <h4 class="title">Follow Us</h4>
+            <ul class="social-icon">
+                <a href="https://www.facebook.com/petloverscommunity" class="social"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com/petloverscommunity" class="social"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/petloverscommunity" class="social"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
+                <a href="https://plus.google.com/plc" class="social"><i class="fa fa-google fa-fw" aria-hidden="true"></i></a>
+            </ul>
+        </div>           
+        
         </div>
 
-    </div>
-	</footer>
+    </div>	
+	</footer>	
+	<!--End of Footer-->
 
 	<!--Sub-floor-->
-      <div id="sub-floor">
-        <div class="container">
+      <div class="footer-copyright copyright">
+        <div class="container-fluid copyright">
              Copyright ©2018 petloverscommunity.com All rights reserved
          </div>
-      </div>
+      </div> 
+</div>	  
 
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
   </body>
+
 </html>
