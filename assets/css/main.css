@@ -14,6 +14,9 @@
     overflow:hidden;
     background-color: #FFFFFF;
 }
+#login-dp b{
+	color: black;
+}
 #login-dp .help-block{
     font-size:12px   
 }
