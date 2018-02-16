@@ -7,6 +7,7 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css'); ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/register.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css//bootstrap-theme.css'); ?>" />
 	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />
@@ -18,51 +19,74 @@
 	</style>
 
 	<!--Body-->
-<body>
-	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal">&times;</button>
-		<h2 class="modal-title">Register</h2>
-	</div>	
-	<div class="modal body">
-		<form>
-				<div class="row">
-					<div class="col-sm-6 form-group">
-						<label>First Name</label>
-						<input type="text" placeholder="Enter First Name Here.." class="form-control">
-					</div>
-					<div class="col-sm-6 form-group">
-						<label>Last Name</label>
-						<input type="text" placeholder="Enter Last Name Here.." class="form-control">
-					</div>
-				</div>					
-				<div class="form-group">
-					<label>Address</label>
-					<textarea placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
-				</div>	
-				<div class="row">
-					<div class="col-sm-6 form-group">
-						<label>City</label>
-						<input type="text" placeholder="Enter City Name Here.." class="form-control">
-					</div>	
-					<div class="col-sm-6 form-group">
-						<label>State</label>
-						<input type="text" placeholder="Enter State Name Here.." class="form-control">
-					</div>		
-				</div>					
-			<div class="form-group">
-				<label>Phone Number</label>
-				<input type="text" placeholder="Enter Phone Number Here.." class="form-control">
-			</div>		
-			<div class="form-group">
-				<label>Email Address</label>
-				<input type="text" placeholder="Enter Email Address Here.." class="form-control">
-			</div>
-		</form>
-	</div>	
-	<div class="modal footer">
-		<button class="btn-submit"><a href="#"></a>Submit</button>
+	<body>
+	<nav class="navbar navbar-custom" style="background-color: 353535;">
+		
+    <div class="container" id="homelogo">
+	<div class="logo_container">
+		<span class="logo_helper"></span>
+			<a href="<?php echo base_url('home'); ?>">
+				<img src="<?php echo base_url('assets/img/logo.jpg'); ?>"   alt="Pet Lovers Community" id="logo" width="500" /></a>
 	</div>
+	</div>
+	</nav>
+	<div class="container">
+        <div class="row">
 
-	  
-  </body>
+            <div class="col-md-8 col-md-offset-2">
+                <form role="form" method="POST" action="#">
+
+                    <legend class="text-center">Register</legend>
+
+                    <fieldset>
+                        <legend>Account Details</legend>
+
+                        <div class="form-group col-md-6">
+                            <label for="first_name">First name</label>
+                            <input type="text" class="form-control" name="" id="first_name" placeholder="First Name">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="last_name">Last name</label>
+                            <input type="text" class="form-control" name="last_name" id="" placeholder="Last Name">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="">Email</label>
+                            <input type="email" class="form-control" name="" id="" placeholder="Email">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="" id="password" placeholder="Password">
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" class="form-control" name="" id="confirm_password" placeholder="Confirm Password">
+                        </div>
+                    </fieldset>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" value="" id="">
+                                    I accept the <a href="#">terms and conditions</a>.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+ 	</div>
+	</body>
 </html>
