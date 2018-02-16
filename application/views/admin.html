@@ -7,7 +7,6 @@
 
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../../assets/css/homepage.css">
-	<link rel="stylesheet" href="../../assets/css/user.css">
 	<link rel="stylesheet" href="../../assets/css/bootstrap.css">
 	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../assets/css/bootstrap-theme.css">
@@ -15,13 +14,20 @@
 	
     <title>Pet Lovers Community</title>
 	<link rel="icon" href="../../assets/img/cologo.png"/>
-	  </head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
   <style type="text/css">
    body { background: #EEEBE9; font-family: segoe ui; } 
 </style>
 <body>
   
+  
 
+    <!-- Optional JavaScript -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	
 	<!--NavBar-->
 
 	<nav class="navbar navbar-custom mega-nav" style="background-color: #FB7E09;">
@@ -98,7 +104,13 @@
 								 </form>
 							</div>
 							<div class="bottom text-center">
-								New here ? <a href="register.html"><b>Join Us</b></a>
+								New here ? <a href="register.html" data-target="#theModal" data-toggle="modal"><b>Join Us</b></a>
+							</div>
+							<div class="modal fade text-center" id="theModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+									</div>
+								</div>
 							</div>
 					 </div>
 					</li>
@@ -123,51 +135,43 @@
         </div>
     </nav>	
 	
-	<!--End of NavBar-->
-	
-	<!--Start-->
-<div class="container">
-    <div class="plc-profile">
-        <img align="left" class="plc-image-lg img-responsive" src="../../assets/img/dog.jpg"   alt="Pet Lovers Community" id="logo"/>
-        <img align="left" class="plc-image-profile thumbnail img-circle" src="../../assets/img/rengar.jpg" alt="Profile image example"/>
-        <div class="plc-profile-text">
-            <h1>Rengar</h1>
-            <p>WSWSWSWSWSWSWSWSWSWSW</p>
-			<button type="button" class="btn btn-warning btn-xs">Edit Profile</button>
-			<button type="button" class="btn btn-warning btn-lg btn pull-right">Post</button>			
+<!-- End of first navbar-->
+    <div class="container navcont">
+	<div class="logo_container col-sm-6">
+		<span class="logo_helper"></span>
+			<a href="https:/petloverscommunity.com">
+				<img src="../../assets/img/logo.png"   alt="Pet Lovers Community" id="logo" width="500" /></a>
+	</div>
+	    <div class="col-sm-3">
+            <h4 class="title">Call Us</h4>
+			<span class="acount-icon"> 
+			<a href="#"><i class="fa fa-address-book fa-fw" aria-hidden="true"></i>09123456789</a></span>
+			<h4 class="title">Email Us</h4>
+			<span class="acount-icon"> 
+			<a href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>plc@gmail.com</a></span>
         </div>
-    </div>
-</div>
-<div id="contbody1">
- <div class="col-lg-4 col-sm-4">           
-               <div class="user-bio">
-                 <h2 class="user-bio-text">User Bio</h2>
-                   <!-- <div class="content-widget-sidebar"> -->
-                    <ul>
-                     <p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. </p>                      
-                         
-                        
-					<!-- </div> -->
-				</div>
-</div>
- <div class="col-lg-8 col-sm-8">           
-               <div class="post">
-                 <h2 class="post-text-title">Post</h2>
-                   <!-- <div class="content-widget-sidebar"> -->
-                    <ul>
-                     <p class="post-text">No Recent Post </p>                      
-                         
-                        
-					<!-- </div> -->
-				</div>
-</div>
+		<div class="col-sm-3">
+            <h4 class="title">&emsp; Follow Us</h4>
+            <ul class="social-icon" style="font-size: 36px;">
+                <a href="https://www.facebook.com/petloverscommunity" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.twitter.com/petloverscommunity" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/petloverscommunity" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://plus.google.com/plc" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+            </ul>
+        </div>
+	</div>
+	<nav class="navbar navbar-custom mega-nav" style="background-color: #FB7E09;">
+	</nav>
+	
+	<!--Body-->
 
-</div>				
-		
- <!-- /container -->  
-
-	<!--End of Profile-->
+	
+	
+	
+	<!--End of Body-->		
+	
 	<!--Footer-->
+
 	<footer class="footer panel-footer" style="border-top: 2px solid #666">
     <div class="container">
         <div class="row">
@@ -178,16 +182,16 @@
 		 <div class="col-sm-3">
             <h4 class="title">Category</h4>
             <div class="category">	
-				<a href="#" class="btn btn-change" role="button">Cat</a>
-				<a href="#" class="btn btn-change" role="button">Dog</a>
-				<a href="#" class="btn btn-change" role="button">Other pets</a>
+				<a href="cats.html" class="btn btn-change" role="button">Cat</a>
+				<a href="dogs.html" class="btn btn-change" role="button">Dog</a>
+				<a href="others.html" class="btn btn-change" role="button">Other pets</a>
             </div>
         </div>
 		<div class="col-sm-3">
             <h4 class="title">Contact Us</h4>
 			<span class="acount-icon"> 
 			<a href="#"><i class="fa fa-address-book fa-fw" aria-hidden="true"></i>09123456789</a>
-			<a href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>plc@gmail.com</a>
+			<a href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>plc@gmail.com</a></span>
         </div>
         <div class="col-sm-3">
             <h4 class="title">Follow Us</h4>
@@ -197,27 +201,25 @@
                 <a href="https://www.instagram.com/petloverscommunity" class="social"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
                 <a href="https://plus.google.com/plc" class="social"><i class="fa fa-google fa-fw" aria-hidden="true"></i></a>
             </ul>
-        </div>           
-        
+        </div>                   
         </div>
-
     </div>	
 	</footer>	
-	<!--End of Footer
+	<!--End of Footer-->
 
 	<!--Sub-floor-->
       <div class="footer-copyright copyright">
         <div class="container-fluid copyright">
              Copyright ©2018 petloverscommunity.com All rights reserved
          </div>
-      </div>  
-	
-	<!--JavaScript-->
+      </div> 
+
+	  	<!--JavaScript-->
 	<script type="text/javascript" src="../../assets/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="../../assets/js/script.js"></script>	
 	<script type="text/javascript" src="../../assets/js/npm.js"></script>
 	<script type="text/javascript" src="../../assets/js/bootstrap.js"></script>	  
 	<script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>	  
-	
+	  
   </body>
 </html>
