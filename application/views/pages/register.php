@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   	<style type="text/css">
-  	.error { color: red; font: 5px Tahoma; }
+  	.error { color: red; font: 10px Tahoma; }
   	</style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -155,7 +155,8 @@
     <h2 class="well" id="register">Register</h2>
 	<div class="col-lg-12 well">
 	<div class="row">
-				<form method="register">
+    <?php echo form_open('register/index');?>
+				<form>
 					<div class="col-sm-12">
 						<div class="row">
 							<div class="col-sm-6 form-group">
