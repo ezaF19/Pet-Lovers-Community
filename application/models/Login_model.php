@@ -5,22 +5,36 @@ class Login_model extends CI_Model {
     $this->load->database();
   }
 
-  public function check_em($user){
+  public function check_em(){
+    $err = 'Mismatch!';    
+    $user = $this->input->post('username');
   	$pass = $this->input->post('password');
     $conn = new mysqli('localhost', 'root', '', 'plc_db');
-		$query = 'Select AccountPass from account where AccountUser = "'.$user.'"';
+		$query = 'Select AccountPass, BioID from account where AccountUser = "'.$user.'"';
 		$result = $conn->query($query);
 		if($result->num_rows > 0){
 			while($row = $result->fetch_assoc()){
 				if($row['AccountPass'] === $pass){
-          return $user;
-				}
+          $bio = $row['BioID'];
+          $query_next = 'Select AccountName, BioID from accbio where BioID = "'.$bio.'"';
+      		$result_next = $conn->query($query_next);
+      		if($result_next->num_rows > 0){
+      			while($row_next = $result_next->fetch_assoc()){
+      				if($row_next['BioID'] === $bio){
+                $res_name = $row_next['AccountName'];
+                return $res_name;
+				      }
+            }
+          }
+        }
 				else{
-					$err = 'Mismatch!';
 					return $err;
 				}
 			}
 		}
+    else{
+      return $err;
+    }
 	}
 
 }
