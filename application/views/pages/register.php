@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -93,6 +94,8 @@
 	</body>
 </html>
 =======
+=======
+>>>>>>> parent of 82e6095... Add files via upload
 =======
 >>>>>>> parent of 82e6095... Add files via upload
 <!doctype html>
@@ -362,6 +365,9 @@
   </body>
 </html>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 82e6095... Add files via upload
+=======
 >>>>>>> parent of 82e6095... Add files via upload
 =======
 >>>>>>> parent of 82e6095... Add files via upload

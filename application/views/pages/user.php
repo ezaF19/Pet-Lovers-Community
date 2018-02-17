@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -217,6 +218,8 @@
 	<script type="text/javascript" src="js/script.js"></script>
   </body>
 =======
+=======
+>>>>>>> parent of 82e6095... Add files via upload
 =======
 >>>>>>> parent of 82e6095... Add files via upload
 <!doctype html>
@@ -640,6 +643,9 @@
   </body>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 82e6095... Add files via upload
+=======
 >>>>>>> parent of 82e6095... Add files via upload
 =======
 >>>>>>> parent of 82e6095... Add files via upload

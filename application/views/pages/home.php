@@ -78,6 +78,7 @@
                 </li>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <li><a href="meetbreed.html">Meet N' Breed</a></li>
                 <li><a href="community.html">Community</a></li>
             </ul>
@@ -85,12 +86,17 @@
 				<li class="dropdown">
 					<a href="" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
 =======
+=======
+>>>>>>> parent of 82e6095... Add files via upload
                 <li><a href="#">Meet N' Breed</a></li>
                 <li><a href="#">Community</a></li>
             </ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
+<<<<<<< HEAD
+>>>>>>> parent of 82e6095... Add files via upload
+=======
 >>>>>>> parent of 82e6095... Add files via upload
 				<ul id="login-dp" class="dropdown-menu">
 					<li>
@@ -105,6 +111,7 @@
 								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
 										<div class="form-group">
 <<<<<<< HEAD
+<<<<<<< HEAD
 											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
 											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required />
 										</div>
@@ -113,6 +120,8 @@
 											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required />
                                              <div class="help-block text-right"><a href="forget.html"><b>Forget the password ?</b></a></div>
 =======
+=======
+>>>>>>> parent of 82e6095... Add files via upload
 											 <label class="sr-only" for="exampleInputEmail2">Username</label>
 											 <input type="username" name="username" class="form-control" id="exampleInputEmail2" placeholder="Username" required />
 										</div>
@@ -120,6 +129,9 @@
 											 <label class="sr-only" for="exampleInputPassword2">Password</label>
 											 <input type="password" name="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required />
                                              <div class="help-block text-right"><a href="#">Forget the password ?</a></div>
+<<<<<<< HEAD
+>>>>>>> parent of 82e6095... Add files via upload
+=======
 >>>>>>> parent of 82e6095... Add files via upload
 										</div>
 										<div class="form-group">
@@ -128,7 +140,11 @@
 										<div class="checkbox">
 											 <label>
 <<<<<<< HEAD
+<<<<<<< HEAD
 											 <input type="checkbox"/> Keep me logged-in
+=======
+											 <input type="checkbox"/> keep me logged-in
+>>>>>>> parent of 82e6095... Add files via upload
 =======
 											 <input type="checkbox"/> keep me logged-in
 >>>>>>> parent of 82e6095... Add files via upload
@@ -138,7 +154,11 @@
 							</div>
 							<div class="bottom text-center">
 <<<<<<< HEAD
+<<<<<<< HEAD
 								New here ? <a href="<?php echo base_url('register'); ?>" ><b>Join Us</b></a>
+=======
+								New here ? <a href="<?php echo base_url(); ?>register"><b>Join Us</b></a>
+>>>>>>> parent of 82e6095... Add files via upload
 =======
 								New here ? <a href="<?php echo base_url(); ?>register"><b>Join Us</b></a>
 >>>>>>> parent of 82e6095... Add files via upload
@@ -149,6 +169,7 @@
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+<<<<<<< HEAD
 <<<<<<< HEAD
 				<li class="active"><a href="<?php echo base_url('home'); ?>">Home</a></li>
 				<li><a href="<?php echo base_url('donations'); ?>">Donations</a></li>
@@ -204,6 +225,11 @@
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="<?php echo base_url();?>">Home</a></li>
+				<li><a href="#">Donations</a></li>
+			</ul>
+>>>>>>> parent of 82e6095... Add files via upload
+=======
 				<li class="active"><a href="<?php echo base_url();?>">Home</a></li>
 				<li><a href="#">Donations</a></li>
 			</ul>
