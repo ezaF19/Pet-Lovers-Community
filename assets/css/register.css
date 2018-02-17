@@ -1,18 +1,318 @@
-form * {
-    border-radius:0 !important;
+@body{
+
+	overflow: fixed;
+    padding-top: 255px;
 }
 
-form > fieldset > legend {
-    font-size:120%;
+
+.navbar{
+	box-shadow: 0 6px 15px 1px rgba(0, 0, 0, 0.2);
 }
-#homelogo{
-	border-top: 5px solid #353535;
+.container .acount-icon a{
+	display:block;
+	color: black;
+	font-size:18px;
+	padding:5px;
+	text-decoration:none;
 }
-img {
-    display: block;
-	height: 100px;
-	width: 350px;
-    margin-left: 470px;
-    margin-right: auto;
+.container .social-icon a{
+	display:inline-block;
+	color: black;
+	font-size:25px;
+	padding:5px;
+}
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color: #FFFFFF;
+}
+#login-dp .help-block{
+    font-size:12px   
+}
+#login-dp .bottom{
+    background-color: #FFFFFF;
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0 ; 
 
 }
+#login-dp .social-buttons a{
+    width: 49%;
+	color: white;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+.navbar-custom a {
+    color: black;
+}
+
+.footer {
+    padding: 50px 0 20px 0;
+	background: url('../img/petbg.jpg') repeat;
+    background-color: #ECE8E8;
+	border-top: 1px solid #666;
+    color: black;
+}
+.footer .title{
+	text-align: left;
+	color: black;
+	font-size:25px;
+}
+.footer .social-icon{
+	padding:0px;
+	margin:0px;
+}
+.footer .social-icon a{
+	display:inline-block;
+	color: black;
+	font-size:30px;
+	padding:10px;
+}
+.footer .acount-icon a{
+	display:block;
+	color: black;
+	font-size:18px;
+	padding:5px;
+	text-decoration:none;
+}
+.footer .acount-icon .fa{
+	margin-right: 0px;
+}
+.footer .category a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 1px;
+    border-radius:4px;
+    margin-top: 6px;
+    background-color: black;
+    border: solid 1px #fff;
+}
+
+.copyright{
+	background-color: #FB7E09;
+}
+
+
+h1 h2 h3 h4 h5{
+  color: #223;
+  font-weight: bold;
+}
+a{
+  color: #223;
+  font-weight: bold;
+}
+p{
+  color: #223;
+  font-weight: bold;
+}
+.btn {
+  text-align: center;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc ;
+	box-shadow: 0 6px 15px 1px rgba(0, 0, 0, 0.3);
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+	box-shadow: 0 6px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-bio {
+  background: transparent;
+  padding: 10px 25px;
+  width: 150px;
+  border-radius: 25px;
+  border: 1px solid #7fd6da;
+  color: #7fd6da;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.btn-bio:hover {
+  color: white;
+  box-shadow: 0 6px 15px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.1);
+  background: #31708f;
+}
+.btn-bio:focus {
+  outline: 0;
+}
+
+.btn-learn {
+  margin-left: 30px;
+  background: black;
+  padding: 10px 25px;
+  width: 120px;
+  border-radius: 25px;
+  border: 1px solid #7fd6da;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.btn-learn:hover {
+  color: white;
+  box-shadow: 0 6px 15px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.1);
+  background: white;
+}
+.btn-submit {
+  background: dodgerblue;
+  padding: 10px 25px;
+  width: 150px;
+  border-radius: 25px;
+  border: 1px solid white;
+  color: black;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.btn-submit:hover {
+  color: white;
+  box-shadow: 0 6px 15px 1px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.1);
+  background: orange;
+}
+.btn-bio:focus {
+  outline: 0;
+}
+.btn-change{
+    background: lightseagreen;
+    margin: 20px;
+    float: left;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-transition: all 0.5s ease-in-out;
+    border: 0px;
+    color: #fff;
+}
+.btn-change:hover{
+    -webkit-transform: scale(1.1);
+    background: #31708f;
+}
+.menu-icon{
+	width: 100%;
+	background: #005c48;
+	text-align: left;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	cursor: pointer;
+	color: #fff;
+	display: none;
+	text-align: right;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+		.menu-icon{
+		display: block;
+	}
+}
+#register{
+	text-align: center;
+}
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .body {
+    max-width: 730px;
+	margin-top: 80px;
+	margin-bottom: 100px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
