@@ -8,6 +8,8 @@ class Register extends CI_Controller {
 	}
 
 	public function index(){
+		$data = array();
+		if($_SERVER['REQUEST_METHOD'] == "POST"){
 		$validate = array(
 			array('field'=>'first_name','label'=>'First Name','rules'=>'trim|required',array('required' => 'You must provide a %s.')),
 			array('field'=>'last_name','label'=>'Last Name','rules'=>'trim|required'),
@@ -33,6 +35,7 @@ class Register extends CI_Controller {
 			redirect('user');
 			$this->load->view('template/footer');
 		}
+	}
 			$this->load->view('pages/register', $data);
 }
 

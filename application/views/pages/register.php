@@ -155,8 +155,7 @@
     <h2 class="well" id="register">Register</h2>
 	<div class="col-lg-12 well">
 	<div class="row">
-    <?php echo form_open('register/index');?>
-				<form>
+				<form method = "Post">
 					<div class="col-sm-12">
 						<div class="row">
 							<div class="col-sm-6 form-group">
