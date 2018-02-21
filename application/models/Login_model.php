@@ -6,7 +6,7 @@ class Login_model extends CI_Model {
   }
 
   public function check_em(){
-    $err = 'Mismatch!';    
+    $err = 'Mismatch!';
     $user = $this->input->post('username');
   	$pass = $this->input->post('password');
     $conn = new mysqli('localhost', 'root', '', 'plc_db');
@@ -14,7 +14,8 @@ class Login_model extends CI_Model {
 		$result = $conn->query($query);
 		if($result->num_rows > 0){
 			while($row = $result->fetch_assoc()){
-				if($row['AccountPass'] === $pass){
+        $boolean = password_verify($pass, $row['AccountPass']);
+				if($boolean == 'true'){
           $bio = $row['BioID'];
           $query_next = 'Select AccountName, BioID from accbio where BioID = "'.$bio.'"';
       		$result_next = $conn->query($query_next);
