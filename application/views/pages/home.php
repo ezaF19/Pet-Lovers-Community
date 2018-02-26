@@ -34,20 +34,27 @@
 
 	<!--Navbar and Header-->
 	<nav class="navbar navbar-custom" style="background-color: #353535;">
-        <div class="container">
+        <div class="container">		
+		    <div class="navbar-header ">		.
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainMenu">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span><a>MENU</a>
+		      </button>		
+			</div>
         <div class="collapse navbar-collapse" id="MainMenu"> 
             <ul class="nav navbar-nav menu-list">
-				
                 <li class="dropdown list-adoptapet">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Adopt a Pet <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </a>  
                     <ul class="dropdown-menu mega-dropdown-menu">
-                        <li><a href="names.html">Name</a></li>
-                        <li><a href="types.html">Pet type</a></li>
-                        <li><a href="recent.html">Recently Post</a></li>
+                        <li><a href="<?php echo base_url('pnames');?>"/ >Name</a></li>
+                        <li><a href="<?php echo base_url('ptype');?>"/ >Pet type</a></li>
+                        <li><a href="<?php echo base_url('recentpost');?>"/ >Recently Post</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="adoptall.html">View all</a></li>
+                        <li><a href="<?php echo base_url('adoptall');?>"/ >View all</a></li>
                     </ul>
                 </li>
                 <li class="dropdown list-services">
@@ -55,16 +62,16 @@
                         Services <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </a>  
                     <ul class="dropdown-menu mega-dropdown-menu">
-                        <li><a href="veterinary.html">Veterinary</a></li>
-                        <li><a href="training.html">Training</a></li>
-                        <li><a href="grooming.html">Grooming</a></li>
-                        <li><a href="petsitting.html">Pet Sitting</a></li>
+                        <li><a href="<?php echo base_url('veterinary');?>" />Veterinary</a></li>
+                        <li><a href="<?php echo base_url('training');?>" />Training</a></li>
+                        <li><a href="<?php echo base_url('grooming');?>" />Grooming</a></li>
+                        <li><a href="<?php echo base_url('petsitting');?>" />Pet Sitting</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="serviceall.html">View all</a></li>
+                        <li><a href="<?php echo base_url('viewall');?>" />View all</a></li>
                     </ul>
                 </li>
-                <li><a href="meetbreed.html">Meet N' Breed</a></li>
-                <li><a href="community.html">Community</a></li>
+                <li><a href="<?php echo base_url('meetbreed');?>" />Meet N' Breed</a></li>
+                <li><a href="<?php echo base_url('community');?>" />Community</a></li>
             </ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
@@ -92,11 +99,6 @@
 										<div class="form-group">
 											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
 										</div>
-										<div class="checkbox">
-											 <label>
-											 <input type="checkbox"/> Keep me logged-in
-											 </label>
-										</div>
 								 </form>
 							</div>
 							<div class="bottom text-center">
@@ -108,7 +110,7 @@
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="<?php echo base_url('home'); ?>">Home</a></li>
+				<li><a href="<?php echo base_url('home'); ?>">Home</a></li>
 				<li><a href="<?php echo base_url('donations'); ?>">Donations</a></li>
 			</ul> 		
             <form id="mega-search" class="navbar-form navbar-right">
@@ -130,7 +132,7 @@
     <div class="container navcont">
 	<div class="logo_container">
 		<span class="logo_helper"></span>
-			<a href="https:/petloverscommunity.com">
+			<a href="<?php echo base_url('home'); ?>">
 				<img src="<?php echo base_url('assets/img/logo.jpg'); ?>"   alt="Pet Lovers Community" id="logo" width="500" /></a>
 	</div>
 	</div>

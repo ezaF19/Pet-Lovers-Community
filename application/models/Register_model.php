@@ -34,9 +34,9 @@ class Register_model extends CI_Model {
       'AccountUser' => $this->input->post('username'),
       'AccountPass' => $this->input->post('password')
     );
-    
+
     $this->db->insert('account', $data);
-    return $this->input->post('username');
+    return $name;
   }
 }
 }

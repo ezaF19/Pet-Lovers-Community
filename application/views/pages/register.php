@@ -15,6 +15,7 @@
 
     </head>
 	<style type="text/css">
+		.error { color: red; font: 10px Tahoma; }
 		<!--body { ; font-family: segoe ui; } -->
 	</style>
 
@@ -30,61 +31,60 @@
 	</div>
 	</div>
 	</nav>
-	<div class="container">
+	<div class="container body">
         <div class="row">
-
+		<?php echo form_open('register/index');?>
             <div class="col-md-8 col-md-offset-2">
-                <form role="form" method="POST" action="#">
-
-                    <legend class="text-center">Register</legend>
-
-                    <fieldset>
-                        <legend>Account Details</legend>
-
-                        <div class="form-group col-md-6">
-                            <label for="first_name">First name</label>
-                            <input type="text" class="form-control" name="" id="first_name" placeholder="First Name">
-                        </div>
-
-                        <div class="form-group col-md-6">
-                            <label for="last_name">Last name</label>
-                            <input type="text" class="form-control" name="last_name" id="" placeholder="Last Name">
-                        </div>
-
-                        <div class="form-group col-md-12">
-                            <label for="">Email</label>
-                            <input type="email" class="form-control" name="" id="" placeholder="Email">
-                        </div>
-
-                        <div class="form-group col-md-12">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" name="" id="password" placeholder="Password">
-                        </div>
-
-                        <div class="form-group col-md-12">
-                            <label for="confirm_password">Confirm Password</label>
-                            <input type="password" class="form-control" name="" id="confirm_password" placeholder="Confirm Password">
-                        </div>
-                    </fieldset>
-                    <div class="form-group">
-                        <div class="col-md-12">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="" id="">
-                                    I accept the <a href="#">terms and conditions</a>.
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-primary">
-                                Register
-                            </button>
-                        </div>
-                    </div>
-                </form>
+				<form>
+				<legend>Account Details</legend>
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<label>First Name</label>
+								<input type="text" name="first_name" placeholder="Enter First Name Here.." class="form-control">
+                <?=isset($errors)?form_error('first_name','<div class="error">','</div>'):''?>
+							</div>
+							<div class="col-sm-6 form-group">
+								<label>Last Name</label>
+								<input type="text" name="last_name" placeholder="Enter Last Name Here.." class="form-control">
+                <?=isset($errors)?form_error('last_name','<div class="error">','</div>'):''?>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>Address</label>
+							<textarea name="address" placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
+              <?=isset($errors)?form_error('address','<div class="error">','</div>'):''?>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 form-group">
+								<label>City</label>
+								<input name="city" type="text" placeholder="Enter City Name Here.." class="form-control">
+                <?=isset($errors)?form_error('city','<div class="error">','</div>'):''?>
+							</div>
+							<div class="col-sm-6 form-group">
+								<label>State</label>
+								<input name="state" type="text" placeholder="Enter State Name Here.." class="form-control">
+                <?=isset($errors)?form_error('state','<div class="error">','</div>'):''?>
+							</div>
+						</div>
+					<div class="form-group">
+						<label>Phone Number</label>
+						<input name="number" type="text" placeholder="Enter Phone Number Here.." class="form-control">
+            <?=isset($errors)?form_error('number','<div class="error">','</div>'):''?>
+					</div>
+					<div class="form-group">
+						<label>Username</label>
+						<input name="username" type="text" placeholder="Enter Username Here.." class="form-control">
+            <?=isset($errors)?form_error('username','<div class="error">','</div>'):''?>
+					</div>
+          <div class="form-group">
+						<label>Password</label>
+						<input name="password" type="text" placeholder="Enter Password Here.." class="form-control">
+            <?=isset($errors)?form_error('password','<div class="error">','</div>'):''?>
+					</div>
+					<button class="btn-submit" type="submit">Submit</button>
+					</div>
+				</form>
             </div>
         </div>
  	</div>
