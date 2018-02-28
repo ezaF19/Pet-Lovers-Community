@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <?php $user = $this->session->userdata('username'); ?>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,7 +20,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <title>Pet Lovers Community</title>
-	<link rel="icon" href="img/PLC.jpg"/>
+	<link rel="icon" href="assets/img/cologo.png"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
@@ -36,14 +37,14 @@
 
 	<!--NavBar-->
 
-<nav class="navbar navbar-custom" style="background-color: #A9A9A9;">
+<nav class="navbar navbar-custom" style="background-color: #F87C09;">
   <div class="container">
 
-	<p class="navbar-text" style="color: #ECECEC;">EVERY PET DESERVES A HOME, BUT NOT EVERY HOME DESERVES A PET</p>
+	<p class="navbar-text" style="color: black;">EVERY PET DESERVES A HOME, BUT NOT EVERY HOME DESERVES A PET</p>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li class="DashUserDropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?= $username; ?> <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $user; ?><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#"> Profile </span></a></li>
             <li class="divider"></li>
@@ -57,7 +58,7 @@
             <li class="divider"></li>
 			<li><a href="#"> Help</span></a></li>
 			<li><a href="#"> Settings</span></a></li>
-            <li><a href="#"> Log Out</span></a></li>
+            <li><a href='<?php echo base_url(); ?>logout'> Log Out</span></a></li>
           </ul>
         </li>
       </ul>
@@ -154,13 +155,6 @@
             <div class="category">
                 <a href="#">Cat</a>
                 <a href="#">Dog</a>
-                <a href="#">Bird</a>
-                <a href="#">Lion</a>
-                <a href="#">Tigers</a>
-                <a href="#">Bear</a>
-                <a href="#">Panda</a>
-                <a href="#">Shark</a>
-                <a href="#">Spider</a>
             </div>
         </div>
         <div class="col-sm-3">
