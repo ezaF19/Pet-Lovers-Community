@@ -38,11 +38,9 @@
                         Adopt a Pet <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </a>  
                     <ul class="dropdown-menu mega-dropdown-menu">
-                        <li><a href="<?php echo base_url('pnames');?>"/ >Name</a></li>
-                        <li><a href="<?php echo base_url('ptype');?>"/ >Pet type</a></li>
-                        <li><a href="<?php echo base_url('recentpost');?>"/ >Recently Post</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="<?php echo base_url('adoptall');?>"/ >View all</a></li>
+                        <li><a href="<?php echo base_url('pnames');?>"/ >Adopt a Dog</a></li>
+                        <li><a href="<?php echo base_url('ptype');?>"/ >Adopt a Cat</a></li>
+                        <li><a href="<?php echo base_url('recentpost');?>"/ >Others</a></li>
                     </ul>
                 </li>
                 <li class="dropdown list-services">
@@ -54,8 +52,6 @@
                         <li><a href="<?php echo base_url('training');?>" />Training</a></li>
                         <li><a href="<?php echo base_url('grooming');?>" />Grooming</a></li>
                         <li><a href="<?php echo base_url('petsitting');?>" />Pet Sitting</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="<?php echo base_url('viewall');?>" />View all</a></li>
                     </ul>
                 </li>
                 <li><a href="<?php echo base_url('meetbreed');?>" />Meet N' Breed</a></li>
