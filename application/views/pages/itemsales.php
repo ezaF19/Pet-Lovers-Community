@@ -7,11 +7,18 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css'); ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/community.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css//bootstrap-theme.css'); ?>" />
 	<link rel="stylesheet" href="<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'); ?>" >
 	<link rel="stylesheet" href="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); ?>" />
-	
+	<script src="<?php echo base_url('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'); ?> " /></script>
+	<script src="<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'); ?>" /></script>
+	<script src="<?php echo base_url ('https://code.jquery.com/jquery-3.2.1.slim.min.js'); ?>" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" /></script>
+    <script src="<?php echo base_url ('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'); ?>" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" /></script>
+	<script src="<?php echo base_url ('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'); ?>"/></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
 
 	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />
 	
@@ -44,8 +51,8 @@
                         Adopt a Pet <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </a>  
                     <ul class="dropdown-menu mega-dropdown-menu">
-                        <li><a href="<?php echo base_url('pnames');?>"/>Adopt a Dog</a></li>
-                        <li><a href="<?php echo base_url('ptype');?>"/>Adopt a Cat</a></li>
+                        <li><a href="<?php echo base_url('pnames');?>"/ >Adopt a Dog</a></li>
+                        <li><a href="<?php echo base_url('ptype');?>"/ >Adopt a Cat</a></li>
                         <li><a href="<?php echo base_url('recentpost');?>"/ >Others</a></li>
                     </ul>
                 </li>
@@ -76,14 +83,14 @@
 									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
 								</div>
                                 or
-								 <form class="form" role="form" method="post" action="<?php echo base_url();?>login/users" accept-charset="UTF-8" id="login-nav">
+								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
 										<div class="form-group">
 											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
-											 <input type="text" class="form-control" name="email" id="exampleInputEmail2" placeholder="Email address" required />
+											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required />
 										</div>
 										<div class="form-group">
 											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" class="form-control" name="password" id="exampleInputPassword2" placeholder="Password" required />
+											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required />
                                              <div class="help-block text-right"><a href="forget.html"><b>Forget the password ?</b></a></div>
 										</div>
 										<div class="form-group">
@@ -101,7 +108,7 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="<?php echo base_url('home'); ?>">Home</a></li>
-				<li><a href="<?php echo base_url('donations'); ?>">Donations</a></li>
+				<li><a href="<?php echo base_url('donations'); ?>" >Donations</a></li>
 			</ul> 		
             <form id="mega-search" class="navbar-form navbar-right">
                 <div class="input-group">
@@ -119,56 +126,88 @@
 	
 	<!-- End of Navbar and Header-->
 	
-    <div class="container navcont">
-         <div class="col-sm-4"></div>
-	<div class="logo_container col-sm-1">
-		<span class="logo_helper"></span>
-			<a href="<?php echo base_url('home'); ?>">
-				<img src="<?php echo base_url('assets/img/logo.jpg'); ?>"   alt="Pet Lovers Community" id="logo" width="500" /></a>
-	</div>
-         <div class="col-sm-4"></div>
-	</div>
-	<!--Body-->
 
-	<div id="contbody1">
+	<!--Body-->
+	<div class="sidebar-section">
+	<div class="container-fluid">
 	<div class="container">
-		<div class="container textbody" style="background-color: rgba(255,145,0,0.4);"> 
-			<h1 class="title"> Make a Difference - Adopt</h1>
-			<p class="lead"> Open your heart and your home to pet that needs your help. They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!</p>
-			<a href="#" class="btn btn-learn" role="button">LEARN MORE</a>
-		</div>
-	</div>
-	</div>
-	<div id="contbody2">
-		<div class="container-fluid">
-          <h3><strong> FEATURED PET</strong></h3>
+	<div class="row">
+	    <div class="sidenav col-md-2  sidebar-box">
+	        <ul class="list-links">
+              <li><a href="<?php echo base_url('community');?>">Featured</a></li>
+              <li><a href="<?php echo base_url('recent');?>">Fresh</a></li>
+              <li class="active"><a href="<?php echo base_url('itemsales');?>">Item Sales</a></li>
+              <li><a href="<?php echo base_url('foradopt');?>">For Adoption</a></li>
+              <li><a href="<?php echo base_url('services');?>">Services</a></li>              
+			</ul>
+	    </div>
+	<div class="container col-lg-10">
+	<div class="row">	
+
+		<div class="col-sm-10">			
+			<div class="panel panel-default panel-front">					
+				<div class="panel-heading">				
+					<h4 class="panel-title"><a HREF="#"><img src="https://i.imgur.com/UuosGKL.jpg"></a></h4>					
+				</div>				
+				<div class="panel-body">				
+					<h4>Pulp Fiction</h4>				
+					Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year.				  
+				<div class="text-right">
+					<a href="#" class="btn btn-primary btn-sm" role="button">Share on Facebook</a>
+					<a href="#" class="btn btn-info btn-sm" role="button">Share on Twitter</a>
+				</div>					
+				</div>
+			</div>				
+		</div>		
+		<div class="col-sm-10">     
 		</div>		
 	</div>	
-	
-<!--FeaturedPet-->
-	<div class="featured">
-		<div class="profile"><img src="<?php echo base_url('assets/img/Rengar.jpg'); ?>" alt="cat"/></div>
-		<div class="info">
-		<div class="bio btn">
-		<div class="head">
-			<a href="types.html">Type of Pet</a>
-		</div>
-		</div>
-		<h1><em>Rengar</em></h1>
-		<p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. </p>
-		<button class="btn-bio">Full Bio</button>
-		</div>
-	</div>		
-<!--End of FeaturedPet-->	
-	<div class="container" id="contbody4">
-		<div class="col-xs-5 col-md-7">
-			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. Sed nec pulvinar lacus. Morbi euismod scelerisque accumsan. Vestibulum pretium ut tellus at feugiat. Pellentesque venenatis sem quis tellus rhoncus lacinia. Etiam ultrices turpis et eros eleifend, vel molestie tortor ornare.</p>
-		</div>
-		<div class="col-xs-11 col-md-1">
-			<img src="<?php echo base_url('assets/img/paws.png'); ?>" alt="Paws" id="logo" width="320" height="320"/></a>
-		</div>
-	</div>	
+	<div class="row">	
 
+		<div class="col-sm-10">			
+			<div class="panel panel-default panel-front">					
+				<div class="panel-heading">				
+					<h4 class="panel-title"><a HREF="#"><img src="https://i.imgur.com/UuosGKL.jpg"></a></h4>					
+				</div>				
+				<div class="panel-body">				
+					<h4>Pulp Fiction</h4>				
+					Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year.				  
+				<div class="text-right">
+					<a href="#" class="btn btn-primary btn-sm" role="button">Share on Facebook</a>
+					<a href="#" class="btn btn-info btn-sm" role="button">Share on Twitter</a>
+				</div>					
+				</div>
+			</div>				
+		</div>		
+		<div class="col-sm-10">     
+		</div>		
+	</div>	
+	<div class="row">	
+
+		<div class="col-sm-10">			
+			<div class="panel panel-default panel-front">					
+				<div class="panel-heading">				
+					<h4 class="panel-title"><a HREF="#"><img src="https://i.imgur.com/UuosGKL.jpg"></a></h4>					
+				</div>				
+				<div class="panel-body">				
+					<h4>Pulp Fiction</h4>				
+					Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year.				  
+				<div class="text-right">
+					<a href="#" class="btn btn-primary btn-sm" role="button">Share on Facebook</a>
+					<a href="#" class="btn btn-info btn-sm" role="button">Share on Twitter</a>
+				</div>					
+				</div>
+			</div>				
+		</div>		
+		<div class="col-sm-10">     
+		</div>		
+	</div>		
+
+	</div>	
+	</div>
+	</div>
+	</div>
+	</div>
 
 	<!--End of Body-->		
 	
@@ -214,12 +253,6 @@
              Copyright ©2018 petloverscommunity.com All rights reserved
          </div>
       </div> 
-<script src="<?php echo base_url('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'); ?> " /></script>
-	<script src="<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'); ?>" /></script>
-	<script src="<?php echo base_url('https://code.jquery.com/jquery-3.2.1.slim.min.js'); ?>" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" /></script>
-        <script src="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'); ?>" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" /></script>
-	<script src="<?php echo base_url('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'); ?>"/></script>
-	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
-	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+  
   </body>
 </html>

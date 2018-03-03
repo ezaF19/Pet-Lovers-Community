@@ -53,7 +53,7 @@
 }
 .container .navcont{
 	background-color: black;
-	margin-bottom: 10 px;
+	margin-bottom: 10px;
 }
 .navbar .navbar-custom{
 	margin-bottom: 100px;
@@ -289,7 +289,7 @@ footer{
   color:#FFC831;
 } 
 #foot2 a:hover{
-  text-decoration: none;
+  text-decoration: #005c48;
   color:#FFC831;
 }
 h5#firstchild{
@@ -303,5 +303,6 @@ h5#firstchild{
 }
 .copyright{
 	background-color: orange;
+        
 }
 /*Footer*/
