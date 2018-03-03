@@ -1,18 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-
-
-	<title>Pet Lovers Community</title>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css'); ?>" />
+	<title>Pet Lovers Community | Register</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/register.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.css'); ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css//bootstrap-theme.css'); ?>" />
-	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />
-
-
     </head>
 	<style type="text/css">
 		.error { color: red; font: 10px Tahoma; }
