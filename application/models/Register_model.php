@@ -13,6 +13,9 @@ class Register_model extends CI_Model {
   $cname = $this->input->post('city');
   $sname = $this->input->post('state');
   $add = $aname.', '.$cname.', '.$sname;
+  $pass = $this->input->post('password');
+
+  $encryptedpass = password_hash($pass, PASSWORD_DEFAULT, ['cost' => 12]);
 
     $acc = array(
       'AccountName' => $name,
@@ -32,7 +35,7 @@ class Register_model extends CI_Model {
     $data = array(
       'BioID' => $bio,
       'AccountUser' => $this->input->post('username'),
-      'AccountPass' => $this->input->post('password')
+      'AccountPass' => $encryptedpass
     );
 
     $this->db->insert('account', $data);
