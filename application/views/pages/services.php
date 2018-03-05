@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap-theme.css'); ?>" />	
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/user.css'); ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/services.css'); ?>" />
 	<link rel="stylesheet" href="<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'); ?>" >
 	<link rel="stylesheet" href="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); ?>" />
 	<link rel="stylesheet" href="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css'); ?> "/>
@@ -20,6 +21,11 @@
 	<script src="<?php echo base_url ('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'); ?>"/></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+	
+	<link href="<?php echo base_url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'); ?>" rel="stylesheet" id="bootstrap-css">
+<script src="<?php echo base_url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'); ?>" /></script>
+<script src="<?php echo base_url('//code.jquery.com/jquery-1.11.1.min.js'); ?>" /></script>
+	
 	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />
 	
     </head>
@@ -97,71 +103,215 @@
     </nav>
 <!-- End of first navbar-->
 
+<h1 align="center">SERVICES</h1>
 
-	<div class="container">
-		<div class="plc-profile">
-			<img align="left" class="plc-image-lg img-responsive" src="<?php echo base_url('assets/img/dog.jpg'); ?>"   alt="Pet Lovers Community" id="logo"/>
-			<img align="left" class="plc-image-profile thumbnail img-circle" src="<?php echo base_url('assets/img/rengar.jpg'); ?>" alt="Profile image example"/>
-			<div class="plc-profile-text">
-				<h1>Rengar</h1>
-				<p>WSWSWSWSWSWSWSWSWSWSW</p>
-			<button type="button" class="btn btn-warning btn-xs">Edit Profile</button>						
-			</div>
-		</div>
-	</div><br>
-	<div class="container">
-    <div class="row">
-    	<div class="col-md-12 center">
-            <div class="panel with-nav-tabs panel-warning">
-                <div class="panel-heading">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1warning" data-toggle="tab">Posts</a></li>
-                            <li><a href="#tab2warning" data-toggle="tab">Photos</a></li>
-                            <li><a href="#tab3warning" data-toggle="tab">User Bio</a></li>
-                        </ul>
-                </div>
-                <div class="panel-body">
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="tab1warning">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-8" >
-										<div class="panel panel-default text-right">
-										<div class="panel-body text-center">
-										<input type="post" class="form-control" placeholder="What are you up to?">
-										</div>
-										<div class="panel-footer">
-   										<button type="button" class="btn btn-warning btn-md">Post</button>
-										</div>
-										</div>
-										</div>
-								</div>
-							</div>
-						</div>
-                        <div class="tab-pane fade" id="tab2warning">
-						<div class="container">
-						<div class="row">
-							<div class="gallery_product col-lg-3 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-							<img src="<?php echo base_url('assets/img/rengar.jpg'); ?>" class="img-responsive">
-							</div>
-							<div class="gallery_product col-lg-3 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-							<img src="<?php echo base_url('assets/img/rengar.jpg'); ?>" class="img-responsive">
-							</div>
-							<div class="gallery_product col-lg-3 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-							<img src="<?php echo base_url('assets/img/rengar.jpg'); ?>" class="img-responsive">
-							</div>
-														
-						</div>
-						</div>
-						</div>
-                        <div class="tab-pane fade" id="tab3warning">About/ Bio</div>
-                    </div>
-                </div>
-            </div>
+ <div class="container" id="tourpackages-carousel">
+      
+      <div class="row">
+        
+        <div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a data-toggle="modal" data-target="#myModal"><img src="http://placehold.it/500x300" alt=""></a>
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+    
+					<!-- Modal content-->
+					<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+					<p>Some text in the modal.</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+      
+					</div>
+				</div>
+          </div>
+        </div> 
+
+<div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a data-toggle="modal" data-target="#myModal"><img src="http://placehold.it/500x300" alt=""></a>
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+    
+					<!-- Modal content-->
+					<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+					<p>Some text in the modal.</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+      
+					</div>
+				</div>
+          </div>
+        </div>  
+
+<div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a data-toggle="modal" data-target="#myModal"><img src="http://placehold.it/500x300" alt=""></a>
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+    
+					<!-- Modal content-->
+					<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+					<p>Some text in the modal.</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+      
+					</div>
+				</div>
+          </div>
+        </div>  
+
+<div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a data-toggle="modal" data-target="#myModal"><img src="http://placehold.it/500x300" alt=""></a>
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+    
+					<!-- Modal content-->
+					<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+					<p>Some text in the modal.</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+      
+					</div>
+				</div>
+          </div>
         </div>
-	</div>
-</div>
-<!--.container-->
+
+<div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a data-toggle="modal" data-target="#myModal"><img src="http://placehold.it/500x300" alt=""></a>
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+    
+					<!-- Modal content-->
+					<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+					<p>Some text in the modal.</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+      
+					</div>
+				</div>
+          </div>
+        </div> 
+
+<div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a data-toggle="modal" data-target="#myModal"><img src="http://placehold.it/500x300" alt=""></a>
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+    
+					<!-- Modal content-->
+					<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+					<p>Some text in the modal.</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+      
+					</div>
+				</div>
+          </div>
+        </div>  
+
+<div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a data-toggle="modal" data-target="#myModal"><img src="http://placehold.it/500x300" alt=""></a>
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+    
+					<!-- Modal content-->
+					<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+					<p>Some text in the modal.</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+      
+					</div>
+				</div>
+          </div>
+        </div>  
+
+<div class="col-xs-18 col-sm-6 col-md-3">
+          <div class="thumbnail">
+            <a data-toggle="modal" data-target="#myModal"><img src="http://placehold.it/500x300" alt=""></a>
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+    
+					<!-- Modal content-->
+					<div class="modal-content">
+					<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Header</h4>
+					</div>
+					<div class="modal-body">
+					<p>Some text in the modal.</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+					</div>
+      
+					</div>
+				</div>
+          </div>
+        </div>  		
+        
+      </div><!-- End row -->
+      
+    </div><!-- End container -->
 
 <!--Footer-->
 	<div class="container-fluid" id="footinfo">
