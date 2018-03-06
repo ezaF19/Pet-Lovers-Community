@@ -1,87 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
+    <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />	
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css'); ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.css'); ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css//bootstrap-theme.css'); ?>" />
+	<link rel="stylesheet" href="<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'); ?>" >
+	<link rel="stylesheet" href="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); ?>" />
+	<link rel="stylesheet" href="<?php echo base_url('netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css'); ?>" rel="stylesheet" id="bootstrap-css" />
+	<link rel="stylesheet" href="<?php echo base_url('netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'); ?>" rel="stylesheet" />
+	
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/homepage.css">
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <title>Pet Lovers Community</title>
-	<link rel="icon" href="assets/img/cologo.png"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <style type="text/css">
-   body { background: #EEEBE9; font-family: segoe ui; }
-</style>
+	<title>Pet Lovers Community</title>
+	</head>
+	<style type="text/css">
+		<!--body { ; font-family: segoe ui; } -->
+	</style>	
 <body>
 
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-	<!--NavBar-->
-
-	<nav class="navbar navbar-custom mega-nav" style="background-color: #FB7E09;">
-        <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" style="background-color: white;" data-toggle="collapse" data-target="#MainMenu" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span> Menu
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="MainMenu">
+	<!--Navbar and Header-->
+	<nav class="navbar navbar-custom" style="background-color: #353535;">
+        <div class="container">		
+		    <div class="navbar-header ">		.
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainMenu">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span><a>MENU</a>
+		      </button>		
+			</div>
+        <div class="collapse navbar-collapse" id="MainMenu"> 
             <ul class="nav navbar-nav menu-list">
-
                 <li class="dropdown list-adoptapet">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Adopt a Pet <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </a>
+                    </a>  
                     <ul class="dropdown-menu mega-dropdown-menu">
-                        <li><a href="#">Name</a></li>
-                        <li><a href="#">Pet type</a></li>
-                        <li><a href="#">Recently Post</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">View all</a></li>
+                        <li><a href="<?php echo base_url('pnames');?>"/ >Adopt a Dog</a></li>
+                        <li><a href="<?php echo base_url('ptype');?>"/ >Adopt a Cat</a></li>
+                        <li><a href="<?php echo base_url('recentpost');?>"/ >Others</a></li>
                     </ul>
                 </li>
                 <li class="dropdown list-services">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         Services <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </a>
+                    </a>  
                     <ul class="dropdown-menu mega-dropdown-menu">
-                        <li><a href="#">Veterinary</a></li>
-                        <li><a href="#">Training</a></li>
-                        <li><a href="#">Grooming</a></li>
-                        <li><a href="#">Pet Sitting</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">View all</a></li>
+                        <li><a href="<?php echo base_url('veterinary');?>" />Veterinary</a></li>
+                        <li><a href="<?php echo base_url('training');?>" />Training</a></li>
+                        <li><a href="<?php echo base_url('grooming');?>" />Grooming</a></li>
+                        <li><a href="<?php echo base_url('petsitting');?>" />Pet Sitting</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Meet N' Breed</a></li>
-                <li><a href="#">Community</a></li>
+                <li><a href="<?php echo base_url('meetbreed');?>" />Meet N' Breed</a></li>
+                <li><a href="<?php echo base_url('community');?>" />Community</a></li>
             </ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
+					<a href="" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
 				<ul id="login-dp" class="dropdown-menu">
 					<li>
 					 <div class="row">
@@ -94,26 +73,21 @@
                                 or
 								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
 										<div class="form-group">
-											 <label class="sr-only" for="exampleInputEmail2">Username</label>
-											 <input type="username" name="username" class="form-control" id="exampleInputEmail2" placeholder="Username" required />
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required />
 										</div>
 										<div class="form-group">
 											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" name="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required />
-                                             <div class="help-block text-right"><a href="#">Forget the password ?</a></div>
+											 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required />
+                                             <div class="help-block text-right"><a href="forget.html"><b>Forget the password ?</b></a></div>
 										</div>
 										<div class="form-group">
 											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
 										</div>
-										<div class="checkbox">
-											 <label>
-											 <input type="checkbox"/> keep me logged-in
-											 </label>
-										</div>
 								 </form>
 							</div>
 							<div class="bottom text-center">
-								New here ? <a href="<?php echo base_url(); ?>register"><b>Join Us</b></a>
+								New here ? <a href="<?php echo base_url('register'); ?>" ><b>Join Us</b></a>
 							</div>
 					 </div>
 					</li>
@@ -121,9 +95,9 @@
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="<?php echo base_url();?>">Home</a></li>
-				<li><a href="#">Donations</a></li>
-			</ul>
+				<li><a href="<?php echo base_url('home'); ?>">Home</a></li>
+				<li><a href="<?php echo base_url('donations'); ?>">Donations</a></li>
+			</ul> 		
             <form id="mega-search" class="navbar-form navbar-right">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search..."/>
@@ -136,40 +110,22 @@
             </form>
         </div>
         </div>
-    </nav>
-<!-- End of first navbar-->
+    </nav>	
+	
+	<!-- End of Navbar and Header-->
+	
     <div class="container navcont">
-	<div class="logo_container col-sm-6">
+	<div class="logo_container">
 		<span class="logo_helper"></span>
-			<a href="<?php echo base_url();?>">
-				<img src="assets/img/logo.png"   alt="Pet Lovers Community" id="logo" width="500" /></a>
+			<a href="<?php echo base_url('home'); ?>">
+				<img src="<?php echo base_url('assets/img/logo.jpg'); ?>"   alt="Pet Lovers Community" id="logo" width="500" /></a>
 	</div>
-	    <div class="col-sm-3">
-            <h4 class="title">Call Us</h4>
-			<span class="acount-icon">
-			<a href="#"><i class="fa fa-address-book fa-fw" aria-hidden="true"></i>09123456789</a></span>
-			<h4 class="title">Email Us</h4>
-			<span class="acount-icon">
-			<a href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>plc@gmail.com</a></span>
-        </div>
-		<div class="col-sm-3">
-            <h4 class="title">&emsp; Follow Us</h4>
-            <ul class="social-icon" style="font-size: 36px;">
-                <a href="https://www.facebook.com/petloverscommunity" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="https://www.twitter.com/petloverscommunity" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/petloverscommunity" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://plus.google.com/plc" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
-            </ul>
-        </div>
 	</div>
-	<nav class="navbar navbar-custom mega-nav" style="background-color: #FB7E09;">
-	</nav>
-
 	<!--Body-->
 
 	<div id="contbody1">
-	<div class="container contbody1">
-		<div class="container textbody" style="background-color: rgba(255,145,0,0.4);;">
+	<div class="container">
+		<div class="container textbody" style="background-color: rgba(255,145,0,0.4);"> 
 			<h1 class="title"> Make a Difference - Adopt</h1>
 			<p class="lead"> Open your heart and your home to pet that needs your help. They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!</p>
 			<a href="#" class="btn btn-learn" role="button">LEARN MORE</a>
@@ -179,84 +135,90 @@
 	<div id="contbody2">
 		<div class="container-fluid">
           <h3><strong> FEATURED PET</strong></h3>
-		</div>
-	</div>
-
+		</div>		
+	</div>	
+	
 <!--FeaturedPet-->
-	<div class="contbody3">
-		<div class="box">
-			<div class="profile"><img src="assets/img/Rengar.jpg" alt="cat"/></div>
-			<div class="info">
-			<div class="bio btn">
-			<div class="head">
-				<a href="#">Type of Pet</a>
-			</div>
-			</div>
+	<div class="featured">
+		<div class="profile"><img src="<?php echo base_url('assets/img/Rengar.jpg'); ?>" alt="cat"/></div>
+		<div class="info">
+		<div class="bio btn">
+		<div class="head">
+			<a href="types.html">Type of Pet</a>
+		</div>
+		</div>
 		<h1><em>Rengar</em></h1>
 		<p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. </p>
 		<button class="btn-bio">Full Bio</button>
-			</div>
 		</div>
-	</div>
-<!--End of FeaturedPet-->
-	<div id="contbody4" >
-	<div class="container">
+	</div>		
+<!--End of FeaturedPet-->	
+	<div class="container" id="contbody4">
 		<div class="col-xs-5 col-md-7">
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. Sed nec pulvinar lacus. Morbi euismod scelerisque accumsan. Vestibulum pretium ut tellus at feugiat. Pellentesque venenatis sem quis tellus rhoncus lacinia. Etiam ultrices turpis et eros eleifend, vel molestie tortor ornare.</p>
 		</div>
 		<div class="col-xs-11 col-md-1">
-			<img src="assets/img/paws.png" alt="Paws" id="logo" width="320" height="320"/></a>
+			<img src="<?php echo base_url('assets/img/paws.png'); ?>" alt="Paws" id="logo" width="320" height="320"/></a>
 		</div>
-	</div>
-	</div>
-
-	<!--End of Body-->
-
+	</div>	
+	<!--End of Body-->		 
 	<!--Footer-->
-
-	<footer class="footer panel-footer" style="border-top: 2px solid #666">
-    <div class="container">
-        <div class="row">
-		 <div class="col-sm-3 category">
-            <br/><h4><a href="#">About Us</a></h4>
-            <h4><a href="#">Donate</a></h4>
-        </div>
-		 <div class="col-sm-3">
-            <h4 class="title">Category</h4>
-            <div class="category">
-				<a href="#" class="btn btn-change" role="button">Cat</a>
-				<a href="#" class="btn btn-change" role="button">Dog</a>
-				<a href="#" class="btn btn-change" role="button">Other pets</a>
-            </div>
-        </div>
-		<div class="col-sm-3">
-            <h4 class="title">Contact Us</h4>
-			<span class="acount-icon">
-			<a href="#"><i class="fa fa-address-book fa-fw" aria-hidden="true"></i>09123456789</a>
-			<a href="#"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>plc@gmail.com</a></span>
-        </div>
-        <div class="col-sm-3">
-            <h4 class="title">Follow Us</h4>
-            <ul class="social-icon">
-                <a href="https://www.facebook.com/petloverscommunity" class="social"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i></a>
-                <a href="https://www.twitter.com/petloverscommunity" class="social"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/petloverscommunity" class="social"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i></a>
-                <a href="https://plus.google.com/plc" class="social"><i class="fa fa-google fa-fw" aria-hidden="true"></i></a>
-            </ul>
-        </div>
-        </div>
-    </div>
+	<div class="container-fluid" id="footinfo">
+    <footer class="container ">
+	<div class="row foot">
+		<div id="foot1" class="col-md-3 col-sm-3">
+			<h3>Useful Links</h3>
+		<h5 id="firstchild"><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Contact Us</b></a></h5>
+		<h5><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>About Us</b></a></h5>
+		<h5><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Terms & Conditions</b></a></h5>
+		<h5><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Private Policy</b></a></h5>
+		</div>
+		<div id="foot2" class="col-md-3 col-sm-3">
+			<h3>Customer Services</h3>
+		<h5 id="firstchild"><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Customer Support</b></a></h5>
+		<h5><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Adoption</b></a></h5>
+		<h5><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"><b> Register</b></a></h5>
+		<h5 style="border-bottom:0px;"><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"><b> Donate</b></a></h5>
+		</div>
+		<div id="foot3" class="col-md-3 col-sm-3">
+			<h3>Address</h3>
+		<h4 class="text-muted">
+		Phone Number: 0912 345 6789<br>
+		E-mail: plc@yahoo.com</h4>
+		</div>
+		<div id="foot3" class="col-md-3 col-sm-3">
+			<h3>Follow Us</h3>
+		<h5 id="firstchild"><a href="#" class="text-muted"> <b>Facebook</b></a></h5>
+		<h5><a href="#" class="text-muted"> <b>Twitter</b></a></h5>
+		<h5><a href="#" class="text-muted"> <b>Instagram</b></a></h5>
+		<h5><a href="#" class="text-muted"> <b>Google</b></a></h5>
+		</div>
+    </div>   
+	</div>
 	</footer>
 	<!--End of Footer-->
-
 	<!--Sub-floor-->
       <div class="footer-copyright copyright">
-        <div class="container-fluid copyright">
+        <div class="container copyright">
              Copyright ©2018 petloverscommunity.com All rights reserved
          </div>
-      </div>
+      </div> 
 
-	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="assets/js/script.js"></script>
+<!--Javascript-->	  
+<!--Local Javascript-->	 
+	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/npm.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
+ 
+<!--From net Javascript-->	  
+	<script src="<?php echo base_url('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'); ?> " /></script>
+	<script src="<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'); ?>" /></script>
+	<script src="<?php echo base_url ('https://code.jquery.com/jquery-3.2.1.slim.min.js'); ?>" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" /></script>
+    <script src="<?php echo base_url ('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'); ?>" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" /></script>
+	<script src="<?php echo base_url ('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'); ?>"/></script>
+
+  
   </body>
 </html>
