@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
+      <?php $user = $this->session->userdata('username'); ?>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />
@@ -56,46 +56,28 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo base_url('meetbreed');?>" />Meet N' Breed</a></li>
-                <li><a href="<?php echo base_url('community');?>" />Community</a></li>
+                <li><a href="<?php echo base_url('community0');?>?=<?php echo $user; ?>" />Community</a></li>
             </ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
-				<ul id="login-dp" class="dropdown-menu">
-					<li>
-					 <div class="row">
-							<div class="col-md-12">
-								Login via
-								<div class="social-buttons">
-									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-									<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
-								</div>
-                                or
-								 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
-										<div class="form-group">
-											 <label class="sr-only">Username</label>
-											 <input type="username" class="form-control" name="username" placeholder="Username" required />
-										</div>
-										<div class="form-group">
-											 <label class="sr-only" for="exampleInputPassword2">Password</label>
-											 <input type="password" class="form-control" name="password" id="exampleInputPassword2" placeholder="Password" required />
-                                             <div class="help-block text-right"><a href="forget.html"><b>Forget the password ?</b></a></div>
-										</div>
-										<div class="form-group">
-											 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-										</div>
-								 </form>
-							</div>
-							<div class="bottom text-center">
-								New here ? <a href="<?php echo base_url('register'); ?>" ><b>Join Us</b></a>
-							</div>
-					 </div>
-					</li>
-				</ul>
-				</li>
+      <li class="dropdown list-profile">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <?php echo $user; ?><div class="img-rounded profile-img"></div></i>
+          </a>
+          <ul class="dropdown-menu mega-dropdown-menu">
+            <li><a href="<?php echo base_url('user');?>">My Profile</a></li>
+  <li role="separator" class="divider"></li>
+              <li><a href="">My Posts</a></li>
+              <li><a href="">Donations</a></li>
+              <li><a href="">Notifications</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="">Activity Log</a></li>
+  <li><a href="">Settings</a></li>
+  <li><a href="<?php echo base_url('');?>logout">Sign Out</a></li>
+</ul>
+      </li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="<?php echo base_url('home'); ?>">Home</a></li>
+				<li><a href="<?php echo base_url('home0'); ?>?=<?php echo $user;?>">Home</a></li>
 				<li><a href="<?php echo base_url('donations'); ?>">Donations</a></li>
 			</ul>
             <form id="mega-search" class="navbar-form navbar-right">
@@ -117,7 +99,7 @@
     <div class="container navcont">
 	<div class="logo_container">
 		<span class="logo_helper"></span>
-			<a href="<?php echo base_url('home'); ?>">
+			<a href="<?php echo base_url('home0'); ?>?=<?php echo $user;?>">
 				<img src="<?php echo base_url('assets/img/logo.jpg'); ?>"   alt="Pet Lovers Community" id="logo" width="500" /></a>
 	</div>
 	</div>
@@ -177,7 +159,6 @@
 			<h3>Customer Services</h3>
 		<h5 id="firstchild"><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Customer Support</b></a></h5>
 		<h5><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"> <b>Adoption</b></a></h5>
-		<h5><span class="glyphicon glyphicon-chevron-right"></span><a href="<?php echo base_url('register'); ?>" class="text-muted"><b> Register</b></a></h5>
 		<h5 style="border-bottom:0px;"><span class="glyphicon glyphicon-chevron-right"></span><a href="#" class="text-muted"><b> Donate</b></a></h5>
 		</div>
 		<div id="foot3" class="col-md-3 col-sm-3">
