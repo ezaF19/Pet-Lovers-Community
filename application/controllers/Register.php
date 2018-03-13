@@ -22,18 +22,39 @@ class Register extends CI_Controller {
 	);
 
 	$this->form_validation->set_rules($validate);
-
+	$pass = trim($_POST['password']);
+	$phone = trim($_POST['number']);
 
 		if($this->form_validation->run() === FALSE){
 			$this->form_validation->set_message('user', 'The {user} field is required');
 			$data['errors'] = validation_errors();
 		}
 		else{
-			$result = $this->register_model->success();
-			$this->session->set_userdata('username', $result);
-			$this->load->view('template/header');
-			redirect('user');
-			$this->load->view('template/footer');
+			if(strlen($phone)!=11){
+				echo "<script>
+					alert('Phone Number must be 11 numbers!');
+					window.location.href='';
+					</script>";
+			}
+			else if(!ctype_digit($phone)){
+				echo "<script>
+					alert('Phone Number must contain numbers only!');
+					window.location.href='';
+					</script>";
+			}
+			else if(strlen($pass) < 8){
+				echo "<script>
+					alert('Password must be 8 characters!');
+					window.location.href='';
+					</script>";
+			}
+			else{
+				$result = $this->register_model->success();
+				$this->session->set_userdata('username', $result);
+				$this->load->view('template/header');
+				redirect('user');
+				$this->load->view('template/footer');
+			}
 		}
 	}
 			$this->load->view('pages/register', $data);

@@ -4,7 +4,7 @@
 
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />	
+	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css'); ?>" />+
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/register.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.css'); ?>" />
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'); ?>" >
 	<link rel="stylesheet" href="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); ?>" />
 	<link rel="stylesheet" href="<?php echo base_url('netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css'); ?>" rel="stylesheet" id="bootstrap-css" />
-	<link rel="stylesheet" href="<?php echo base_url('netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'); ?>" rel="stylesheet" />	
+	<link rel="stylesheet" href="<?php echo base_url('netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'); ?>" rel="stylesheet" />
 	<title>Pet Lovers Community | Register</title>
     </head>
 	<style type="text/css">
@@ -22,7 +22,7 @@
 	<!--Body-->
 	<body>
 	<nav class="navbar navbar-custom" style="background-color: 353535;">
-		
+
     <div class="container" id="homelogo">
 	<div class="logo_container">
 		<span class="logo_helper"></span>
@@ -79,7 +79,7 @@
 					</div>
           <div class="form-group">
 						<label>Password</label>
-						<input name="password" type="text" placeholder="Enter Password Here.." class="form-control">
+						<input name="password" type="password" placeholder="Enter Password Here.." class="form-control">
             <?=isset($errors)?form_error('password','<div class="error">','</div>'):''?>
 					</div>
 					<button class="btn-submit" type="submit">Submit</button>
@@ -88,21 +88,21 @@
             </div>
         </div>
  	</div>
-<!--Javascript-->	  
-<!--Local Javascript-->	 
+<!--Javascript-->
+<!--Local Javascript-->
 	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/npm.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
- 
-<!--From net Javascript-->	  
+
+<!--From net Javascript-->
 	<script src="<?php echo base_url('https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'); ?> " /></script>
 	<script src="<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'); ?>" /></script>
 	<script src="<?php echo base_url ('https://code.jquery.com/jquery-3.2.1.slim.min.js'); ?>" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" /></script>
     <script src="<?php echo base_url ('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'); ?>" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" /></script>
 	<script src="<?php echo base_url ('https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'); ?>"/></script>
 
-  
+
   </body>
 </html>

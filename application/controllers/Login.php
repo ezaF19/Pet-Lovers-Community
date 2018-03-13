@@ -8,7 +8,10 @@ class Login extends CI_Controller {
 			$user['username'] = $result;
 			$this->session->set_userdata('username', $result);
 			if($result === 'Mismatch!'){
-				echo $result;
+				echo "<script>
+					alert('$result');
+					window.location.href='index';
+					</script>";
 			}
 			else{
 				$this->load->view('template/header');
