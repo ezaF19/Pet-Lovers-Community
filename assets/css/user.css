@@ -1,3 +1,19 @@
+@#userbody{
+	overflow: auto;
+	padding: 50px 0 20px 0;	
+	margin-bottom: 20px;	
+}
+.profile-img{
+    margin-top: -5px;
+    margin-right: 5px;
+    float: left;
+    background: url(../../assets/img/rengar.jpg) 50% 50% no-repeat; 
+    background-size: auto 100%; 
+    width: 30px;
+    height: 30px;
+}
+
+
 body
 {
     font-family: 'Open Sans', sans-serif;
@@ -12,18 +28,66 @@ body
 
 .plc-image-profile
 {
-    margin: -90px 10px 0px 50px;
+   position: center;
+   margin: -90px 10px 0px 50px;
     z-index: 9;
     width: 200px;
+	height: 200px
+	
+}
+.adopt-pic {
+    margin-bottom: 30px;
+	width: 100%;
+	height: auto;
+	
+}
+}
+.pet-pic {
+    width: 200px;
 	height: 200px;
+	
+}
+.name {
+	font-size: 24px;
+	text-align: center;
+	background-color: #fff;
+}
+.gallery-title{
+    font-size: 36px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 70px;
+	border-bottom: 1px solid #5e5e5e;
+	
+}
+.navbar-login
+{
+    width: 350px;
+    padding: 10px;
+    padding-bottom: 0px;
 }
 
+.navbar-login-session
+{
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size
+{
+    font-size: 87px;
+}
+
+
+}
 @media (max-width:768px)
 {
     
 .plc-profile-text>h1{
     font-weight: 700;
     font-size:16px;
+	text-align:left;
 }
 
 /* .fb-image-profile
@@ -45,6 +109,39 @@ body
     padding-bottom: 10px;    
     margin-top: 0px;
 }
+.shared{
+	
+    margin: 10px 10px 10px 10px;
+	height: 200px;
+	width: 200px;
+}
+.services {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.services-text {
+    font-size: 14pt;
+    border-bottom: 2px solid #e5ebef;
+    margin-bottom: 15px;
+    padding-bottom: 10px;  	
+    margin-top: 0px;
+
+}
+.serv-pic {
+	width:220px;
+	height:220px;
+	{
+
+		
+
+	
+
+
+
+	
+	
 
 
 
