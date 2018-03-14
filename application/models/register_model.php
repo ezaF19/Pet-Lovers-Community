@@ -9,9 +9,7 @@ class Register_model extends CI_Model {
   $fname = $this->input->post('first_name');
   $lname = $this->input->post('last_name');
   $name = $fname.', '.$lname;
-  $aname = $this->input->post('address');
-  $cname = $this->input->post('city');
-  $sname = $this->input->post('state');
+  $aname = $this->input->post('email_address');
   $add = $aname.', '.$cname.', '.$sname;
 
     $acc = array(

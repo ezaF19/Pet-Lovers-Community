@@ -6,7 +6,6 @@ class Register extends CI_Controller {
 		parent::_construct();
 
 	}
-
 	public function index(){
 		$validate = array(
 			array('field'=>'first_name','label'=>'First Name','rules'=>'trim|required',array('required' => 'You must provide a %s.')),
@@ -23,34 +22,22 @@ class Register extends CI_Controller {
 
 
 		if($this->form_validation->run() === FALSE){
+			//error message
 			$this->form_validation->set_message('user', 'The {user} field is required');
 			$data['errors'] = validation_errors();
 		}
 		else{
+			//encrypt password
+			$epass=sha1($this->input->post('password'));
+			$this->register_model->add($epass);
+			//approval message
 			$result = $this->register_model->success();
 			$this->session->set_userdata('username', $result);
 			$this->load->view('template/header');
 			redirect('user');
 			$this->load->view('template/footer');
 		}
-			$this->load->view('pages/register', $data);
-}
-
-	// public function register_checker(){
-  //   $data = array(
-  //   "AccountUsername" => $this->input->post("username"),
-  //   "AccountPassword" => $this->input->post("password"),
-  //   "AccountName" => $this->input->post("name"),
-  //   "AccountAddress" => $this->input->post("address"),
-  //   "AccountContact" => $this->input->post("email"),
-	// "AccountEmail" => $this->input->post("contact")
-  //   );
-  //
-  //   $this->load->model('register_model');
-  //
-  //   $this->register_model->registercustomer($data);
-  //
-  //   echo "Account Registration Successful!";
-  //   }
+		$this->load->view('pages/register', $data);
+	}
 }
 ?>

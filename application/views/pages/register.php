@@ -1,92 +1,100 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
 
 
-	<title>Pet Lovers Community</title>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css'); ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/register.css'); ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.css'); ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css//bootstrap-theme.css'); ?>" />
-	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pet Lovers Community | Register</title>
 
+        <!-- CSS -->
+       
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
     </head>
-	<style type="text/css">
-		.error { color: red; font: 10px Tahoma; }
-		<!--body { ; font-family: segoe ui; } -->
-	</style>
 
-	<!--Body-->
-	<body>
-	<nav class="navbar navbar-custom" style="background-color: 353535;">
-		
-    <div class="container" id="homelogo">
-	<div class="logo_container">
-		<span class="logo_helper"></span>
-			<a href="<?php echo base_url('home'); ?>">
-				<img src="<?php echo base_url('assets/img/logo.jpg'); ?>"   alt="Pet Lovers Community" id="logo" width="500" /></a>
-	</div>
-	</div>
-	</nav>
-	<div class="container body">
-        <div class="row">
-		<?php echo form_open('register/index');?>
-            <div class="col-md-8 col-md-offset-2">
-				<form>
-				<legend>Account Details</legend>
-					<div class="col-sm-12">
-						<div class="row">
-							<div class="col-sm-6 form-group">
-								<label>First Name</label>
-								<input type="text" name="first_name" placeholder="Enter First Name Here.." class="form-control">
-                <?=isset($errors)?form_error('first_name','<div class="error">','</div>'):''?>
-							</div>
-							<div class="col-sm-6 form-group">
-								<label>Last Name</label>
-								<input type="text" name="last_name" placeholder="Enter Last Name Here.." class="form-control">
-                <?=isset($errors)?form_error('last_name','<div class="error">','</div>'):''?>
-							</div>
-						</div>
-						<div class="form-group">
-							<label>Address</label>
-							<textarea name="address" placeholder="Enter Address Here.." rows="3" class="form-control"></textarea>
-              <?=isset($errors)?form_error('address','<div class="error">','</div>'):''?>
-						</div>
-						<div class="row">
-							<div class="col-sm-6 form-group">
-								<label>City</label>
-								<input name="city" type="text" placeholder="Enter City Name Here.." class="form-control">
-                <?=isset($errors)?form_error('city','<div class="error">','</div>'):''?>
-							</div>
-							<div class="col-sm-6 form-group">
-								<label>State</label>
-								<input name="state" type="text" placeholder="Enter State Name Here.." class="form-control">
-                <?=isset($errors)?form_error('state','<div class="error">','</div>'):''?>
-							</div>
-						</div>
-					<div class="form-group">
-						<label>Phone Number</label>
-						<input name="number" type="text" placeholder="Enter Phone Number Here.." class="form-control">
-            <?=isset($errors)?form_error('number','<div class="error">','</div>'):''?>
-					</div>
-					<div class="form-group">
-						<label>Username</label>
-						<input name="username" type="text" placeholder="Enter Username Here.." class="form-control">
-            <?=isset($errors)?form_error('username','<div class="error">','</div>'):''?>
-					</div>
-          <div class="form-group">
-						<label>Password</label>
-						<input name="password" type="text" placeholder="Enter Password Here.." class="form-control">
-            <?=isset($errors)?form_error('password','<div class="error">','</div>'):''?>
-					</div>
-					<button class="btn-submit" type="submit">Submit</button>
-					</div>
-				</form>
-            </div>
+    <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>">Pet Lovers Community</a>
+          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
         </div>
- 	</div>
-	</body>
+	</nav>
+        <!-- Top content -->
+        <div class="top-content">
+       
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-bottom2">
+                                 <h2><b>Are you a PET LOVER?</b><br/> Come and Join us!</h2>
+                            </div>
+                        </div>                       
+                        <div class="col-sm-1"></div>
+                        	
+                        <div class="col-sm-5">
+                        	
+                        	<div class="form-box">
+                        		<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h3>Sign up now</h3>
+	                            		<p>Fill in the form below to get instant access:</p>
+	                        		</div>
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-pencil"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+				                    <form role="form" action="" method="post" class="registration-form">
+				                    	<div class="form-group">
+				                    		<label class="sr-only" for="form-first-name">First name</label>
+				                        	<input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-last-name">Last name</label>
+				                        	<input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+				                        </div>
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-username">Username</label>
+				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+				                        </div>	
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-email-address">Email Address</label>
+				                        	<input type="text" name="form-email-address" placeholder="Email Address..." class="form-email-address form-control" id="form-email-address">
+				                        </div>
+				                     
+				                        <div class="form-group">
+				                        	<label class="sr-only" for="form-password">Password</label>
+				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+				                        </div>									
+				                        <button type="submit" class="btn">Sign me up!</button>
+				                    </form>
+			                    </div>
+                        	</div>
+                        	
+                        </div>
+						</div>
+                    
+                </div>
+				</div>
+            </div>
+		</div>
+
+
+
+        <!-- Footer -->
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
 </html>

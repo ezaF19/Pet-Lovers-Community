@@ -36,18 +36,6 @@ class Login_model extends CI_Model {
       return $err;
     }
 	}
-        
-    public function canlogin($email,$pass){
-        $this->db->where('AccountUser',$email);
-        $this->db->where('AccountPass',$pass);
-        $query = $this->db->get('account');
-        if($query->num_rows() >0){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
 
 }
 ?>
