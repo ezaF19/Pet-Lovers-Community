@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <?php $user = $this->session->userdata('username'); ?>
+      <?php $user = $this->session->userdata('username'); ?>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/main.css'); ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/users.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css//bootstrap-theme.css'); ?>" />
 	<link rel="stylesheet" href="<?php echo base_url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'); ?>" >
 	<link rel="stylesheet" href="<?php echo base_url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'); ?>" />
 	<link rel="stylesheet" href="<?php echo base_url('netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css'); ?>" rel="stylesheet" id="bootstrap-css" />
 	<link rel="stylesheet" href="<?php echo base_url('netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'); ?>" rel="stylesheet" />
+
+
 	<title>Pet Lovers Community</title>
-    </head>
+	</head>
 	<style type="text/css">
 		<!--body { ; font-family: segoe ui; } -->
 	</style>
 <body>
 
-	<!--NavBar-->
-
+	<!--Navbar and Header-->
 	<nav class="navbar navbar-custom" style="background-color: #353535;">
         <div class="container">
+		    <div class="navbar-header ">		.
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MainMenu">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span><a>MENU</a>
+		      </button>
+			</div>
         <div class="collapse navbar-collapse" id="MainMenu">
             <ul class="nav navbar-nav menu-list">
                 <li class="dropdown list-adoptapet">
@@ -48,29 +56,30 @@
                     </ul>
                 </li>
                 <li><a href="<?php echo base_url('meetbreed');?>" />Meet N' Breed</a></li>
-                <li><a href="<?php echo base_url('community0');?>?=<?php echo $user;?>" />Community</a></li>
+                <li><a href="<?php echo base_url('community0');?>?=<?php echo $user; ?>" />Community</a></li>
             </ul>
+			<ul class="nav navbar-nav navbar-right">
+      <li class="dropdown list-profile">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <?php echo $user; ?><div class="img-rounded profile-img"></div></i>
+          </a>
+          <ul class="dropdown-menu mega-dropdown-menu">
+            <li><a href="<?php echo base_url('user');?>">My Profile</a></li>
+  <li role="separator" class="divider"></li>
+              <li><a href="">My Posts</a></li>
+              <li><a href="">Donations</a></li>
+              <li><a href="">Notifications</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="">Activity Log</a></li>
+  <li><a href="">Settings</a></li>
+  <li><a href="<?php echo base_url('');?>logout">Sign Out</a></li>
+</ul>
+      </li>
+			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="<?php echo base_url('home0'); ?>?=<?php echo $user;?>">Home</a></li>
 				<li><a href="<?php echo base_url('donations'); ?>">Donations</a></li>
-                <li class="dropdown list-profile">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <div class="img-rounded profile-img"></div></i>
-                    </a>
-                    <ul class="dropdown-menu mega-dropdown-menu">
-                      <li><a href="<?php echo base_url('user');?>">My Profile</a></li>
-						<li role="separator" class="divider"></li>
-                        <li><a href="">My Posts</a></li>
-                        <li><a href="">Donations</a></li>
-                        <li><a href="">Notifications</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="">Activity Log</a></li>
-						<li><a href="">Settings</a></li>
-						<li><a href="<?php echo base_url('');?>logout">Sign Out</a></li>
-					</ul>
-                </li>
 			</ul>
-
             <form id="mega-search" class="navbar-form navbar-right">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search..."/>
@@ -84,87 +93,57 @@
         </div>
         </div>
     </nav>
-<!-- End of first navbar-->
 
+	<!-- End of Navbar and Header-->
 
+    <div class="container navcont">
+	<div class="logo_container">
+		<span class="logo_helper"></span>
+			<a href="<?php echo base_url('home0'); ?>?=<?php echo $user;?>">
+				<img src="<?php echo base_url('assets/img/logo.jpg'); ?>"   alt="Pet Lovers Community" id="logo" width="500" /></a>
+	</div>
+	</div>
+	<!--Body-->
+
+	<div id="contbody1">
 	<div class="container">
-		<div class="plc-profile">
-			<img align="left" class="plc-image-lg img-responsive" src="<?php echo base_url('assets/img/dog.jpg'); ?>"   alt="Pet Lovers Community" id="logo"/>
-			<img align="left" class="plc-image-profile thumbnail img-circle" src="<?php echo base_url('assets/img/rengar.jpg'); ?>" alt="Profile image example"/>
-			<div class="plc-profile-text">
-				<h1><?php echo $user; ?></h1>
-			<button type="button" class="btn btn-warning btn-xs">Edit Profile</button>
-			<button type="button" class="btn btn-warning btn-lg btn pull-right">Post</button>
-			</div>
-		</div>
-	</div>
-	<div id="userbody">
-	<div class="col-lg-4 col-sm-8">
-		<div class="user-bio">
-		<h2 class="user-bio-text">User Bio</h2>
-			<p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. </p>
-		</div>
-	</div>
-	<div class="col-lg-7 col-sm-6">
-        <div class="user-bio">
-            <h2 class="user-bio-text">Post</h2>
-			<p class="bio-text">No Recent Post </p>
+		<div class="container textbody" style="background-color: rgba(255,145,0,0.4);">
+			<h1 class="title"> Make a Difference - Adopt</h1>
+			<p class="lead"> Open your heart and your home to pet that needs your help. They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!</p>
+			<a href="#" class="btn btn-learn" role="button">LEARN MORE</a>
 		</div>
 	</div>
 	</div>
-
-<div class="container">
-    <div class="row">
-		<div class="col-md-12">
-                <div id="Carousel" class="carousel slide">
-
-                <ol class="carousel-indicators">
-                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#Carousel" data-slide-to="1"></li>
-                    <li data-target="#Carousel" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-
-                <div class="item active">
-                	<div class="row">
-                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                	</div><!--.row-->
-                </div><!--.item-->
-
-                <div class="item">
-                	<div class="row">
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                	</div><!--.row-->
-                </div><!--.item-->
-
-                <div class="item">
-                	<div class="row">
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;"></a></div>
-                	</div><!--.row-->
-                </div><!--.item-->
-
-                </div><!--.carousel-inner-->
-                  <a data-slide="prev" href="#Carousel" class="btn btn-default btn-arrow-left">‹</a>
-                  <a data-slide="next" href="#Carousel" class="btn btn-default btn-arrow-right">›</a>
-                </div><!--.Carousel-->
-
+	<div id="contbody2">
+		<div class="container-fluid">
+          <h3><strong> FEATURED PET</strong></h3>
 		</div>
 	</div>
-</div>
 
-
-
+<!--FeaturedPet-->
+	<div class="featured">
+		<div class="profile"><img src="<?php echo base_url('assets/img/Rengar.jpg'); ?>" alt="cat"/></div>
+		<div class="info">
+		<div class="bio btn">
+		<div class="head">
+			<a href="types.html">Type of Pet</a>
+		</div>
+		</div>
+		<h1><em>Rengar</em></h1>
+		<p class="bio-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. </p>
+		<button class="btn-bio">Full Bio</button>
+		</div>
+	</div>
+<!--End of FeaturedPet-->
+	<div class="container" id="contbody4">
+		<div class="col-xs-5 col-md-7">
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper non nunc sit amet feugiat. Nam mollis laoreet velit a vulputate. Cras dignissim imperdiet justo ac tincidunt. Nam sagittis suscipit tellus, sit amet convallis neque fringilla vel. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus odio tortor, gravida ac viverra vitae, suscipit ac libero. Proin ullamcorper risus a turpis porta lobortis nec sed lorem. Sed nec pulvinar lacus. Morbi euismod scelerisque accumsan. Vestibulum pretium ut tellus at feugiat. Pellentesque venenatis sem quis tellus rhoncus lacinia. Etiam ultrices turpis et eros eleifend, vel molestie tortor ornare.</p>
+		</div>
+		<div class="col-xs-11 col-md-1">
+			<img src="<?php echo base_url('assets/img/paws.png'); ?>" alt="Paws" id="logo" width="320" height="320"/></a>
+		</div>
+	</div>
+	<!--End of Body-->
 	<!--Footer-->
 	<div class="container-fluid" id="footinfo">
     <footer class="container ">

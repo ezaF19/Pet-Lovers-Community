@@ -45,7 +45,7 @@
 	            <div class="row">
 	                <div class="col-md-6">
 	                    <div class ="block">
-	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
+	                        <h1 class="brand-heading"><b>PET LOVERS COMMUNITY</b></h1>
 	                        <p class="intro-text">"Open your heart and your home to pets that need your help. 
 			  They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!"</p>
 	                    </div>
@@ -85,32 +85,32 @@
 		</div>
 		<div class="pbox">
 		<div class="photo">
-		<img src="https://templated.co/items/demos/theory/images/pic01.jpg" width="100%">
+		<img src="assets/img/grooming.jpg" width="100%">
 
-		<h3>Praesent placerat magna</h3>
+		<h3>Grooming</h3>
 		<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
 		<a class="More" href="#" >More</a>
 		</div>
 
 		<div class="photo">
-		<img src="https://templated.co/items/demos/theory/images/pic02.jpg" width="100%">
+		<img src="assets/img/Training.jpg" width="100%">
 
-		<h3>Praesent placerat magna</h3>
+		<h3>Training</h3>
 		<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
 		<a class="More" href="#" >More</a>
 		</div>	
 		<div class="photo">
-		<img src="https://templated.co/items/demos/theory/images/pic01.jpg" width="100%">
+		<img src="assets/img/sitting.jpg" width="100%">
 
-		<h3>Praesent placerat magna</h3>
+		<h3>Pet Sitting</h3>
 		<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
 		<a class="More" href="#" >More</a>
 		</div>
 
 		<div class="photo">
-		<img src="https://templated.co/items/demos/theory/images/pic02.jpg" width="100%">
+		<img src="assets/img/veterinary.jpg" width="100%">
 
-		<h3>Praesent placerat magna</h3>
+		<h3>Veterinary</h3>
 		<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
 		<a class="More" href="#" >More</a>
 		</div>
@@ -190,20 +190,20 @@
 			<p>Semper suscipit posuere apede</p>
 		</div>
 		<div class="boxphoto">
-		<img src="https://templated.co/items/demos/theory/images/pic03.jpg">
+		<img src="assets/img/dogs.jpg">
 
 		<h3>Dogs</h3>
 		<p>Cipdum dolor</p>
 		</div>
 		<div class="boxphoto">
-		<img src="https://templated.co/items/demos/theory/images/pic04.jpg">
+		<img src="assets/img/cats.jpg">
 
 
 		<h3>Cats</h3>
 		<p>Vestibulum comm</p>
 		</div>
 		<div class="boxphoto">
-		<img src="https://templated.co/items/demos/theory/images/pic05.jpg">
+		<img src="assets/img/others.jpeg">
 
 		
 		<h3>Others</h3>
