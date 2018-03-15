@@ -3,7 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
 	public function index(){
-		if ( $_SERVER['REQUEST_METHOD']== 'POST' ){
 			$result = $this->login_model->check_em();
 			$user['username'] = $result;
 			$this->session->set_userdata('username', $result);
@@ -18,7 +17,6 @@ class Login extends CI_Controller {
 				redirect('user');
 				$this->load->view('template/footer');
 			}
-		}
 	}
 	public function sign(){
 		redirect('sign');

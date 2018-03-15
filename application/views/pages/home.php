@@ -31,7 +31,7 @@
               <a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('register'); ?>">Register</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('rgstr'); ?>">Register</a>
             </li>
           </ul>
         </div>

@@ -46,7 +46,7 @@
 	                            </div>
 	                            <div class="form-bottom">
                                 <?php echo form_open('login/index');?>
-				                    <form role="form" method="" class="login-form">
+				                    <form role="form" class="login-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-username">Username</label>
 				                        	<input type="text" name="usrnm" placeholder="Username..." class="form-username form-control" id="form-username">

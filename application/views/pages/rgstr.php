@@ -45,7 +45,7 @@
 	                            </div>
 	                            <div class="form-bottom">
                                 <?php echo form_open('register/index');?>
-				                    <form role="form" action="" method="get" class="registration-form">
+				                    <form role="form" action="" method="" class="registration-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-first-name">First name</label>
 				                        	<input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
