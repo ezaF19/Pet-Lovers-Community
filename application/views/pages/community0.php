@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <?php $user = $this->session->userdata('username'); ?>
+      <?php $user = $this->session->userdata('username');
+            if($user == ''){
+              echo "<script>
+                alert('Login first!');
+                window.location.href='home';
+                </script>";
+            }
+            else if($user == 'Mismatch!'){
+              echo "<script>
+                alert('Login first!');
+                window.location.href='home';
+                </script>";
+            }
+      ?>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<link rel="icon" href="<?php echo base_url('assets/img/cologo.png'); ?>" />

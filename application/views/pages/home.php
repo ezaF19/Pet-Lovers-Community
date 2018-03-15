@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 	<title>Pet Lovers Community</title>
-	</head>	
+	</head>
   <body id="page-top">
 
     <!-- Navigation -->
@@ -23,10 +23,10 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#community">Community</a>
-            </li>          
+            </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#adopt">Adopt</a>
-            </li>            
+            </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
             </li>
@@ -46,7 +46,7 @@
 	                <div class="col-md-6">
 	                    <div class ="block">
 	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
-	                        <p class="intro-text">"Open your heart and your home to pets that need your help. 
+	                        <p class="intro-text">"Open your heart and your home to pets that need your help.
 			  They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!"</p>
 	                    </div>
 	                </div>
@@ -63,11 +63,11 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>About Pet Lovers Community</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel eleifend enim, eget luctus dolor. Ut sit amet condimentum nisl. Quisque pretium cursus orci nec fermentum. 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel eleifend enim, eget luctus dolor. Ut sit amet condimentum nisl. Quisque pretium cursus orci nec fermentum.
 			Duis molestie molestie dolor, ut porttitor leo sagittis ut. Maecenas vulputate suscipit justo, et imperdiet sem venenatis eget.
 			Morbi sit amet magna nulla.</p>
             <p>Sed in mattis mi, et tristique magna. Curabitur rhoncus, velit ut interdum aliquam, lectus eros luctus felis, eget blandit nibh elit eget est.
-			Nunc dignissim ex id purus cursus, et sodales justo placerat. Duis sit amet felis pellentesque turpis condimentum fermentum sed ut ex. Mauris in mi justo. 
+			Nunc dignissim ex id purus cursus, et sodales justo placerat. Duis sit amet felis pellentesque turpis condimentum fermentum sed ut ex. Mauris in mi justo.
 			Ut sollicitudin mi turpis, ac laoreet quam pharetra sit amet. </p>
 
           </div>
@@ -98,7 +98,7 @@
 		<h3>Training</h3>
 		<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
 		<a class="More" href="#" >More</a>
-		</div>	
+		</div>
 		<div class="photo">
 		<img src="assets/img/sitting.jpg" width="100%">
 
@@ -117,8 +117,8 @@
 		</div>
       </div>
 
-    </section>  
-	
+    </section>
+
 	<!-- Community Section -->
     <section id="community" class="content-section content-section text-center">
       <div class="container">
@@ -135,7 +135,7 @@
 		<li>
 			<div class="image_title">
 				<a href="<?php echo base_url('featured');?>">Featured Pets</a>
-			</div> 
+			</div>
 			<a href="<?php echo base_url('featured');?>">
 				<img src="<?php echo base_url('assets/img/community1.jpg');?>">
 			</a>
@@ -180,7 +180,7 @@
 	</div>
 
     </section>
-	
+
     <!-- Adopt Section -->
     <section id="adopt" class="content-section content-section text-center" >
       <div class="container">
@@ -205,7 +205,7 @@
 		<div class="boxphoto">
 		<img src="assets/img/others.jpeg">
 
-		
+
 		<h3>Others</h3>
 		<p>Fusce pellentes</p>
 		</div>
@@ -213,4 +213,4 @@
 
       </div>
 
-    </section>  
+    </section>
