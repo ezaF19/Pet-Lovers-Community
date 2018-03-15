@@ -16,8 +16,7 @@ class Register extends CI_Controller {
 	);
 
 	$this->form_validation->set_rules($validate);
-	$pass = trim($_POST['password']);
-	$phone = trim($_POST['number']);
+
 
 		if($this->form_validation->run() === FALSE){
 			//error message
@@ -25,10 +24,17 @@ class Register extends CI_Controller {
 			$data['errors'] = validation_errors();
 		}
 		else{
-
+			//encrypt password
+			$epass=sha1($this->input->post('password'));
+			$this->register_model->add($epass);
+			//approval message
+			$result = $this->register_model->success();
+			$this->session->set_userdata('username', $result);
+			$this->load->view('template/header');
+			redirect('user');
+			$this->load->view('template/footer');
 		}
 		$this->load->view('pages/register', $data);
 	}
-
 }
 ?>

@@ -45,7 +45,7 @@
 	            <div class="row">
 	                <div class="col-md-6">
 	                    <div class ="block">
-	                        <h1 class="brand-heading"><b>PET LOVERS COMMUNITY</b></h1>
+	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
 	                        <p class="intro-text">"Open your heart and your home to pets that need your help. 
 			  They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!"</p>
 	                    </div>
