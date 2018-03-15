@@ -58,23 +58,7 @@ class Register extends CI_Controller {
 		}
 	}
 			$this->load->view('pages/register', $data);
-}
+}	
 
-	// public function register_checker(){
-  //   $data = array(
-  //   "AccountUsername" => $this->input->post("username"),
-  //   "AccountPassword" => $this->input->post("password"),
-  //   "AccountName" => $this->input->post("name"),
-  //   "AccountAddress" => $this->input->post("address"),
-  //   "AccountContact" => $this->input->post("email"),
-	// "AccountEmail" => $this->input->post("contact")
-  //   );
-  //
-  //   $this->load->model('register_model');
-  //
-  //   $this->register_model->registercustomer($data);
-  //
-  //   echo "Account Registration Successful!";
-  //   }
 }
 ?>
