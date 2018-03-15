@@ -62,13 +62,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>About Pet Lovers Community</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel eleifend enim, eget luctus dolor. Ut sit amet condimentum nisl. Quisque pretium cursus orci nec fermentum.
-			Duis molestie molestie dolor, ut porttitor leo sagittis ut. Maecenas vulputate suscipit justo, et imperdiet sem venenatis eget.
-			Morbi sit amet magna nulla.</p>
-            <p>Sed in mattis mi, et tristique magna. Curabitur rhoncus, velit ut interdum aliquam, lectus eros luctus felis, eget blandit nibh elit eget est.
-			Nunc dignissim ex id purus cursus, et sodales justo placerat. Duis sit amet felis pellentesque turpis condimentum fermentum sed ut ex. Mauris in mi justo.
-			Ut sollicitudin mi turpis, ac laoreet quam pharetra sit amet. </p>
+            <h2>About Us</h2>
+			<p> Pet Lovers Community is an independent, non-profit , pet adoption website that caters a gateway for people to find adoptable pets and various services for other people's pets. These animals can’t make it without our help and we can’t do it without yours. </p>
+            <p>We aim to be the alternative in pet placement! We seek not only to help animals who have been lost or turned into our local shelters, but to also assist families in search of new homes for their pets due to lifestyle, living arrangement or other similar changes.</p>
 
           </div>
         </div>
@@ -81,38 +77,38 @@
 
 		<div class="title">
 			<h2>Services</h2>
-			<p>Semper suscipit posuere apede</p>
+			<p>Don't miss out on the many offers!</p>
 		</div>
 		<div class="pbox">
 		<div class="photo">
 		<img src="assets/img/grooming.jpg" width="100%">
 
 		<h3>Grooming</h3>
-		<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
-		<a class="More" href="#" >More</a>
+		<p>Make your furbaby shine!</p>
+		<a class="More" href="#" >View</a>
 		</div>
 
 		<div class="photo">
 		<img src="assets/img/Training.jpg" width="100%">
 
 		<h3>Training</h3>
-		<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
-		<a class="More" href="#" >More</a>
+		<p>Have fun and get your pet a new skill!</p>
+		<a class="More" href="#" >View</a>
 		</div>
 		<div class="photo">
 		<img src="assets/img/sitting.jpg" width="100%">
 
 		<h3>Pet Sitting</h3>
-		<p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor lorem ipsum.</p>
-		<a class="More" href="#" >More</a>
+		<p>Busy day? Check us out!</p>
+		<a class="More" href="#" >View</a>
 		</div>
 
 		<div class="photo">
 		<img src="assets/img/veterinary.jpg" width="100%">
 
 		<h3>Veterinary</h3>
-		<p>Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna non comodo sodales tempus.</p>
-		<a class="More" href="#" >More</a>
+		<p>Get that monthly check-up here!</p>
+		<a class="More" href="#" >View</a>
 		</div>
 		</div>
       </div>
@@ -124,7 +120,7 @@
       <div class="container">
 		<div class="title">
 		<h1>Community</h1>
-		<p>Aliquam erat volutpat nam dui </p>
+		<p>Get Involved! Check our community page for the featured and freshest posts from our users.</p>
 		</div>
 	<div class="sidebar-section">
 	<div class="container-fluid">
@@ -187,27 +183,24 @@
 
 		<div class="title">
 			<h2>Adopt a Pet</h2>
-			<p>Semper suscipit posuere apede</p>
+			<p>Help us provide assistance to families who must give up their beloved pets so those pets will not end up being brought to a shelter but instead will be placed directly with another family who will give them the love and affection that they deserve.</p>
 		</div>
 		<div class="boxphoto">
 		<img src="assets/img/dogs.jpg">
 
 		<h3>Dogs</h3>
-		<p>Cipdum dolor</p>
 		</div>
 		<div class="boxphoto">
 		<img src="assets/img/cats.jpg">
 
 
 		<h3>Cats</h3>
-		<p>Vestibulum comm</p>
 		</div>
 		<div class="boxphoto">
 		<img src="assets/img/others.jpeg">
 
 
 		<h3>Others</h3>
-		<p>Fusce pellentes</p>
 		</div>
 
 
