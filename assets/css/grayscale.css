@@ -1,0 +1,680 @@
+body {
+  font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 25px;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 35px;
+  }
+}
+
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #42DCA3;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+
+#mainNav {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: black;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 14px;
+  padding: 11px;
+  color: white;
+  border: 1px solid white;
+}
+#nav-pic {
+  width: 50px;
+  height: 50px;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+}
+
+#mainNav .navbar-brand a {
+  color: #101010;
+}
+#mainNav .nav-item a {
+  color: rgba(255, 140, 0, 0.6);
+}
+#mainNav .nav-item a:hover {
+  color: #FF8C00;
+}
+
+#mainNav .navbar-nav .nav-item {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+    border-bottom: none;
+    background: transparent;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: black;
+  }
+  #mainNav.navbar-shrink .navbar-brand{
+    color: white;
+  }
+  #mainNav .nav-link.active {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    color:#FF8C00;
+  }
+ 
+}
+
+.masthead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/BGGG.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.masthead .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 100%;
+    padding: 0;
+  }
+  .masthead .intro-body .brand-heading {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 6px;
+    position: relative;
+    color:#181818;
+  }
+  .masthead .intro-body .intro-text {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818;
+    background: rgba(255, 255, 255, 0.2);
+    padding:18px;
+    border-radius: 50px;
+  }
+}
+
+.btn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  background: transparent;
+}
+
+.btn-circle:focus, .btn-circle:hover {
+  color: #FF8C00;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+.content-section h2{
+    color: #101010;
+}
+.content-section p{
+    color: white;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+}
+
+@media (min-width: 992px) {
+  .content-section {
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+  #map {
+    height: 350px;
+  }
+}
+
+.btn {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-default {
+  color: #42DCA3;
+  border: 1px solid #42DCA3;
+  background-color: transparent;
+}
+
+.btn-default:focus, .btn-default:hover {
+  color: black;
+  border: 1px solid #42DCA3;
+  outline: none;
+  background-color: #42DCA3;
+}
+
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+
+@media (max-width: 1199px) {
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+footer {
+  padding: 50px 0;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+::-moz-selection {
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: none;
+}
+
+::selection {
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+/*Now the styles*/
+* {
+    margin: 0; 
+	padding: 0;
+}
+
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.accordian {
+	width: 805px; height: 320px;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 100px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	width: 1200px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 160px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 640px;}
+
+
+.accordian li img {
+	display: block;
+}
+
+/*Image title styles*/
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; bottom: 0;	
+	width: 640px;	
+
+}
+.image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 16px;
+}
+
+/*Common styles*/
+
+#services .title h2{
+    color:white;
+}
+#adopt .title h2{
+    color:white;
+    margin-top: 0px;
+}
+#adopt .title p{
+    color:white;
+    margin-top: 0px;
+}
+
+#community .title h1{
+}
+
+/*FEATURED PETS CSS*/
+
+
+
+.feathead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/featbg.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.feathead .feat-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 768px) {
+  .feathead {
+    height: 100%;
+    padding: 0;
+  }
+  .feathead .feat-body .brand-heading {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 6px;
+    position: relative;
+    color:#181818;
+  }
+  .feathead .feat-body .intro-text {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818;
+    background: rgba(255, 255, 255, 0.2);
+    padding:18px;
+    border-radius: 50px;
+  }
+}
+
+/*RECENT POSTS CSS*/
+
+
+
+.rechead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/recbg.jpg") no-repeat bottom center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.rechead .rec-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 768px) {
+  .rechead {
+    height: 100%;
+    padding: 0;
+  }
+  .rechead .rec-body .brand-heading {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 6px;
+    position: relative;
+    color:white;
+  }
+  .rechead .rec-body .intro-text {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818;
+    background: rgba(255, 255, 255, 0.5);
+    padding:18px;
+    border-radius: 50px;
+  }
+}
+.recbtn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: #FF8C00;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  background:#101010;
+}
+
+.recbtn-circle:focus, .recbtn-circle:hover {
+  color: #101010;
+  outline: none;
+  background:#FF8C00;
+}
+
+/*ITEM SALES CSS*/
+
+
+
+.salehead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+   background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.salehead .sale-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .salehead {
+    height: 100%;
+    padding: 0;
+  }
+ 
+  .salehead .sale-body .brand-text {
+      font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    position: relative;
+    color: #101010;
+    text-align: center;
+  }
+  .salehead .sale-body .intro-text {
+      font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 15px;
+    color: darkorange;
+    background: rgba(0, 0, 0, 0.2);
+    padding:30px;
+    border-radius: 50px;
+    text-align: left;
+  }
+}
+
+.salehead .sale-body .btn-primary{
+    background-color: #FF8C00;
+    color:#101010;
+    border-color: #FF8C00;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.salebtn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: #FF8C00;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  background:#101010;
+}
+
+.salebtn-circle:focus, .salebtn-circle:hover {
+  color: #101010;
+  outline: none;
+  background:#FF8C00;
+}
+
+/*ADOPTIONs */
+
+.adopthead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/adoptbg.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.adopthead .adopt-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 768px) {
+  .adopthead {
+    height: 100%;
+    padding: 0;
+  }
+  .adopthead .adopt-body .brand-heading {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 6px;
+    position: relative;
+    color:white;
+  }
+  .adopthead .adopt-body .intro-text {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818;
+    background: rgba(255, 255, 255, 0.2);
+    padding:18px;
+    border-radius: 50px;
+  }
+}
+
+/*DONATIONs */
+
+.donatehead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/donatebg.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.donatehead .donate-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 768px) {
+  .donatehead {
+    height: 100%;
+    padding: 0;
+  }
+  .donatehead .donate-body .brand-heading {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 6px;
+    position: relative;
+    color:#101010;
+  }
+  .donatehead .donate-body .intro-text {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818;
+    background: rgba(255, 255, 255, 0.2);
+    padding:18px;
+    border-radius: 50px;
+  }
+}

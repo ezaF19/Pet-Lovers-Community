@@ -9,10 +9,6 @@ class Login extends CI_Controller {
 			$this->session->set_userdata('username', $result);
 			if($result === 'Mismatch!'){
 				redirect('home');
-				echo "<script>
-					alert('$result');
-					window.location.href='index';
-					</script>";
 			}
 			else{
 				$this->load->view('template/header');
