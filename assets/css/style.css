@@ -5,8 +5,7 @@ body {
 	height: auto;
 	text-align: center;
 	color: white;
-	background: url("../img/bg1.jpg") no-repeat center scroll;
-	background-color: black;
+	background: url("../img/background.png") no-repeat center scroll;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -18,7 +17,10 @@ body {
     line-height: 30px;
     text-align: center;
 }
-
+#nav-pic {
+  width: 50px;
+  height: 50px;
+}
 strong { font-weight: 500; }
 
 a, a:hover, a:focus {
@@ -90,6 +92,7 @@ img { max-width: 100%; }
 .btn-link-2:active, .btn-link-2:active:focus { outline: 0; opacity: 0.6; background: rgba(0, 0, 0, 0.3); color: #fff; }
 
 
+ 
 /***** Top content *****/
 
 .inner-bg {
@@ -104,7 +107,8 @@ img { max-width: 100%; }
 .top-content .description a:focus { border-bottom: 1px dotted #19b9e7; }
 
 .form-box {
-	margin-top: 70px;
+	margin-top: 50px;
+    margin-bottom: 0px;
 }
 
 .form-top {
@@ -121,7 +125,13 @@ img { max-width: 100%; }
 	padding-top: 25px;
 }
 
-.form-top-left h3 { margin-top: 0; }
+.form-top-left h3 { 
+    margin-top: 0;
+}
+.form-top-left p { 
+    margin-top: 0;
+    color:#555;
+}
 
 .form-top-right {
 	float: left;
@@ -147,16 +157,14 @@ img { max-width: 100%; }
 }
 
 .form-bottom2 h2 {
-	margin-top: 10px;
-	margin-bottom: 30px;
-	font-size: 38px;
-    font-weight: 100;
-    color: white;
-    line-height: 50px;
-}
-.form-body{
-	color: white;
-	text-decoration: none;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 34px;
+    letter-spacing: 4px;
+    color: whitesmoke; 
+    background: rgba(255, 140, 0, 0.5);
+    padding:50px;
+    border-radius: 50px;
 }
 
 .form-bottom form textarea {

@@ -65,13 +65,23 @@ a:focus, a:hover {
   color: white;
   border: 1px solid white;
 }
+#nav-pic {
+  width: 50px;
+  height: 50px;
+}
 
 #mainNav .navbar-brand {
   font-weight: 700;
 }
 
-#mainNav a {
-  color: white;
+#mainNav .navbar-brand a {
+  color: #101010;
+}
+#mainNav .nav-item a {
+  color: rgba(255, 140, 0, 0.6);
+}
+#mainNav .nav-item a:hover {
+  color: #FF8C00;
 }
 
 #mainNav .navbar-nav .nav-item {
@@ -108,13 +118,15 @@ a:focus, a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     background: black;
   }
+  #mainNav.navbar-shrink .navbar-brand{
+    color: white;
+  }
   #mainNav .nav-link.active {
     outline: none;
     background-color: rgba(255, 255, 255, 0.3);
+    color:#FF8C00;
   }
-  #mainNav .nav-link.active:hover {
-    color: white;
-  }
+ 
 }
 
 .masthead {
@@ -124,7 +136,7 @@ a:focus, a:hover {
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/bg.jpg") no-repeat bottom center scroll;
+  background: url("../img/BGGG.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -137,13 +149,7 @@ a:focus, a:hover {
   vertical-align: middle;
 }
 
-.masthead .intro-body .brand-heading {
-  font-size: 50px;
-}
 
-.masthead .intro-body .intro-text {
-  font-size: 18px;
-}
 
 @media (min-width: 768px) {
   .masthead {
@@ -151,10 +157,20 @@ a:focus, a:hover {
     padding: 0;
   }
   .masthead .intro-body .brand-heading {
-    font-size: 100px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 6px;
+    position: relative;
+    color:#181818;
   }
   .masthead .intro-body .intro-text {
-    font-size: 22px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818;
+    background: rgba(255, 255, 255, 0.2);
+    padding:18px;
+    border-radius: 50px;
   }
 }
 
@@ -174,14 +190,17 @@ a:focus, a:hover {
 }
 
 .btn-circle:focus, .btn-circle:hover {
-  color: white;
+  color: #FF8C00;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
 }
 
-.content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+
+.content-section h2{
+    color: #101010;
+}
+.content-section p{
+    color: white;
 }
 
 #map {
@@ -191,7 +210,7 @@ a:focus, a:hover {
 
 @media (min-width: 992px) {
   .content-section {
-    padding-top: 200px;
+    padding-top: 50px;
     padding-bottom: 200px;
   }
   #map {
@@ -349,4 +368,313 @@ default width = 800/5 = 160px;
 	text-decoration: none;
 	padding: 20px;
 	font-size: 16px;
+}
+
+/*Common styles*/
+
+#services .title h2{
+    color:white;
+}
+#adopt .title h2{
+    color:white;
+    margin-top: 0px;
+}
+#adopt .title p{
+    color:white;
+    margin-top: 0px;
+}
+
+#community .title h1{
+}
+
+/*FEATURED PETS CSS*/
+
+
+
+.feathead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/featbg.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.feathead .feat-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 768px) {
+  .feathead {
+    height: 100%;
+    padding: 0;
+  }
+  .feathead .feat-body .brand-heading {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 6px;
+    position: relative;
+    color:#181818;
+  }
+  .feathead .feat-body .intro-text {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818;
+    background: rgba(255, 255, 255, 0.2);
+    padding:18px;
+    border-radius: 50px;
+  }
+}
+
+/*RECENT POSTS CSS*/
+
+
+
+.rechead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/recbg.jpg") no-repeat bottom center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.rechead .rec-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 768px) {
+  .rechead {
+    height: 100%;
+    padding: 0;
+  }
+  .rechead .rec-body .brand-heading {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 6px;
+    position: relative;
+    color:white;
+  }
+  .rechead .rec-body .intro-text {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818;
+    background: rgba(255, 255, 255, 0.5);
+    padding:18px;
+    border-radius: 50px;
+  }
+}
+.recbtn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: #FF8C00;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  background:#101010;
+}
+
+.recbtn-circle:focus, .recbtn-circle:hover {
+  color: #101010;
+  outline: none;
+  background:#FF8C00;
+}
+
+/*ITEM SALES CSS*/
+
+
+
+.salehead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+   background-color: white;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.salehead .sale-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .salehead {
+    height: 100%;
+    padding: 0;
+  }
+ 
+  .salehead .sale-body .brand-text {
+      font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    position: relative;
+    color: #101010;
+    text-align: center;
+  }
+  .salehead .sale-body .intro-text {
+      font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 15px;
+    color: darkorange;
+    background: rgba(0, 0, 0, 0.2);
+    padding:30px;
+    border-radius: 50px;
+    text-align: left;
+  }
+}
+
+.salehead .sale-body .btn-primary{
+    background-color: #FF8C00;
+    color:#101010;
+    border-color: #FF8C00;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.salebtn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: #FF8C00;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  background:#101010;
+}
+
+.salebtn-circle:focus, .salebtn-circle:hover {
+  color: #101010;
+  outline: none;
+  background:#FF8C00;
+}
+
+/*ADOPTIONs */
+
+.adopthead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/adoptbg.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.adopthead .adopt-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 768px) {
+  .adopthead {
+    height: 100%;
+    padding: 0;
+  }
+  .adopthead .adopt-body .brand-heading {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 6px;
+    position: relative;
+    color:white;
+  }
+  .adopthead .adopt-body .intro-text {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818;
+    background: rgba(255, 255, 255, 0.2);
+    padding:18px;
+    border-radius: 50px;
+  }
+}
+
+/*DONATIONs */
+
+.donatehead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: white;
+  background: url("../img/donatebg.jpg") no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.donatehead .donate-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
+@media (min-width: 768px) {
+  .donatehead {
+    height: 100%;
+    padding: 0;
+  }
+  .donatehead .donate-body .brand-heading {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 6px;
+    position: relative;
+    color:#101010;
+  }
+  .donatehead .donate-body .intro-text {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #181818;
+    background: rgba(255, 255, 255, 0.2);
+    padding:18px;
+    border-radius: 50px;
+  }
 }
