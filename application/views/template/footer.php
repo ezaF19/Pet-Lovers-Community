@@ -12,10 +12,15 @@
 	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.easing.min.js'); ?>"></script>
 
     <!-- Custom scripts for this template -->
+
 	<script type="text/javascript" src="<?php echo base_url('assets/js/grayscale.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery-1.11.1.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.backstretch.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/carousel.js'); ?>"></script>
 
 
   </body>
 
+</html>
 </html>

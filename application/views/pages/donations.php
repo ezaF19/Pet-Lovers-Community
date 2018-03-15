@@ -19,13 +19,13 @@
               <a class="nav-link js-scroll-trigger" href="featured">Featured Pets</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
+              <a class="nav-link js-scroll-trigger" href="recent">Recent Posts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="adoptions">Adoptions</a>
+              <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
             </li>          
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="donations">Donations</a>
+              <a class="nav-link js-scroll-trigger" href="adoptions">Adoptions</a>
             </li>            
           </ul>
         </div>
@@ -33,14 +33,15 @@
     </nav>
 
     <!-- Intro Header -->
-    <section class="rechead">
-            <div class="rec-body">
+    <section class="donatehead">
+            <div class="donate-body">
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-md-6">
 	                    <div class ="block">
 	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
-	                        <p class="intro-text">"RECENT POSTS"</p>
+	                        <p class="intro-text">"Open your heart and your home to pets that need your help. 
+			  They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!"</p>
 	                    </div>
 	                </div>
 	            </div>

@@ -10,11 +10,8 @@ class Register extends CI_Controller {
 		$validate = array(
 			array('field'=>'first_name','label'=>'First Name','rules'=>'trim|required',array('required' => 'You must provide a %s.')),
 			array('field'=>'last_name','label'=>'Last Name','rules'=>'trim|required'),
-			array('field'=>'address','label'=>'Address','rules'=>'trim|required'),
-			array('field'=>'city','label'=>'City','rules'=>'trim|required'),
-			array('field'=>'state','label'=>'State','rules'=>'trim|required'),
-			array('field'=>'number','label'=>'Phone Number','rules'=>'trim|required'),
 			array('field'=>'username','label'=>'Username','rules'=>'trim|required'),
+			array('field'=>'email_address','label'=>'Email Address','rules'=>'trim|required'),
 			array('field'=>'password','label'=>'Password','rules'=>'trim|required')
 	);
 

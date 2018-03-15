@@ -7,6 +7,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
+          <img id="nav-pic" class="navbar-brand" href="#page-top" src="assets/img/cologo.png" />
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Pet Lovers Community</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -38,23 +39,24 @@
     </nav>
 
     <!-- Intro Header -->
-    <header class="masthead">
-      <div class="intro-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="brand-heading">PET LOVERS COMMUNITY</h2>
-              <p class="intro-text">Open your heart and your home to pet that needs your help. 
-			  They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!</p>
-              <a href="#about" class="btn btn-circle js-scroll-trigger">
+    <section class="masthead">
+            <div class="intro-body">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-6">
+	                    <div class ="block">
+	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
+	                        <p class="intro-text">"Open your heart and your home to pets that need your help. 
+			  They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!"</p>
+	                    </div>
+	                </div>
+	            </div>
+                    <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
+              </a><!-- .row close -->
+	        </div>
+                </div><!-- .container close -->
+	    </section>
     <!-- About Section -->
     <section id="about" class="content-section text-center" style="background-color: #FF8C00;">
       <div class="container">
@@ -132,7 +134,7 @@
     <ul>
 		<li>
 			<div class="image_title">
-				<a href="<?php echo base_url('featured');?>">Featured</a>
+				<a href="<?php echo base_url('featured');?>">Featured Pets</a>
 			</div> 
 			<a href="<?php echo base_url('featured');?>">
 				<img src="<?php echo base_url('assets/img/community1.jpg');?>">
@@ -140,7 +142,7 @@
 		</li>
 		<li>
 			<div class="image_title">
-				<a href="<?php echo base_url('recent');?>">Fresh</a>
+				<a href="<?php echo base_url('recent');?>">Recent Posts</a>
 			</div>
 			<a href="<?php echo base_url('recent');?>">
 				<img src="<?php echo base_url('assets/img/community2.jpg');?>">
@@ -156,17 +158,17 @@
 		</li>
 		<li>
 			<div class="image_title">
-				<a href="<?php echo base_url('foradopt');?>">For Adoption</a>
+				<a href="<?php echo base_url('adoptions');?>">Adoptions</a>
 			</div>
-			<a href="<?php echo base_url('foradopt');?>">
+			<a href="<?php echo base_url('adoptions');?>">
 				<img src="<?php echo base_url('assets/img/community4.jpg');?>">
 			</a>
 		</li>
 		<li>
 			<div class="image_title">
-				<a href="<?php echo base_url('services');?>">Services</a>
+				<a href="<?php echo base_url('donations');?>">Donations</a>
 			</div>
-			<a href="<?php echo base_url('services');?>">
+			<a href="<?php echo base_url('donations');?>">
 				<img src="<?php echo base_url('assets/img/community5.jpg');?>">
 			</a>
 		</li>
@@ -203,10 +205,10 @@
 		<div class="boxphoto">
 		<img src="https://templated.co/items/demos/theory/images/pic05.jpg">
 
+		
 		<h3>Others</h3>
 		<p>Fusce pellentes</p>
 		</div>
-
 
 
       </div>

@@ -19,11 +19,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/font-awesome.min.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/Lora.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/Cabin.css'); ?>" />
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/Roboto.css'); ?>" />
 
     <!-- Custom styles for this template -->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/grayscale.css'); ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/Homepage.css'); ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/Homepage.css'); ?>" />
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/Homepage.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/Homepage.css'); ?>" />
 

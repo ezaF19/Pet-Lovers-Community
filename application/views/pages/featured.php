@@ -16,31 +16,31 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="featured">Featured Pets</a>
+              <a class="nav-link js-scroll-trigger" href="recent">Recent Posts</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
+                <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="adoptions">Adoptions</a>
             </li>          
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="donations">Donations</a>
-            </li>            
+            </li>          
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Intro Header -->
-    <section class="rechead">
-            <div class="rec-body">
+    <section class="feathead">
+            <div class="feat-body">
 	        <div class="container">
 	            <div class="row">
 	                <div class="col-md-6">
 	                    <div class ="block">
-	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
-	                        <p class="intro-text">"RECENT POSTS"</p>
+	                        <h1 class="brand-heading" ><b>FEATURED PETS</b></h1>
+	                        <p class="intro-text">"TOP 10 PETS THAT GOT THE MOST PAWS"</p>
 	                    </div>
 	                </div>
 	            </div>

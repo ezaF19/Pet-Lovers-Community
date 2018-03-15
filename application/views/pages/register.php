@@ -6,9 +6,11 @@
         <title>Pet Lovers Community | Register</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+       
+        <link rel="stylesheet" href="assets/css/Roboto.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/form-elements.css">
         <link rel="stylesheet" href="assets/css/style.css">
 
     </head>
@@ -16,26 +18,20 @@
     <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>">Pet Lovers Community</a>
-        <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
+          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>">Pet Lovers Community</a>
+          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
+        </div>
 	</nav>
         <!-- Top content -->
         <div class="top-content">
        
             <div class="inner-bg">
                 <div class="container">
- 
                     <div class="row">
-                        <div class="col-sm-6">
-						<div class="form-bottom2">
-             <h2><b>WELCOME TO PET LOVERS COMMUNITY</b></h2>
-              <p class="form-body"><b>Open your heart and your home to pet that needs your help. 
-			  They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!</b></p>
-						</div>
-						</div>                       
-                        <div class="col-sm-1"></div>
+                     
+                        <div class="col-sm-3"></div>
                         	
-                        <div class="col-sm-5">
+                        <div class="col-sm-6">
                         	
                         	<div class="form-box">
                         		<div class="form-top">
@@ -81,22 +77,3 @@
                 </div>
 				</div>
             </div>
-		</div>
-
-
-
-        <!-- Footer -->
-
-
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.11.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
-        
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
-
-    </body>
-
-</html>
