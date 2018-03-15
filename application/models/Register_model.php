@@ -6,16 +6,17 @@ class Register_model extends CI_Model {
   }
 
   public function success(){
-  $fname = $this->input->post('first_name');
-  $lname = $this->input->post('last_name');
-  $name = $fname.', '.$lname;
-  $aname = $this->input->post('email_address');
-  $add = $aname.', '.$cname.', '.$sname;
+  $fname = $this->input->post('form-first-name');
+  $lname = $this->input->post('form-last-name');
+  $name = $fname.' '.$lname;
+  $aname = $this->input->post('form-email-address');
+  $pass = $this->input->post('form-password');
+
+  $encryptedpass = password_hash($pass, PASSWORD_DEFAULT, ['cost' => 12]);
 
     $acc = array(
       'AccountName' => $name,
-      'AccountContact' => $this->input->post('number'),
-      'AccountAddress' => $add
+      'AccountContact' => $aname
     );
     $this->db->insert('accbio', $acc);
 
@@ -29,8 +30,8 @@ class Register_model extends CI_Model {
 
     $data = array(
       'BioID' => $bio,
-      'AccountUser' => $this->input->post('username'),
-      'AccountPass' => $this->input->post('password')
+      'AccountUser' => $this->input->post('form-username'),
+      'AccountPass' => $encryptedpass
     );
 
     $this->db->insert('account', $data);
