@@ -38,14 +38,14 @@ class Register extends CI_Controller {
 			$this->load->view('template/footer');
 		}
 	}
-		$this->load->view('template/header');
-		$this->load->view('pages/register', $data);
-		$this->load->view('template/footer');
+	echo "<script>alert('All fields must be filled!');
+	window.location.href='error';
+	</script>";
 	}
 
 	public function error()
 	{
-		redirect('register');
+		redirect('rgstr');
 	}
 }
 ?>
