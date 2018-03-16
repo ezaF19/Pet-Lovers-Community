@@ -6,16 +6,17 @@ class Login extends CI_Controller {
 			$result = $this->login_model->check_em();
 			$user['username'] = $result;
 			$this->session->set_userdata('username', $result);
-			if($result === 'Mismatch!'){
-				echo "<script>
-					alert('$result');
-					window.location.href='sign';
-					</script>";
-			}
-			else{
+			if($result != 'Mismatch!'){
+				
 				$this->load->view('template/header');
 				redirect('user');
 				$this->load->view('template/footer');
+			}			
+			else{
+			echo "<script>
+					alert('Mismatch!');
+					window.location.href='sign';
+					</script>";
 			}
 	}
 	public function sign(){

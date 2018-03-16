@@ -40,7 +40,7 @@
 	                            		<p>Fill in the form below to get instant access:</p>
 	                        		</div>
 	                        		<div class="form-top-right">
-	                        			<i class="fa fa-pencil"></i>
+          <img src="assets/img/cologo.png" width="50%" height="50%"/>
 	                        		</div>
 	                            </div>
 	                            <div class="form-bottom">

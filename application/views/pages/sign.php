@@ -41,7 +41,7 @@
 	                            		<p>Enter username and password to login:</p>
 	                        		</div>
 	                        		<div class="form-top-right">
-	                        			<i class="fa fa-key"></i>
+          <img src="assets/img/cologo.png" width="50%" height="50%"/>
 	                        		</div>
 	                            </div>
 	                            <div class="form-bottom">
@@ -72,7 +72,7 @@
 	        </div>
 							<center>
 								<b>Not registered ?</b><br/>
-								<a href="<?php echo base_url('register'); ?>">Register here</a>
+								<a href="<?php echo base_url('rgstr'); ?>">Register here</a>
 							</center>
 			                    </div>
 		                    </div>

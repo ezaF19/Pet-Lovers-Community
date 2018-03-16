@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-
+<?php $user = $this->session->userdata('username');
+		if($user != ''){
+			redirect('featured0?='.$user);
+		}
+	?>
 	<title>Pet Lovers Community</title>
 	</head>	
   <body id="page-top">
@@ -27,6 +31,13 @@
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="donations">Donations</a>
             </li>          
+			
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('rgstr'); ?>">Register</a>
+            </li>
           </ul>
         </div>
       </div>

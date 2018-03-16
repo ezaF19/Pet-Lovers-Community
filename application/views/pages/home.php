@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-
+<?php $user = $this->session->userdata('username');
+		if($user != ''){
+			redirect('home0?='.$user);
+		}
+	?>
 	<title>Pet Lovers Community</title>
 	</head>
   <body id="page-top">
@@ -19,10 +23,10 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#community">Community</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#community">Community</a>
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
             </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#adopt">Adopt</a>
@@ -69,50 +73,6 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="content-section content-section text-center">
-      <div class="container">
-
-		<div class="title">
-			<h2>Services</h2>
-			<p>Don't miss out on the many offers!</p>
-		</div>
-		<div class="pbox">
-		<div class="photo">
-		<img src="assets/img/grooming.jpg" width="100%">
-
-		<h3>Grooming</h3>
-		<p>Make your furbaby shine!</p>
-		<a class="More" href="#" >View</a>
-		</div>
-
-		<div class="photo">
-		<img src="assets/img/Training.jpg" width="100%">
-
-		<h3>Training</h3>
-		<p>Have fun and get your pet a new skill!</p>
-		<a class="More" href="#" >View</a>
-		</div>
-		<div class="photo">
-		<img src="assets/img/sitting.jpg" width="100%">
-
-		<h3>Pet Sitting</h3>
-		<p>Busy day? Check us out!</p>
-		<a class="More" href="#" >View</a>
-		</div>
-
-		<div class="photo">
-		<img src="assets/img/veterinary.jpg" width="100%">
-
-		<h3>Veterinary</h3>
-		<p>Get that monthly check-up here!</p>
-		<a class="More" href="#" >View</a>
-		</div>
-		</div>
-      </div>
-
     </section>
 
 	<!-- Community Section -->
@@ -176,6 +136,51 @@
 	</div>
 
     </section>
+
+	    <!-- Services Section -->
+    <section id="services" class="content-section content-section text-center">
+      <div class="container">
+
+		<div class="title">
+			<h2>Services</h2>
+			<p>Don't miss out on the many offers!</p>
+		</div>
+		<div class="pbox">
+		<div class="photo">
+		<img src="assets/img/grooming.jpg" width="100%">
+
+		<h3>Grooming</h3>
+		<p>Make your furbaby shine!</p>
+		<a class="More" href="#" >View</a>
+		</div>
+
+		<div class="photo">
+		<img src="assets/img/Training.jpg" width="100%">
+
+		<h3>Training</h3>
+		<p>Have fun and get your pet a new skill!</p>
+		<a class="More" href="#" >View</a>
+		</div>
+		<div class="photo">
+		<img src="assets/img/sitting.jpg" width="100%">
+
+		<h3>Pet Sitting</h3>
+		<p>Busy day? Check us out!</p>
+		<a class="More" href="#" >View</a>
+		</div>
+
+		<div class="photo">
+		<img src="assets/img/veterinary.jpg" width="100%">
+
+		<h3>Veterinary</h3>
+		<p>Get that monthly check-up here!</p>
+		<a class="More" href="#" >View</a>
+		</div>
+		</div>
+      </div>
+
+    </section>
+
 
     <!-- Adopt Section -->
     <section id="adopt" class="content-section content-section text-center" >
