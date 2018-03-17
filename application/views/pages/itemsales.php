@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<?php $user = $this->session->userdata('username');
-		if($user != ''){
-			redirect('itemsales0?='.$user);
-		}
-	?>
+<?php $user = $this->session->userdata('username');	?>
 	<title>Pet Lovers Community</title>
-	</head>	
+	</head>
+	<style>
+		#logged, #unlogged, #unlogged2{
+			display: none;
+		}
+	</style>
   <body id="page-top">
 
     <!-- Navigation -->
@@ -27,16 +28,27 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="adoptions">Adoptions</a>
-            </li>          
+            </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="donations">Donations</a>
-            </li>            
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('rgstr'); ?>">Register</a>
-            </li>
+						<li class="nav-item dropdown" id="logged">
+										<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
+						<ul class="dropdown-menu">
+									<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('user');?>">My Profile</a></li>
+									<li><a class="dropdown-item"  style="color:black;" href="">Donations</a></li>
+															<li><a class="dropdown-item"  style="color:black;" href="">Notifications</a></li>
+															<li><a class="dropdown-item"  style="color:black;" href="">Activity Log</a></li>
+									<li><a class="dropdown-item"  style="color:black;" href="">Settings</a></li>
+									<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('');?>logout">Sign Out</a></li>
+									</ul>
+								</li>
+			<li class="nav-item" id="unlogged">
+							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
+						</li>
+			<li class="nav-item" id="unlogged2">
+							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('rgstr'); ?>">Register</a>
+						</li>
           </ul>
         </div>
       </div>
@@ -53,7 +65,7 @@
 	                         <?php echo form_open('itempost/create_post');?>
                                     <div class="intro-text">
                                         <div class="container">
-                                           
+
                                                     <p class="brand-text">POST AN ITEM</p>
                                                    <label class="mr-sm" for="inlineFormCustomSelect">Pet</label>
                                                    <select class="custom-select col-lg-4" id="inlineFormCustomSelect" name="category">
@@ -95,15 +107,38 @@
                                     <label><?php echo $post->cont?></label><br/>
                                     <label><?php echo $post->loc?></label>
                                 </div>
-                                
+
                                 <div class="col-md-3"></div>
                             </div>
                         </div>
-                        
+
                         <?php endforeach;?>
               </a><!-- .row close -->
 	        </div>
                 </div><!-- .container close -->
 	    </section>
     <!-- About Section -->
-   
+		<?php
+ 	 	if($user == ''){
+ 	 		echo "<script>
+ 	 		document.getElementById('unlogged').style.display = 'block';
+ 	 		document.getElementById('unlogged2').style.display = 'block';
+ 	 		document.getElementById('logged').style.display = 'none';
+ 	 		</script>";
+ 	 	}
+ 	 	else if($user == 'Mismatch!'){
+ 	 		echo "<script>
+ 	 		document.getElementById('logged').style.display = 'block';
+ 	 		document.getElementById('unlogged2').style.display = 'block';
+ 	 		document.getElementById('unlogged').style.display = 'none';
+ 	 		</script>";
+ 	 	}
+ 	 	else{
+ 	 		echo "<script>
+ 	 		document.getElementById('logged').style.display = 'block';
+ 	 		document.getElementById('unlogged2').style.display = 'none';
+ 	 		document.getElementById('unlogged').style.display = 'none';
+ 	 		</script>";
+ 	 	}
+
+ 	  ?>
