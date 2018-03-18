@@ -17,12 +17,12 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/usertab.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css'); ?>" />
 	</head>
-	
+
      <body style="background-color: #E0E0E0">
-	 
+
     <nav class="navbar navbar-expand-lg sticky-top" id="mainNav" style="background-color: black">
        <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home0'); ?>?=<?php echo $user; ?>">Pet Lovers Community</a>
+        <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>">Pet Lovers Community</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -30,11 +30,11 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url('home0');?>?=<?php echo $user;?>">Services</a>
+              <a class="nav-link" href="<?php echo base_url('home');?>">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url('featured0');?>?=<?php echo $user;?>">Community</a>
-            </li>          
+              <a class="nav-link" href="<?php echo base_url('featured');?>">Community</a>
+            </li>
 			<li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('adoptions');?>">Adopt</a>
             </li>
@@ -51,7 +51,7 @@
           </ul>
         </div>
       </div>
-        
+
 	</nav>
         <!-- Top content -->
 		<br>
@@ -60,7 +60,7 @@
 		<div class="col-md-3 " style="background-color:white">
 			<div class="profile-sidebar " >
 				<!-- SIDEBAR USERPIC -->
-				
+
 				<div>
 					<br><center><img style="border-radius:50%; width:100px;" src="assets/img/img_avatar.png"  alt=""></center>
 				</div>
@@ -82,7 +82,7 @@
 					<br>
 					<p>Describe Yourself Now! Click the Edit Profile Button.</p>
 					<footer class="blockquote-footer"><?php echo $user;?></footer>
-				
+
 				</div>
 				<!-- END MENU -->
 			</div>
@@ -123,7 +123,7 @@
 								</div>
 							</div>
 							<div id="settings" class="tab-pane">
-								<h4>Photos</h4>	
+								<h4>Photos</h4>
 							</div>
 							<div id="email" class="tab-pane">
 								<h4>Messages</h4>
@@ -131,7 +131,7 @@
 						</div>
 					</div>
 			</div>
-			</div>		
+			</div>
 	</div>
 
 <br>
