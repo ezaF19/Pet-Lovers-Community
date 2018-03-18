@@ -26,14 +26,6 @@ CREATE TABLE `accbio` (
   `AccountAddress` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `accbio`
---
-
-INSERT INTO `accbio` (`BioID`, `AccountName`, `AccountContact`, `AccountAddress`) VALUES
-(1, '111, 111', '111', '111, 111, 111'),
-(2, '123, 123', '123', '123, 123, 123'),
-(3, '123, 123', '123', '123, 123, 123');
 
 -- --------------------------------------------------------
 
@@ -54,13 +46,6 @@ CREATE TABLE `account` (
   `DateMade` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `account`
---
-
-INSERT INTO `account` (`AccountID`, `BioID`, `PetID`, `DonateID`, `ServiceID`, `ItemID`, `AccountUser`, `AccountPass`, `AccountPic`, `DateMade`) VALUES
-(3, 2, 0, 0, 0, 0, 'user1', '12345', '', '0000-00-00'),
-(4, 3, 0, 0, 0, 0, 'user2', '54321', '', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -68,7 +53,7 @@ INSERT INTO `account` (`AccountID`, `BioID`, `PetID`, `DonateID`, `ServiceID`, `
 -- Table structure for table `adminplc`
 --
 
-CREATE TABLE `adminplc` (
+CREATE TABLE `admin` (
   `AdminID` int(100) NOT NULL,
   `PostID` int(255) NOT NULL,
   `AdminUser` varchar(50) NOT NULL,
@@ -130,7 +115,7 @@ CREATE TABLE `post` (
   `PostID` int(100) NOT NULL,
   `AccountID` int(100) NOT NULL,
   `PetID` int(100) NOT NULL,
-  `ServiceID` int(100) NOT NULL,
+  `ServID` int(100) NOT NULL,
   `ItemID` int(100) NOT NULL,
   `PostPic` varchar(1) NOT NULL,
   `PostVid` varchar(1) NOT NULL,
@@ -175,7 +160,7 @@ ALTER TABLE `account`
 --
 -- Indexes for table `adminplc`
 --
-ALTER TABLE `adminplc`
+ALTER TABLE `admin`
   ADD PRIMARY KEY (`AdminID`);
 
 --
