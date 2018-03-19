@@ -2,12 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Itemsales extends CI_Controller {
-    
+
     public function sales(){
         $this->load->model('postmodel');
          $data['item']=$this->postmodel->getData();
          $this->load->view('template/header');
-         $this->load->view('pages/itemsales0', $data);
+         $this->load->view('pages/itemsales', $data);
          $this->load->view('template/footer');
 
     }

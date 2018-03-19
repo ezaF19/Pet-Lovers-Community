@@ -11,30 +11,30 @@ class Register_model extends CI_Model {
   $name = $fname.' '.$lname;
   $aname = $this->input->post('form-email-address');
   $pass = $this->input->post('form-password');
+  $user = $this->input->post('form-username');
 
   $encryptedpass = password_hash($pass, PASSWORD_DEFAULT, ['cost' => 12]);
 
-    $acc = array(
-      'AccountName' => $name,
-      'AccountContact' => $aname
-    );
-    $this->db->insert('accbio', $acc);
+  $acc = array(
+    'AccountUser' => $user,
+    'AccountPass' => $encryptedpass
+  );
+  $this->db->insert('account', $acc);
 
     $conn = new mysqli('localhost', 'root', '', 'plc_db');
-		$query = 'Select BioID from accbio where AccountName = "'.$name.'"';
+		$query = 'Select AccountID from account where AccountUser = "'.$user.'"';
 		$result = $conn->query($query);
 		if($result->num_rows > 0){
 			while($row = $result->fetch_assoc()){
-          $bio = $row['BioID'];
+          $bio = $row['AccountID'];
 				}
 
     $data = array(
-      'BioID' => $bio,
-      'AccountUser' => $this->input->post('form-username'),
-      'AccountPass' => $encryptedpass
+      'AccountID' => $bio,
+      'AccountName' => $name
     );
 
-    $this->db->insert('account', $data);
+    $this->db->insert('accbio', $data);
     return $name;
   }
 }
