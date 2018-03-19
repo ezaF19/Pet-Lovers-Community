@@ -16,6 +16,11 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/user.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/usertab.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css'); ?>" />
+  <style>
+    #petpost, #itempost, #servpost{
+      display: none;
+    }
+  </style>
 	</head>
 
      <body style="background-color: #E0E0E0">
@@ -117,7 +122,35 @@
 										<div class="card-body text-center">
 										<input type="post" class="form-control" name="usrpst" placeholder="What are you up to?">
 										</div>
+                    <div id="petpost">
+                      <h3>Pet Info: </h3>
+                      <label>Pet Type: </label><input type='text' name='pttyp' placeholder='Type'/>
+                      <label><br>Pet Name: </label><input type='text' name='ptnm' placeholder='Name'/>
+                      <label><br>Pet Breed: </label><input type='text' name='ptbrd' placeholder='Breed'/>
+                      <label><br>Pet Age: </label><input type='text' name='ptage' placeholder='Age'/>
+                      <label><br>Pet Gender: </label><input type='text' name='ptgndr' placeholder='Gender'/>
+                    </div>
+                    <div id="itempost">
+                        <h3>Item Info: </h3>
+                        <label>Item Type: </label><input type='text' name='itmtyp' placeholder='Type'/>
+                        <label><br>Item Price: </label><input type='text' name='itmprc' placeholder='Price'/>
+                        <label><br>Item Description: </label><input type='text' name='itminf' placeholder='Description'/>
+                      </div>
+                    <div id="servpost">
+                        <h3>Service Info: </h3>
+                        <label>Service Type: </label><input type='text' name='srvctyp' placeholder='Type'/>
+                        <label><br>Service Name: </label><input type='text' name='srvcnm' placeholder='Name'/>
+                        <label><br>Service Contact: </label><input type='text' name='srvccntct' placeholder='Contact'/>
+                        <label><br>Service Address: </label><input type='text' name='srvcadd' placeholder='Address'/>
+                      </div>
 										<div class="card-footer">
+                      <label class="mr-sm" for="inlineFormCustomSelect">Type: </label>
+                    <select class="custom-select col-lg-4" id="inlineFormCustomSelect" oninput="check()" name="category">
+                          <option selected>Choose...</option>
+                          <option>Pet</option>
+                          <option>Item</option>
+                          <option>Service</option>
+                        </select>
 										<button type="submit" class="btn btn-dark btn-md">Post</button>
 										</div>
                   </form>
@@ -151,6 +184,29 @@
 			</div>
 			</div>
 	</div>
-
 <br>
 <br>
+<script>
+  function check(){
+  if(document.getElementById('inlineFormCustomSelect').value == 'Pet'){
+    document.getElementById('petpost').style.display = 'block';
+    document.getElementById('itempost').style.display = 'none';
+    document.getElementById('servpost').style.display = 'none';
+  }
+  else if(document.getElementById('inlineFormCustomSelect').value == 'Item'){
+    document.getElementById('petpost').style.display = 'none';
+    document.getElementById('itempost').style.display = 'block';
+    document.getElementById('servpost').style.display = 'none';
+  }
+  else if(document.getElementById('inlineFormCustomSelect').value == 'Service'){
+    document.getElementById('petpost').style.display = 'none';
+    document.getElementById('itempost').style.display = 'none';
+    document.getElementById('servpost').style.display = 'block';
+  }
+  if(document.getElementById('inlineFormCustomSelect').value == 'Choose...'){
+    document.getElementById('petpost').style.display = 'none';
+    document.getElementById('itempost').style.display = 'none';
+    document.getElementById('servpost').style.display = 'none';
+  }
+}
+</script>
