@@ -9,5 +9,8 @@ class User extends CI_Controller {
   $this->load->view('pages/user', $data);
   $this->load->view('template/footer');
 }
+  public function plcpost(){
+    redirect('user');
+  }
 }
 ?>

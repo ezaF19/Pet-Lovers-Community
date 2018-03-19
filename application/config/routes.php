@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+$route['user'] = 'plcpost/posting';
+$route['user'] = 'user/posts';
 $route['register'] ='register/index';
 $route['login'] ='login/index';
 $route['login'] ='login/sign';
