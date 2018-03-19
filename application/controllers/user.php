@@ -12,5 +12,18 @@ class User extends CI_Controller {
   public function plcpost(){
     redirect('user');
   }
+
+  // public function savepet(){
+  //   $stmt = $this->input->post('usrpst');
+  //   echo "<script>alert('$stmt');</script>";
+  //   $this->load->model('userpost_model');
+  //   $result = $this->userpost_model->save_pet();
+  //   if($result == "true"){
+  //     $too = $this->userpost_model->save_post_pet($stmt);
+  //     if($too == "true"){
+  //       redirect('user');
+  //     }
+  //   }
+  // }
 }
 ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 18, 2018 at 04:49 PM
+-- Generation Time: Mar 19, 2018 at 01:38 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -36,13 +36,6 @@ CREATE TABLE `accbio` (
   `AccountAddress` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `accbio`
---
-
-INSERT INTO `accbio` (`AccountID`, `BioID`, `AccountName`, `AccountContact`, `AccountAddress`) VALUES
-(5, 4, 'Rhed Silvestre', '', '');
-
 -- --------------------------------------------------------
 
 --
@@ -56,13 +49,6 @@ CREATE TABLE `account` (
   `AccountPic` varchar(1) NOT NULL,
   `DateMade` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `account`
---
-
-INSERT INTO `account` (`AccountID`, `AccountUser`, `AccountPass`, `AccountPic`, `DateMade`) VALUES
-(5, 'asd', '$2y$12$WC7bA3wG4Q4n3tJv7XIfNeeQghYSKZ0BsgXq7J8yyDBNN3B3oI4bO', '', '0000-00-00');
 
 -- --------------------------------------------------------
 
@@ -197,6 +183,12 @@ ALTER TABLE `item`
   ADD PRIMARY KEY (`ItemID`);
 
 --
+-- Indexes for table `pet`
+--
+ALTER TABLE `pet`
+  ADD PRIMARY KEY (`PetID`);
+
+--
 -- Indexes for table `post`
 --
 ALTER TABLE `post`
@@ -240,19 +232,25 @@ ALTER TABLE `donation`
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
-  MODIFY `ItemID` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `ItemID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `pet`
+--
+ALTER TABLE `pet`
+  MODIFY `PetID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `PostID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `PostID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-  MODIFY `ServiceID` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `ServiceID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
