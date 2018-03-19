@@ -112,7 +112,8 @@
 								<div class="row justify-content-center">
 									<div class="col-md-12" >
 										<br><div class="card card-primary text-right">
-                    <form action="plcpost/posting" method="post">
+                      <?php echo form_open('plcpost/posting');?>
+                      <form>
 										<div class="card-body text-center">
 										<input type="post" class="form-control" name="usrpst" placeholder="What are you up to?">
 										</div>

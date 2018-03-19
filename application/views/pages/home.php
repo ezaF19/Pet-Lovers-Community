@@ -32,6 +32,9 @@
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#adopt">Adopt</a>
             </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="donations">Donations</a>
+            </li>
 						<li class="nav-item dropdown" id="logged">
 			              <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
 						<ul class="dropdown-menu">
@@ -45,9 +48,6 @@
 								</li>
 			<li class="nav-item" id="unlogged">
               <a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
-            </li>
-			<li class="nav-item" id="unlogged2">
-              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('rgstr'); ?>">Register</a>
             </li>
           </ul>
         </div>
@@ -74,7 +74,7 @@
                 </div><!-- .container close -->
 	    </section>
     <!-- About Section -->
-    <section id="about" class="content-section text-center" style="background-color: #FF8C00;">
+    <section id="about" class="content-section text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -88,10 +88,10 @@
     </section>
 
 	<!-- Community Section -->
-    <section id="community" class="content-section content-section text-center">
+    <section id="community" class="content-section content-section text-center" style="background-color: blanchedalmond;">
       <div class="container">
 		<div class="title">
-		<h1>Community</h1>
+		<h1>Community</h1><br/>
 		<p>Get Involved! Check our community page for the featured and freshest posts from our users.</p>
 		</div>
 	<div class="sidebar-section">
@@ -134,9 +134,9 @@
 		</li>
 		<li>
 			<div class="image_title">
-				<a href="<?php echo base_url('donate');?>">Donate</a>
+				<a href="<?php echo base_url('donations');?>">Donations</a>
 			</div>
-			<a href="<?php echo base_url('donate');?>">
+			<a href="<?php echo base_url('donations');?>">
 				<img src="<?php echo base_url('assets/img/community5.jpg');?>">
 			</a>
 		</li>
@@ -158,35 +158,44 @@
 			<p>Don't miss out on the many offers!</p>
 		</div>
 		<div class="pbox">
-		<div class="photo">
-		<img src="assets/img/grooming.jpg" width="100%">
-
+		<div class="photo"><a href="<?php echo base_url('adoptions');?>">
+		<img src="assets/img/grooming.jpg" href="#" width="100%" class="photox"></a>
+		
+		<div class="middle">
+			<div class="text">View</div>
+		</div>	
+	
 		<h3>Grooming</h3>
 		<p>Make your furbaby shine!</p>
-		<a class="More" href="#" >View</a>
 		</div>
 
-		<div class="photo">
-		<img src="assets/img/Training.jpg" width="100%">
-
+		<div class="photo"><a href="<?php echo base_url('adoptions');?>">
+		<img src="assets/img/Training.jpg" href="#" width="100%" class="photox"></a>
+		
+		<div class="middle">
+			<div class="text">View</div>
+		</div>	
 		<h3>Training</h3>
 		<p>Have fun and get your pet a new skill!</p>
-		<a class="More" href="#" >View</a>
 		</div>
-		<div class="photo">
-		<img src="assets/img/sitting.jpg" width="100%">
-
+		<div class="photo"><a href="<?php echo base_url('adoptions');?>">
+		<img src="assets/img/sitting.jpg" href="#" width="100%" class="photox"></a>
+		
+		<div class="middle">
+			<div class="text">View</div>
+		</div>	
 		<h3>Pet Sitting</h3>
 		<p>Busy day? Check us out!</p>
-		<a class="More" href="#" >View</a>
 		</div>
 
-		<div class="photo">
-		<img src="assets/img/veterinary.jpg" width="100%">
-
+		<div class="photo"><a href="<?php echo base_url('adoptions');?>">
+		<img src="assets/img/veterinary.jpg" href="#" width="100%" class="photox"></a>
+		
+		<div class="middle">
+			<div class="text">View</div>
+		</div>	
 		<h3>Veterinary</h3>
 		<p>Get that monthly check-up here!</p>
-		<a class="More" href="#" >View</a>
 		</div>
 		</div>
       </div>
@@ -195,29 +204,32 @@
 
 
     <!-- Adopt Section -->
-    <section id="adopt" class="content-section content-section text-center" >
+    <section id="adopt" class="content-section content-section text-center" style="background-color: blanchedalmond;">
       <div class="container">
 
 		<div class="title">
 			<h2>Adopt a Pet</h2>
 			<p>Help us provide assistance to families who must give up their beloved pets so those pets will not end up being brought to a shelter but instead will be placed directly with another family who will give them the love and affection that they deserve.</p>
 		</div>
+		<a href="<?php echo base_url('adoptions');?>">
 		<div class="boxphoto">
 		<img src="assets/img/dogs.jpg">
 
-		<h3>Dogs</h3>
+		<h3>Dogs</h3></a>
 		</div>
+		<a href="<?php echo base_url('adoptions');?>">
 		<div class="boxphoto">
 		<img src="assets/img/cats.jpg">
 
 
-		<h3>Cats</h3>
+		<h3>Cats</h3></a>
 		</div>
+		<a href="<?php echo base_url('adoptions');?>">
 		<div class="boxphoto">
 		<img src="assets/img/others.jpeg">
 
 
-		<h3>Others</h3>
+		<h3>Others</h3></a>
 		</div>
 
 

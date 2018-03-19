@@ -4,7 +4,7 @@
 .boxp h3 { color: #fff; font-weight: normal;}
 .More{ background:#5385c1; color: white; text-decoration: none; padding:10px 20px; }
 .More:hover { background-color:#5383c1; }
-.boxphoto { display:inline-block; width:15%; min-width:200px; margin:0 auto; padding:10px; padding-top:30px; padding-bottom:30px; text-align:center; margin-top:20px; margin-bottom:40px; border:1px solid #bacee6; margin-left:2%; margin-right:2%;   }
+.boxphoto { display:inline-block; width:15%; min-width:200px; margin:0 auto; padding:10px; padding-top:30px; padding-bottom:30px; text-align:center; margin-top:20px; margin-bottom:40px; border:1px solid #bacee6; margin-left:2%; margin-right:2%; background-color: black;  }
 .boxphoto h3 { margin:0 auto;  padding-top:30px; }
 .boxphoto p{margin:0 auto; padding: 5px;}
 .boxphoto img{ border-radius: 50%; }
@@ -16,3 +16,34 @@
 .photo { display:inline-block; width:40%; min-width:200px; margin:0 auto; margin-bottom:50px; padding:1%; text-align:left; }
 h1 {margin: 0 auto;}
 .box2p hr { border-top: 1px solid #dbdbdb; margin:0 auto; } 
+
+.photo:hover .photox {
+  opacity: 0.3;
+  transition: all 0.5s;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.photo:hover .middle {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.text {
+  background-color: #FF8C00;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.boxphoto:hover{
+	opacity: 0.3;
+	transition: all 0.5s;
+	color: white;
+}
