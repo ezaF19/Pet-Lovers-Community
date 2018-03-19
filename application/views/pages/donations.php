@@ -67,7 +67,7 @@
 	                </div>
 	                <div class="col-lg-6">
 	                    <div class ="block">
-	                         <?php echo form_open('itempost/create_post');?>
+	                         <?php echo form_open('donatepost/create_post');?>
                                     <div class="intro-text" style="background-color: #DCDCDC;">
                                         <div class="container">
                                                     <p class="brand-text">DONATION FORM</p>
@@ -78,25 +78,19 @@
                                                          <option>P100.00</option>
                                                          <option>P500.00</option>
                                                          <option>P1000.00</option>
-														 <option>Other</option>
                                                        </select>										   
                                         </div>
                                                  <div class="group row">
                                                      <div class="col-lg-12">	 
-                                                 <label for="exampleInput">First Name*</label>
-                                                 <input type="text" class="form-control col-lg-12" name="firstname" id="exampleInput" aria-describedby="emailHelp" placeholder="" >
+                                                 <input type="text" class="form-control col-lg-12" name="firstname" id="exampleInput" aria-describedby="emailHelp" placeholder="First Name*" >
                                                  
-												 <label for="exampleInput">Last Name*</label>
-                                                 <input type="number" class="form-control col-lg-12" name="lastname" id="exampleInput" placeholder="" >
+                                                 <input type="text" class="form-control col-lg-12" name="lastname" id="exampleInput" placeholder="Last Name*" >
                                                  
-												 <label for="exampleInput">Email*</label>
-                                                 <input type="text" class="form-control col-lg-12" name="email" id="exampleInput" aria-describedby="emailHelp" placeholder="" >
+                                                 <input type="text" class="form-control col-lg-12" name="email" id="exampleInput" aria-describedby="emailHelp" placeholder="Email*" >
                                                  
-												 <label for="exampleInput">Contact Number*</label>
-                                                 <input type="text" class="form-control col-lg-12" name="contactnumber" id="exampleInput" placeholder="" >  
+                                                 <input type="number" class="form-control col-lg-12" name="contactnumber" id="exampleInput" placeholder="Contact Number*" >  
 												 
-												 <label for="exampleInput">Comment or Message*</label>
-                                                 <input type="text" class="form-control col-lg-12" name="comment" id="exampleInput" placeholder="" >
+                                                 <input type="text" class="form-control col-lg-12" name="comment" id="exampleInput" placeholder="Comment or Message" >
                                                
                                                </div>
                                                </div>

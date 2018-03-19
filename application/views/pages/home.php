@@ -33,7 +33,7 @@
               <a class="nav-link js-scroll-trigger" href="#adopt">Adopt</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="donations">Donations</a>
+              <a class="nav-link js-scroll-trigger" href="donations">Donate</a>
             </li>
 						<li class="nav-item dropdown" id="logged">
 			              <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
