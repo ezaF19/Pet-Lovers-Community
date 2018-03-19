@@ -46,9 +46,6 @@
 			<li class="nav-item" id="unlogged">
 							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
 						</li>
-			<li class="nav-item" id="unlogged2">
-							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('rgstr'); ?>">Register</a>
-						</li>
           </ul>
         </div>
       </div>
@@ -63,7 +60,7 @@
 	                <div class="col-lg-6">
 	                    <div class ="block">
 	                         <?php echo form_open('itempost/create_post');?>
-                                    <div class="intro-text">
+                                    <div class="intro-text" style="background-color: #DCDCDC;">
                                         <div class="container">
 
                                                     <p class="brand-text">POST AN ITEM</p>

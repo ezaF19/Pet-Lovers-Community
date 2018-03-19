@@ -30,9 +30,14 @@
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-sm-3"></div>
+                        <div class="col-md-6" id="logintro">
+	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
+	                        <p class="intro-text">"Open your heart and your home to pets that need your help.
+			  They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!"</p>
+						</div>
+                        <div class="col-sm-1"></div>
 
-                        <div class="col-sm-6">
+                        <div class="col-sm-5">
 
                         	<div class="form-box">
                         		<div class="form-top">
@@ -49,11 +54,11 @@
 				                    <form role="form" action="" method="" class="registration-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-first-name">First name</label>
-				                        	<input type="text" name="form-first-name" placeholder="First Name*" class="form-first-name form-control" id="form-first-name">
+				                        	<input type="text" name="form-first-name" placeholder="First name*" class="form-first-name form-control" id="form-first-name">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-last-name">Last name</label>
-				                        	<input type="text" name="form-last-name" placeholder="Last Name*" class="form-last-name form-control" id="form-last-name">
+				                        	<input type="text" name="form-last-name" placeholder="Last name*" class="form-last-name form-control" id="form-last-name">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-username">Username</label>
@@ -71,12 +76,10 @@
 				                        <button type="submit" class="btn">Sign me up!</button>
 				                    </form>
 									<center>
-										<br>
-										<b>Already have an account?</b><br/>
-										<a href="<?php echo base_url('sign'); ?>"><h3>Click Here!</h3></a>
+										<b>Already have account? ?</b><br/>
+										<a href="<?php echo base_url('sign'); ?>" style="color: blue">Login here</a>
 									</center>
 			                    </div>
-								
                         	</div>
 
                         </div>

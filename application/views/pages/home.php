@@ -211,7 +211,7 @@
 			<h2>Adopt a Pet</h2>
 			<p>Help us provide assistance to families who must give up their beloved pets so those pets will not end up being brought to a shelter but instead will be placed directly with another family who will give them the love and affection that they deserve.</p>
 		</div>
-		<a href="<?php echo base_url('adoptions');?>">
+		<a href="<?php echo base_url('dogs');?>">
 		<div class="boxphoto">
 		<img src="assets/img/dogs.jpg">
 
