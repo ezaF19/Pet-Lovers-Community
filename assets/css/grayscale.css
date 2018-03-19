@@ -3,8 +3,8 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: navajowhite;
 }
 
 html {
@@ -48,7 +48,10 @@ a {
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #1d9b6c;
+  color: #FF8C00;
+}
+a{
+	color: white;
 }
 
 #mainNav {
@@ -372,23 +375,33 @@ default width = 800/5 = 160px;
 
 /*Common styles*/
 
-#services .title h2{
-    color:white;
+#about p{
+	color: black;
+}
+
+#services .title p{
+    color:black;
+}
+#services p, h3{
+    color:black;
 }
 #adopt .title h2{
-    color:white;
+    color:black;
     margin-top: 0px;
 }
-#adopt .title p{
-    color:white;
+#adopt p{
+    color:black;
     margin-top: 0px;
+}
+#adopt h3{
+	color: white;
+}
+#community .title p{
+	color: black;
 }
 
-#community .title h1{
-}
 
 /*FEATURED PETS CSS*/
-
 
 
 .feathead {
@@ -677,4 +690,15 @@ default width = 800/5 = 160px;
     padding:18px;
     border-radius: 50px;
   }
+}
+
+#itpost{
+    background-color: rgba(255, 140, 0, 0.5);
+    color:#101010;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius:50px;
+    text-align: left;
+    font-size: 30px;
 }

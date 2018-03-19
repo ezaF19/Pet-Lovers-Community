@@ -24,10 +24,11 @@ body {
 strong { font-weight: 500; }
 
 a, a:hover, a:focus {
-	color: #19b9e7;
+	color: white;
 	text-decoration: none;
     -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
 }
+
 
 h1, h2 {
 	margin-top: 10px;
@@ -227,4 +228,3 @@ footer a:hover, footer a:focus { border-bottom: 1px dotted #19b9e7; }
 	h1, h2 { font-size: 32px; }
 
 }
-
