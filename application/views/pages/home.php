@@ -134,9 +134,9 @@
 		</li>
 		<li>
 			<div class="image_title">
-				<a href="<?php echo base_url('donations');?>">Donations</a>
+				<a href="<?php echo base_url('donate');?>">Donate</a>
 			</div>
-			<a href="<?php echo base_url('donations');?>">
+			<a href="<?php echo base_url('donate');?>">
 				<img src="<?php echo base_url('assets/img/community5.jpg');?>">
 			</a>
 		</li>

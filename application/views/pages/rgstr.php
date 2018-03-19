@@ -18,8 +18,9 @@
     <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>"></a>
           <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>">Pet Lovers Community</a>
-          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
+          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>"></a>
         </div>
 	</nav>
         <!-- Top content -->
@@ -48,28 +49,34 @@
 				                    <form role="form" action="" method="" class="registration-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-first-name">First name</label>
-				                        	<input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+				                        	<input type="text" name="form-first-name" placeholder="First Name*" class="form-first-name form-control" id="form-first-name">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-last-name">Last name</label>
-				                        	<input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+				                        	<input type="text" name="form-last-name" placeholder="Last Name*" class="form-last-name form-control" id="form-last-name">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-username">Username</label>
-				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+				                        	<input type="text" name="form-username" placeholder="Username*" class="form-username form-control" id="form-username">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-email-address">Email Address</label>
-				                        	<input type="text" name="form-email-address" placeholder="Email Address..." class="form-email-address form-control" id="form-email-address">
+				                        	<input type="text" name="form-email-address" placeholder="Email Address*" class="form-email-address form-control" id="form-email-address">
 				                        </div>
 
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-password">Password</label>
-				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+				                        	<input type="password" name="form-password" placeholder="Password*" class="form-password form-control" id="form-password">
 				                        </div>
 				                        <button type="submit" class="btn">Sign me up!</button>
 				                    </form>
+									<center>
+										<br>
+										<b>Already have an account?</b><br/>
+										<a href="<?php echo base_url('sign'); ?>"><h3>Click Here!</h3></a>
+									</center>
 			                    </div>
+								
                         	</div>
 
                         </div>

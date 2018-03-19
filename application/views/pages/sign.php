@@ -49,11 +49,11 @@
 				                    <form role="form" class="login-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-username">Username</label>
-				                        	<input type="text" name="usrnm" placeholder="Username..." class="form-username form-control" id="form-username">
+				                        	<input type="text" name="usrnm" placeholder="Username*" class="form-username form-control" id="form-username">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-password">Password</label>
-				                        	<input type="password" name="psswrd" placeholder="Password..." class="form-password form-control" id="form-password">
+				                        	<input type="password" name="psswrd" placeholder="Password*" class="form-password form-control" id="form-password">
 				                        </div>
 				                        <button type="submit" class="btn">Sign in!</button>
 				                    </form>
@@ -70,9 +70,10 @@
                             </center>
 	                </div>
 	        </div>
+							<br>
 							<center>
-								<b>Not registered ?</b><br/>
-								<a href="<?php echo base_url('rgstr'); ?>">Register here</a>
+								<b>Not yet registered?</b><br/>
+								<a href="<?php echo base_url('rgstr'); ?>"><h3>Join Us!</h3></a>
 							</center>
 			                    </div>
 		                    </div>
