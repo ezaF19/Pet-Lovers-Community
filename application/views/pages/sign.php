@@ -31,8 +31,14 @@
                 <div class="container">
 
                     <div class="row">
-                        <div class="col-sm-3"></div>
-                        <div class="col-sm-6">
+						
+                        <div class="col-md-6" id="logintro">
+	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
+	                        <p class="intro-text">"Open your heart and your home to pets that need your help.
+			  They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!"</p>
+						</div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-5">
 
                         	<div class="form-box">
 	                        	<div class="form-top">
@@ -49,11 +55,11 @@
 				                    <form role="form" class="login-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-username">Username</label>
-				                        	<input type="text" name="usrnm" placeholder="Username*" class="form-username form-control" id="form-username">
+				                        	<input type="text" name="usrnm" placeholder="Username..." class="form-username form-control" id="form-username">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-password">Password</label>
-				                        	<input type="password" name="psswrd" placeholder="Password*" class="form-password form-control" id="form-password">
+				                        	<input type="password" name="psswrd" placeholder="Password..." class="form-password form-control" id="form-password">
 				                        </div>
 				                        <button type="submit" class="btn">Sign in!</button>
 				                    </form>
@@ -70,10 +76,9 @@
                             </center>
 	                </div>
 	        </div>
-							<br>
 							<center>
-								<b>Not yet registered?</b><br/>
-								<a href="<?php echo base_url('rgstr'); ?>"><h3>Join Us!</h3></a>
+								<b>Not registered ?</b><br/>
+								<a href="<?php echo base_url('rgstr'); ?>" style="color: blue">Register here</a>
 							</center>
 			                    </div>
 		                    </div>
