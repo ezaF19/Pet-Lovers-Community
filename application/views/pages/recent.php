@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <?php $user = $this->session->userdata('username');	?>
 	<title>Pet Lovers Community</title>
+	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/user.css'); ?>" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/usertab.css'); ?>" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css'); ?>" /> -->
 	</head>
 	<style>
 		#logged, #unlogged, #unlogged2{
@@ -46,12 +49,17 @@
 			<li class="nav-item" id="unlogged">
 							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
 						</li>
+			<li class="nav-item" id="unlogged2">
+							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('rgstr'); ?>">Register</a>
+						</li>
           </ul>
         </div>
       </div>
     </nav>
 
     <!-- Intro Header -->
+		<form action="plcrecent/posts" method="post">
+		</form>
     <section class="rechead">
             <div class="rec-body">
 	        <div class="container">
@@ -60,6 +68,21 @@
 	                    <div class ="block">
 	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
 	                        <p class="intro-text">"RECENT POSTS"</p>
+													<div id="posting">
+						              <?php foreach($pst as $cntnt):?>
+						              <div class="container">
+						                  <div class="row">
+						                      <div class="col-md-3"></div>
+						                      <div class="col-md-6"  id="itpost">
+						                          <label><?php echo $cntnt->PostComment?></label><br/>
+						                          <label><?php echo $cntnt->PostDate?></label>
+						                      </div>
+
+						                      <div class="col-md-3"></div>
+						                  </div>
+						              </div>
+						              <?php endforeach;?>
+						            </div>
 	                    </div>
 	                </div>
 	            </div>
@@ -91,3 +114,8 @@
  	 	}
 
  	  ?>
+		<!-- <script>
+			document.getElementById('posting').do {
+					redirect('recent/posts');
+			}
+		</script> -->

@@ -49,11 +49,11 @@
 				                    <form role="form" action="" method="" class="registration-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-first-name">First name</label>
-				                        	<input type="text" name="form-first-name" placeholder="First name*" class="form-first-name form-control" id="form-first-name">
+				                        	<input type="text" name="form-first-name" placeholder="First Name*" class="form-first-name form-control" id="form-first-name">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-last-name">Last name</label>
-				                        	<input type="text" name="form-last-name" placeholder="Last name*" class="form-last-name form-control" id="form-last-name">
+				                        	<input type="text" name="form-last-name" placeholder="Last Name*" class="form-last-name form-control" id="form-last-name">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-username">Username</label>
@@ -71,10 +71,12 @@
 				                        <button type="submit" class="btn">Sign me up!</button>
 				                    </form>
 									<center>
-										<b>Already have account? ?</b><br/>
-										<a href="<?php echo base_url('sign'); ?>" style="color: blue">Login here</a>
+										<br>
+										<b>Already have an account?</b><br/>
+										<a href="<?php echo base_url('sign'); ?>"><h3>Click Here!</h3></a>
 									</center>
 			                    </div>
+								
                         	</div>
 
                         </div>

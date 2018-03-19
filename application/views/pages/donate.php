@@ -65,26 +65,34 @@
 	                         <?php echo form_open('itempost/create_post');?>
                                     <div class="intro-text">
                                         <div class="container">
-
-                                                    <p class="brand-text">POST AN ITEM</p>
-                                                   <label class="mr-sm" for="inlineFormCustomSelect">Pet</label>
+                                                    <p class="brand-text">DONATION FORM</p>
+                                                   <label class="mr-sm" for="inlineFormCustomSelect">I would like to donate in the amount of*: </label>
                                                    <select class="custom-select col-lg-4" id="inlineFormCustomSelect" name="category">
-                                                         <option selected>Choose...</option>
-                                                         <option>Dog</option>
-                                                         <option>Cat</option>
-                                                         <option>Both</option>
-                                                       </select>
-                                                   </div>
+                                                         <option selected>P20.00</option>
+                                                         <option>P50.00</option>
+                                                         <option>P100.00</option>
+                                                         <option>P500.00</option>
+                                                         <option>P1000.00</option>
+														 <option>Other</option>
+                                                       </select>										   
+                                        </div>
                                                  <div class="group row">
-                                                     <div class="col-lg-12">
-                                                 <label for="exampleInput">Description</label>
-                                                 <input type="text" class="form-control col-lg-12" name="description" id="exampleInput" aria-describedby="emailHelp" placeholder="Enter description" >
-                                                 <label for="exampleInput">Price</label>
-                                                 <input type="number" class="form-control col-lg-12" name="price" id="exampleInput" placeholder="Price" >
-                                                  <label for="exampleInput">Contact Number</label>
-                                                  <input type="text" class="form-control col-lg-12" name="contact" id="exampleInput" aria-describedby="emailHelp" placeholder="Contact Number" >
-                                                 <label for="exampleInput">Location</label>
-                                                 <input type="text" class="form-control col-lg-12" name="location" id="exampleInput" placeholder="Location" >
+                                                     <div class="col-lg-12">	 
+                                                 <label for="exampleInput">First Name*</label>
+                                                 <input type="text" class="form-control col-lg-12" name="firstname" id="exampleInput" aria-describedby="emailHelp" placeholder="" >
+                                                 
+												 <label for="exampleInput">Last Name*</label>
+                                                 <input type="number" class="form-control col-lg-12" name="lastname" id="exampleInput" placeholder="" >
+                                                 
+												 <label for="exampleInput">Email*</label>
+                                                 <input type="text" class="form-control col-lg-12" name="email" id="exampleInput" aria-describedby="emailHelp" placeholder="" >
+                                                 
+												 <label for="exampleInput">Contact Number*</label>
+                                                 <input type="text" class="form-control col-lg-12" name="contactnumber" id="exampleInput" placeholder="" >  
+												 
+												 <label for="exampleInput">Comment or Message*</label>
+                                                 <input type="text" class="form-control col-lg-12" name="comment" id="exampleInput" placeholder="" >
+                                               
                                                </div>
                                                </div>
                                                    <div class="text-center">

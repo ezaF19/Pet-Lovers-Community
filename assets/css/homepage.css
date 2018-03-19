@@ -42,7 +42,7 @@ h1 {margin: 0 auto;}
   font-size: 16px;
   padding: 16px 32px;
 }
-.boxphoto:hover h3{
+.boxphoto:hover{
 	opacity: 0.3;
 	transition: all 0.5s;
 	color: white;
