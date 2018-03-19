@@ -112,16 +112,34 @@
 								<div class="row justify-content-center">
 									<div class="col-md-12" >
 										<br><div class="card card-primary text-right">
+                      <?php echo form_open('plcpost/posting');?>
+                      <form>
 										<div class="card-body text-center">
-										<input type="post" class="form-control" placeholder="What are you up to?">
+										<input type="post" class="form-control" name="usrpst" placeholder="What are you up to?">
 										</div>
 										<div class="card-footer">
-										<button type="button" class="btn btn-dark btn-md">Post</button>
+										<button type="submit" class="btn btn-dark btn-md">Post</button>
 										</div>
+                  </form>
 										</div><br>
 									</div>
 								</div>
 							</div>
+              <div id="posting">
+              <?php foreach($post as $cntnt):?>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-3"></div>
+                      <div class="col-md-6"  id="itpost">
+                          <label><?php echo $cntnt->PostComment?></label><br/>
+                          <label><?php echo $cntnt->PostDate?></label>
+                      </div>
+
+                      <div class="col-md-3"></div>
+                  </div>
+              </div>
+              <?php endforeach;?>
+            </div>
 							<div id="settings" class="tab-pane">
 								<h4>Photos</h4>
 							</div>
