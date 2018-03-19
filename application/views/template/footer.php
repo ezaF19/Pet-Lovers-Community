@@ -18,6 +18,15 @@
 	<script type="text/javascript" src="<?php echo base_url('assets/js/jquery.backstretch.min.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/scripts.js'); ?>"></script>
 	<script type="text/javascript" src="<?php echo base_url('assets/js/carousel.js'); ?>"></script>
+	<!--Admin-->
+	<script type="text/javascript" src="<?php echo base_url('assets/vendor/chart.js/Chart.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/vendor/datatables/jquery.dataTables.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/vendor/datatables/dataTables.bootstrap4.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/sb-admin.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/sb-admin-datatables.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/sb-admin-charts.min.js'); ?>"></script>
+
+
 
 
   </body>

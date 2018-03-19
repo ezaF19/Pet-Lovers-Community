@@ -19,21 +19,21 @@
     <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>"></a>  
-          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>">Pet Lovers Community</a>  
-          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>"></a>  
+          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>"></a>
+          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>">Pet Lovers Community</a>
+          <a class="navbar-brand js-scroll-trigger" href="<?php echo base_url('home'); ?>"></a>
 		  </div>
 	</nav>
         <!-- Top content -->
         <div class="top-content">
-        	
+
             <div class="inner-bg">
                 <div class="container">
-                    
-                    <div class="row">                     
+
+                    <div class="row">
                         <div class="col-sm-3"></div>
                         <div class="col-sm-6">
-                        	
+
                         	<div class="form-box">
 	                        	<div class="form-top">
 	                        		<div class="form-top-left">
@@ -41,18 +41,19 @@
 	                            		<p>Enter username and password to login:</p>
 	                        		</div>
 	                        		<div class="form-top-right">
-	                        			<i class="fa fa-key"></i>
+          <img src="assets/img/cologo.png" width="50%" height="50%"/>
 	                        		</div>
 	                            </div>
 	                            <div class="form-bottom">
-				                    <form role="form" action="" method="post" class="login-form">
+                                <?php echo form_open('login/index');?>
+				                    <form role="form" class="login-form">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-username">Username</label>
-				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+				                        	<input type="text" name="usrnm" placeholder="Username..." class="form-username form-control" id="form-username">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-password">Password</label>
-				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+				                        	<input type="password" name="psswrd" placeholder="Password..." class="form-password form-control" id="form-password">
 				                        </div>
 				                        <button type="submit" class="btn">Sign in!</button>
 				                    </form>
@@ -71,17 +72,17 @@
 	        </div>
 							<center>
 								<b>Not registered ?</b><br/>
-								<a href="<?php echo base_url('register'); ?>">Register here</a>
-							</center>							
+								<a href="<?php echo base_url('rgstr'); ?>" style="color: blue">Register here</a>
+							</center>
 			                    </div>
 		                    </div>
 
-	                        
+
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
             </div>
-            
+
         </div>

@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-
+<?php $user = $this->session->userdata('username');	?>
 	<title>Pet Lovers Community</title>
-	</head>	
+	</head>
+	<style>
+		#logged, #unlogged, #unlogged2{
+			display: none;
+		}
+	</style>
   <body id="page-top">
 
     <!-- Navigation -->
@@ -23,10 +28,24 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
-            </li>          
+            </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="donations">Donations</a>
-            </li>            
+            </li>
+						<li class="nav-item dropdown" id="logged">
+										<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
+						<ul class="dropdown-menu">
+									<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('user');?>">My Profile</a></li>
+									<li><a class="dropdown-item"  style="color:black;" href="">Donations</a></li>
+															<li><a class="dropdown-item"  style="color:black;" href="">Notifications</a></li>
+															<li><a class="dropdown-item"  style="color:black;" href="">Activity Log</a></li>
+									<li><a class="dropdown-item"  style="color:black;" href="">Settings</a></li>
+									<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('');?>logout">Sign Out</a></li>
+									</ul>
+								</li>
+			<li class="nav-item" id="unlogged">
+							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
+						</li>
           </ul>
         </div>
       </div>
@@ -40,7 +59,7 @@
 	                <div class="col-md-6">
 	                    <div class ="block">
 	                        <h1 class="brand-heading" ><b>Dont Buy! Adopt One</b></h1>
-	                        <p class="intro-text">"Open your heart and your home to pets that need your help. 
+	                        <p class="intro-text">"Open your heart and your home to pets that need your help.
 			  They will show their appreciation for the rest of their lives and you will gain a friend that you'll never forget!"</p>
 	                    </div>
 	                </div>
@@ -49,4 +68,27 @@
                 </div><!-- .container close -->
 	    </section>
     <!-- About Section -->
-   
+		<?php
+ 	 	if($user == ''){
+ 	 		echo "<script>
+ 	 		document.getElementById('unlogged').style.display = 'block';
+ 	 		document.getElementById('unlogged2').style.display = 'block';
+ 	 		document.getElementById('logged').style.display = 'none';
+ 	 		</script>";
+ 	 	}
+ 	 	else if($user == 'Mismatch!'){
+ 	 		echo "<script>
+ 	 		document.getElementById('logged').style.display = 'block';
+ 	 		document.getElementById('unlogged2').style.display = 'block';
+ 	 		document.getElementById('unlogged').style.display = 'none';
+ 	 		</script>";
+ 	 	}
+ 	 	else{
+ 	 		echo "<script>
+ 	 		document.getElementById('logged').style.display = 'block';
+ 	 		document.getElementById('unlogged2').style.display = 'none';
+ 	 		document.getElementById('unlogged').style.display = 'none';
+ 	 		</script>";
+ 	 	}
+
+ 	  ?>
