@@ -108,7 +108,7 @@ img { max-width: 100%; }
 .top-content .description a:focus { border-bottom: 1px dotted #19b9e7; }
 
 .form-box {
-	margin-top: 50px;
+	margin-top: 30px;
     margin-bottom: 0px;
 }
 
@@ -145,13 +145,13 @@ img { max-width: 100%; }
 }
 
 .form-bottom {
-	padding: 25px 25px 30px 25px;
+	padding: 20px 25px 20px 25px;
 	background: #eee;
 	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
 	text-align: left;
 }
 .form-bottom2 {
-	padding: 120px 0px;
+	padding: 100px 0px;
 	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
 	text-align: left;
 	
@@ -227,4 +227,10 @@ footer a:hover, footer a:focus { border-bottom: 1px dotted #19b9e7; }
 	
 	h1, h2 { font-size: 32px; }
 
+}
+#logintro p{
+	margin-top: 20px;
+}
+#logintro h1{
+	margin-top: 180px;
 }
