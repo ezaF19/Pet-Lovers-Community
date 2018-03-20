@@ -74,74 +74,171 @@
         </li>
         <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
-      <!-- Icon Cards-->
-      <div class="row">
-        <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-primary o-hidden h-100">
-            <div class="card-body">
-              <div class="card-body-icon">
-                <i class="fa fa-fw fa-comments"></i>
-              </div>
-              <div class="mr-5">26 New Messages!</div>
-            </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-            </a>
-          </div>
+ 
+ 
+ <div class="btn-group btn-group-lg col-xl-12 pb-3">
+  <button type="button" class="btn btn-warning btn-lg col-xl-4 " data-toggle="modal" data-target="#services" style="color: white">
+    Create Services
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="services">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Create Services</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-warning o-hidden h-100">
-            <div class="card-body">
-              <div class="card-body-icon">
-                <i class="fa fa-fw fa-list"></i>
-              </div>
-              <div class="mr-5">11 New Tasks!</div>
-            </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-            </a>
-          </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="form-group">
+			<label for="services">Select Services</label>
+			<select class="form-control" id="services">
+			  <option value="" disabled selected>Select</option>
+			  <option>Pet Sitting</option>
+			  <option>Pet Grooming</option>
+			  <option>Veterinary Doctor</option>
+			</select>
+			 </div>
+			<div class="form-group">
+			  <label for="Name">Name</label>
+			  <input type="text" class="form-control" id="Name">
+			</div>
+			<div class="form-group">
+			  <label for="Address">Address</label>
+			  <input type="text" class="form-control" id="Address">
+			</div>
+			<div class="form-group">
+			  <label for="Contact">Contact Number</label>
+			  <input type="text" class="form-control" id="Contact Number">
+			</div>
+			</div>
+				<div class="pr-3">
+				<button type="button" class="btn btn-outline-dark pull-right">Submit</button>
+			</div><br>
+		
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
-        <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-success o-hidden h-100">
-            <div class="card-body">
-              <div class="card-body-icon">
-                <i class="fa fa-fw fa-shopping-cart"></i>
-              </div>
-              <div class="mr-5">123 New Orders!</div>
-            </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div class="col-xl-3 col-sm-6 mb-3">
-          <div class="card text-white bg-danger o-hidden h-100">
-            <div class="card-body">
-              <div class="card-body-icon">
-                <i class="fa fa-fw fa-support"></i>
-              </div>
-              <div class="mr-5">13 New Reports!</div>
-            </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
-              <span class="float-right">
-                <i class="fa fa-angle-right"></i>
-              </span>
-            </a>
-          </div>
-        </div>
+        
       </div>
-      <!-- Area Chart Example-->
+    </div>
+  </div>
+  
+  <button type="button" class="btn btn-primary btn-lg col-xl-4 " data-toggle="modal" data-target="#AddPet">
+    Add Pet
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="AddPet">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">ADD PET</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+		<label>Pet Type</label>
+		<div class="form-group">
+			<select class="form-control" id="AddPet">
+			  <option value="" disabled selected>Pet Type</option>
+			  <option>Dog</option>
+			  <option>Cat</option>
+			  <option>Fish</option>
+			  <option>Snake</option>
+			  <option>Birds</option>
+			  <option>Spiders</option>
+			</select>
+		</div>
+			<div class="form-group">
+			  <label for="Breed">Pet Breed</label>
+			  <input type="text" class="form-control" id="Breed">
+			</div>
+			<div class="form-group">
+			  <label for="PetName">Pet Name</label>
+			  <input type="text" class="form-control" id="PetName">
+			</div>
+			<div class="form-group">
+			  <label for="PetAge">Pet Age</label>
+			  <input type="text" class="form-control" id="Address">
+			</div>
+			<label for="Gender">Gender</label>
+			<select class="form-control" id="Gender">
+			  <option value="" disabled selected>Select Gender</option>
+			  <option>Male</option>
+			  <option>Female</option>
+			</select>
+        </div>
+		<div class="pr-3">
+				<button type="button" class="btn btn-outline-dark pull-right">Submit</button>
+		</div><br>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <button type="button" class="btn btn-danger btn-lg col-xl-4" data-toggle="modal" data-target="#Item">
+    Add Item
+  </button><br>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="Item">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">ADD ITEM</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+			<div class="form-group">
+			  <label for="Breed">Item Type</label>
+			  <input type="text" class="form-control" id="Breed">
+			</div>
+		
+			<div class="form-group">
+			  <label for="ItemPrice">Item Price</label>
+			  <input type="number" class="form-control" id="ItemPrice">
+			</div>
+        
+		
+			<div class="form-group">
+			  <label for="ItemInfo">Item Info</label>
+			  <textarea rows="6" cols="63" name="ItemInfo"></textarea>
+			</div>
+		</div>
+		<div class="pr-3">
+				<button type="button" class="btn btn-outline-dark pull-right">Submit</button>
+		</div><br>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+     
+
+	 <!-- Area Chart Example-->
       <div class="card mb-3">
         <div class="card-header">
           <i class="fa fa-area-chart"></i> Site Visits</div>
