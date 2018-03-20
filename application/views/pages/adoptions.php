@@ -66,22 +66,22 @@
                                                    </div>
                                                  <div class="group row">
                                                      <div class="col-lg-6">
-                                                 <label for="exampleInput">Breed</label>
-                                                 <input required type="text" class="form-control col-lg-12" name="petbreed" id="exampleInput" placeholder="Breed" >
-                                                 <label for="exampleInput">Type</label>
-                                                 <input required type="text" class="form-control col-lg-12" name="petype" id="exampleInput" placeholder="Type of Pet" >
-                                                 <label for="exampleInput">Name</label>
-                                                 <input required type="text" class="form-control col-lg-12" name="petname" id="exampleInput" placeholder="Name of Pet" >
-                                                 <label for="exampleInput">Age</label>
-                                                 <input required type="text" class="form-control col-lg-12" name="petage" id="exampleInput" placeholder="Age of Pet" >
+                                                 <label for="exampleInput">Breed*</label>
+                                                 <input required type="text" class="form-control col-lg-12" name="petbreed" id="exampleInput" placeholder="" >
+                                                 <label for="exampleInput">Type*</label>
+                                                 <input required type="text" class="form-control col-lg-12" name="petype" id="exampleInput" placeholder="" >
+                                                 <label for="exampleInput">Name*</label>
+                                                 <input required type="text" class="form-control col-lg-12" name="petname" id="exampleInput" placeholder="" >
+                                                 <label for="exampleInput">Age*</label>
+                                                 <input required type="text" class="form-control col-lg-12" name="petage" id="exampleInput" placeholder="" >
                                                  </div>
                                                      <div class="col-lg-6">
-                                                 <label for="exampleInput">Record</label>
-                                                 <input required type="text" class="form-control col-lg-12" name="petrecord" id="exampleInput" placeholder="Record of Pet" >
-                                                 <label for="exampleInput">Size</label>
-                                                 <input required type="text" class="form-control col-lg-12" name="petsize" id="exampleInput" placeholder="Size of Pet" >
-                                                 <label for="exampleInput">Gender</label>
-                                                 <input required type="text" class="form-control col-lg-12" name="petgender" id="exampleInput" placeholder="Gender of Pet" >
+                                                 <label for="exampleInput">Record*</label>
+                                                 <input required type="text" class="form-control col-lg-12" name="petrecord" id="exampleInput" placeholder="" >
+                                                 <label for="exampleInput">Size*</label>
+                                                 <input required type="text" class="form-control col-lg-12" name="petsize" id="exampleInput" placeholder="" >
+                                                 <label for="exampleInput">Gender*</label>
+                                                 <input required type="text" class="form-control col-lg-12" name="petgender" id="exampleInput" placeholder="" >
                                                  <div class="thumbnail">
                                                  <label for="exampleInput">Image</label>
                                                  <input required type="file" class="form-control col-lg-12" name="image" id="exampleInput">

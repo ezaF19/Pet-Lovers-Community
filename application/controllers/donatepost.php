@@ -10,8 +10,11 @@ class donatepost extends CI_Controller {
      public function create_post(){		
             $this->load->model('donate_model');
             $this->donate_model->create_post();
-            redirect(base_url() . 'donations');
 			
+            //redirect(base_url() . 'donations');
+			echo "<script>
+					alert('Donation Successful!');
+					</script>";		
 			}
 
     
