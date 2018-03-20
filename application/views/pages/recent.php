@@ -52,6 +52,13 @@
     </nav>
 
     <!-- Intro Header -->
+		<?php if($pst != ''){
+
+		}
+		else{
+			redirect('plcrecent/posts');
+		}
+		?>
     <section class="rechead">
             <div class="rec-body">
 	        <div class="container">
@@ -64,6 +71,19 @@
 	                </div>
 	            </div>
 	        </div>
+					<?php foreach($pst as $cntnt):?>
+					<div class="container">
+							<div class="row">
+									<div class="col-md-3"></div>
+									<div class="col-md-6"  id="itpost">
+											<label><?php echo $cntnt->PostComment?></label><br/>
+											<label><?php echo $cntnt->PostDate?></label>
+									</div>
+
+									<div class="col-md-3"></div>
+							</div>
+					</div>
+					<?php endforeach;?>
                 </div><!-- .container close -->
 	    </section>
     <!-- About Section -->
