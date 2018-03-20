@@ -6,26 +6,27 @@ class Postmodel extends CI_Model {
   }
   
   public function create_post(){
+      $file= base64_encode(file_get_contents(addslashes($_FILES['image']['tmp_name'])));
       $field= array(
-                'petype'=>$this->input->post('category'),
-                'itemdesc'=>$this->input->post('description'),
-                'itemprc'=>$this->input->post('price'),
-                'cont'=>$this->input->post('contact'),
-                'loc'=>$this->input->post('location')
+                'ServType'=>$this->input->post('service'),
+                'ServImage'=>$file,
+                'ServDesc'=>$this->input->post('description'),
+                'ServContact'=>$this->input->post('contact'),
+                'ServAddress'=>$this->input->post('address')
       );
-      $query=$this->db->insert('itempost',$field);
+      $query=$this->db->insert('service',$field);
       return true;
       
   }
   public function getData(){
-	  $this->db->order_by('itempostid', 'desc');
-      $query=$this->db->get('itempost');
+	  $this->db->order_by('ServiceID', 'desc');
+      $query=$this->db->get('service');
       return $query->result();
   }
 
   public function getPost(){
-	    $this->db->order_by('petype', 'desc');
-	    $query = $this->db->get('itempost');
+	    $this->db->order_by('ServiceID', 'desc');
+	    $query = $this->db->get('service');
 	    if($query->num_rows() > 0){
 	      	return $query->result();
 	    }
@@ -33,21 +34,10 @@ class Postmodel extends CI_Model {
 	      	return false;
 	    }
   	}
-        
-    	public function getBlogByIdp($id){
-	    $this->db->where('id', $id);
-	    $query = $this->db->get('itempost');
-	    if($query->num_rows() > 0){
-	      	return $query->row();
-	    }
-	    else{
-	      	return false;
-	    }
-  	}
 
   	public function deletepost($id){
-	    $this->db->where('id', $id);
-	    $this->db->delete('itempost');
+	    $this->db->where('ServiceID', $id);
+	    $this->db->delete('service');
 	    if($this->db->affected_rows() > 0){
 	      return true;
 	    }
@@ -56,24 +46,7 @@ class Postmodel extends CI_Model {
 	    }
   	}	
 
-  	public function updatetpost($id){
-	    $id = $this->input->post('id_hidden');
-	    $field = array(
-	      'desc'=>$this->input->post('desc'),
-	      'price'=>$this->input->post('prc'),
-              'cont'=>$this->input->post('cont'),
-	      'loc'=>$this->input->post('loc')
-	      
-	      );
-	    $this->db->where('id', $id);
-	    $this->db->update('itempost', $field);
-	    echo $this->db->last_query();extit;
-	    if($this->db->affected_rows() > 0){
-	      return true;
-	    }else{
-	      return false;
-	    }
-	}    
+  	
 }
 
 

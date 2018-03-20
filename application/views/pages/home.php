@@ -158,7 +158,7 @@
 			<p>Don't miss out on the many offers!</p>
 		</div>
 		<div class="pbox">
-		<div class="photo"><a href="<?php echo base_url('adoptions');?>">
+		<div class="photo"><a href="<?php echo base_url('allservices');?>">
 		<img src="assets/img/grooming.jpg" href="#" width="100%" class="photox"></a>
 		
 		<div class="middle">
@@ -166,10 +166,10 @@
 		</div>	
 	
 		<h3>Grooming</h3>
-		<p>Make your furbaby shine!</p>
+		<p>Make your furrbaby shine!</p>
 		</div>
 
-		<div class="photo"><a href="<?php echo base_url('adoptions');?>">
+		<div class="photo"><a href="<?php echo base_url('allservices');?>">
 		<img src="assets/img/Training.jpg" href="#" width="100%" class="photox"></a>
 		
 		<div class="middle">
@@ -178,7 +178,7 @@
 		<h3>Training</h3>
 		<p>Have fun and get your pet a new skill!</p>
 		</div>
-		<div class="photo"><a href="<?php echo base_url('adoptions');?>">
+		<div class="photo"><a href="<?php echo base_url('allservices');?>">
 		<img src="assets/img/sitting.jpg" href="#" width="100%" class="photox"></a>
 		
 		<div class="middle">
@@ -188,7 +188,7 @@
 		<p>Busy day? Check us out!</p>
 		</div>
 
-		<div class="photo"><a href="<?php echo base_url('adoptions');?>">
+		<div class="photo"><a href="<?php echo base_url('allservices');?>">
 		<img src="assets/img/veterinary.jpg" href="#" width="100%" class="photox"></a>
 		
 		<div class="middle">
@@ -211,7 +211,7 @@
 			<h2>Adopt a Pet</h2>
 			<p>Help us provide assistance to families who must give up their beloved pets so those pets will not end up being brought to a shelter but instead will be placed directly with another family who will give them the love and affection that they deserve.</p>
 		</div>
-		<a href="<?php echo base_url('dogs');?>">
+		<a href="<?php echo base_url('adoptions');?>">
 		<div class="boxphoto">
 		<img src="assets/img/dogs.jpg">
 
