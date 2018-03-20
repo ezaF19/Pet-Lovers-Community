@@ -528,7 +528,6 @@ default width = 800/5 = 160px;
   padding: 200px 0;
   text-align: center;
   color: white;
-   background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -551,8 +550,8 @@ default width = 800/5 = 160px;
  
   .salehead .sale-body .brand-text {
       font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 30px;
-    letter-spacing: 3px;
+    font-size: 23px;
+    letter-spacing: 2px;
     position: relative;
     color: #101010;
     text-align: center;
@@ -560,20 +559,23 @@ default width = 800/5 = 160px;
   .salehead .sale-body .intro-text {
       font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-top: 100px;
-    font-size: 15px;
+    font-size: 13px;
     color: darkorange;
-    background: rgba(0, 0, 0, 0.2);
-    padding:30px;
-    border-radius: 50px;
+    background:transparent;
+    padding:20px;
+    border-radius: 5px;
     text-align: left;
+     
   }
 }
-
+.salehead .border{
+    border-bottom: #42DCA3;
+}
 .salehead .sale-body .btn-primary{
     background-color: #FF8C00;
     color:#101010;
     border-color: #FF8C00;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 15px;
 }
 
@@ -641,7 +643,7 @@ default width = 800/5 = 160px;
     color: #181818;
     background: rgba(255, 255, 255, 0.2);
     padding:18px;
-    border-radius: 50px;
+    border-radius: 10px;
   }
 }
 
@@ -693,12 +695,20 @@ default width = 800/5 = 160px;
 }
 
 #itpost{
-    background-color: rgba(255, 140, 0, 0.5);
-    color:#101010;
+    background-color: rgba(255, 255, 255, 0.8);
+    color:#252525;
     padding: 20px;
     margin-top: 30px;
     margin-bottom: 10px;
-    border-radius:50px;
+    border-radius:2px;
     text-align: left;
-    font-size: 30px;
+    font-size: 15px;
+    border-top: 5px;
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#itpost img{
+    border-radius:1px;
+    height: auto;
+    width: 100%;
 }

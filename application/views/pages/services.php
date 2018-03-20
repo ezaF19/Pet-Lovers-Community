@@ -38,9 +38,9 @@
                         Adopt a Pet <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </a>  
                     <ul class="dropdown-menu mega-dropdown-menu">
-                        <li><a href="<?php echo base_url('pnames');?>"/ >Adopt a Dog</a></li>
-                        <li><a href="<?php echo base_url('ptype');?>"/ >Adopt a Cat</a></li>
-                        <li><a href="<?php echo base_url('recentpost');?>"/ >Others</a></li>
+                        <li><a href="<?php echo base_url('pnames');?>"/>Adopt a Dog</a></li>
+                        <li><a href="<?php echo base_url('ptype');?>"/>Adopt a Cat</a></li>
+                        <li><a href="<?php echo base_url('recentpost');?>"/>Others</a></li>
                     </ul>
                 </li>
                 <li class="dropdown list-services">
