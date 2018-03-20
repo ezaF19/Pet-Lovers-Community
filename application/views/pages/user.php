@@ -144,10 +144,9 @@
                         <label><br>Service Address: </label><input type='text' name='srvcadd' placeholder='Address'/>
                       </div>
 										<div class="card-footer">
-                      <label class="mr-sm" for="inlineFormCustomSelect">Type: </label>
+                      <label class="mr-sm" for="inlineFormCustomSelect">Type*: </label>
                     <select class="custom-select col-lg-4" id="inlineFormCustomSelect" oninput="check()" name="category">
-                          <option selected>Choose...</option>
-                          <option>Pet</option>
+                          <option selected>Pet</option>
                           <option>Item</option>
                           <option>Service</option>
                         </select>
