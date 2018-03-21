@@ -164,10 +164,12 @@
                   <div class="row">
                       <div class="col-md-3"></div>
                       <div class="col-md-6"  id="itpost">
-                          <label><?php echo $cntnt->PostComment?></label><br/>
-                          <label><?php echo $cntnt->PostDate?></label>
+                          <p>You posted: </p>
+                          <label><?php echo $cntnt['PostComment'];?></label><br/>
+                          <p>Posted on: <?php echo $cntnt['PostDate'];?></p>
+                          <button class="btn btn-dark"><a href="<?php echo site_url('user/read/'.$cntnt['PostID']);?>">See More...</a></button>
+                          <button class="btn btn-danger"><a href="<?php echo site_url('user/delete/'.$cntnt['PostID']);?>">Delete</a></button>
                       </div>
-
                       <div class="col-md-3"></div>
                   </div>
               </div>

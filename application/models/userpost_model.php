@@ -29,12 +29,12 @@ class userpost_model extends CI_Model {
 			while($row = $result->fetch_assoc()){
         $accid = $row['AccountID'];
       }
-      $this->db->Select('PostDate, PostComment');
+      $this->db->Select('PostDate, PostComment, PostID');
       $this->db->from('post');
       $this->db->where('AccountID', $accid);
       $this->db->order_by('PostDate', 'Desc');
       $query=$this->db->get();
-      return $query->result();
+      return $query->result_array();
     }
   }
   // public function save_pet(){
@@ -185,6 +185,52 @@ class userpost_model extends CI_Model {
         return "true";
       }
   }
+  }
+  public function get_delete($id){
+    $this->db->where('PostID', $id);
+    $this->db->delete('post');
+    return true;
+  }
+
+  public function read($id){
+    $conn = new mysqli('localhost', 'root', '', 'plc_db');
+    $query = 'Select PetID, ServID, ItemID from post where PostID = "'.$id.'"';
+    $result = $conn->query($query);
+    if($result->num_rows > 0){
+      while($row=$result->fetch_assoc()){
+        $petid = $row['PetID'];
+        $servid = $row['ServID'];
+        $itemid = $row['ItemID'];
+        if($petid =='0'){
+          if($servid == '0'){
+            if($itemid != '0'){
+              $this->db->select('*');
+              $this->db->from('item');
+              $this->db->where('ItemID', $itemid);
+              $query = $this->db->get();
+              $this->session->set_userdata('id', 'ItemID');
+              return $query->result_array();
+            }
+          }
+          else{
+            $this->db->select('*');
+            $this->db->from('service');
+            $this->db->where('ServiceID', $servid);
+            $query = $this->db->get();
+            $this->session->set_userdata('id', 'ServID');
+            return $query->result_array();
+          }
+        }
+        else{
+          $this->db->select('*');
+          $this->db->from('pet');
+          $this->db->where('PetID', $petid);
+          $query = $this->db->get();
+          $this->session->set_userdata('id', 'PetID');
+          return $query->result_array();
+        }
+      }
+    }
   }
 }
 ?>
