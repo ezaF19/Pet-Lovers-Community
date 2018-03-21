@@ -79,8 +79,6 @@ if($admin != 'Admin'){
         </li>
         <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
-
-
  <div class="btn-group btn-group-lg col-xl-12 pb-3">
   <button type="button" class="btn btn-warning btn-lg col-xl-4 " data-toggle="modal" data-target="#services" style="color: white">
     Create Services
@@ -90,13 +88,11 @@ if($admin != 'Admin'){
   <div class="modal fade" id="services">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Create Services</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-
         <!-- Modal body -->
         <div class="modal-body">
           <div class="form-group">
@@ -124,16 +120,14 @@ if($admin != 'Admin'){
 				<div class="pr-3">
 				<button type="button" class="btn btn-outline-dark pull-right">Submit</button>
 			</div><br>
-
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
-
+        
       </div>
     </div>
   </div>
-
   <button type="button" class="btn btn-primary btn-lg col-xl-4 " data-toggle="modal" data-target="#AddPet">
     Add Pet
   </button>
@@ -142,13 +136,11 @@ if($admin != 'Admin'){
   <div class="modal fade" id="AddPet">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">ADD PET</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-
         <!-- Modal body -->
         <div class="modal-body">
 		<label>Pet Type</label>
@@ -185,16 +177,16 @@ if($admin != 'Admin'){
 		<div class="pr-3">
 				<button type="button" class="btn btn-outline-dark pull-right">Submit</button>
 		</div><br>
-
+        
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
-
+        
       </div>
     </div>
   </div>
-
+  
   <button type="button" class="btn btn-danger btn-lg col-xl-4" data-toggle="modal" data-target="#Item">
     Add Item
   </button><br>
@@ -203,26 +195,26 @@ if($admin != 'Admin'){
   <div class="modal fade" id="Item">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-
+      
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">ADD ITEM</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-
+        
         <!-- Modal body -->
         <div class="modal-body">
 			<div class="form-group">
 			  <label for="Breed">Item Type</label>
 			  <input type="text" class="form-control" id="Breed">
 			</div>
-
+		
 			<div class="form-group">
 			  <label for="ItemPrice">Item Price</label>
 			  <input type="number" class="form-control" id="ItemPrice">
 			</div>
-
-
+        
+		
 			<div class="form-group">
 			  <label for="ItemInfo">Item Info</label>
 			  <textarea rows="6" cols="63" name="ItemInfo"></textarea>
@@ -236,12 +228,11 @@ if($admin != 'Admin'){
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
-
+        
       </div>
     </div>
   </div>
   </div>
-
 
 	 <!-- Area Chart Example-->
       <div class="card mb-3">

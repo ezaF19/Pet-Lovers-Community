@@ -23,29 +23,6 @@ class donate_model extends CI_Model {
       $query=$this->db->get('donation');
       return $query->result();
   }
-/*
-  public function getPost(){
-	    $this->db->order_by('donateamount', 'desc');
-	    $query = $this->db->get(Donate');
-	    if($query->num_rows() > 0){
-	      	return $query->result();
-	    }
-	    else{
-	      	return false;
-	    }
-  	}
-        
-    	public function getBlogByIdp($id){
-	    $this->db->where('DonateID', $id);
-	    $query = $this->db->get('Donate');
-	    if($query->num_rows() > 0){
-	      	return $query->row();
-	    }
-	    else{
-	      	return false;
-	    }
-  	}   
-*/
 }
 
 
