@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2018 at 10:37 AM
+-- Generation Time: Mar 21, 2018 at 11:09 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -169,7 +169,8 @@ CREATE TABLE `service` (
   `ServDesc` varchar(100) NOT NULL,
   `ServContact` varchar(100) NOT NULL,
   `ServAddress` varchar(100) NOT NULL,
-  `ServImage` longblob NOT NULL
+  `ServImage` longblob NOT NULL,
+  `ServName` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -238,13 +239,13 @@ ALTER TABLE `service`
 -- AUTO_INCREMENT for table `accbio`
 --
 ALTER TABLE `accbio`
-  MODIFY `BioID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `BioID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `AccountID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `AccountID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `adminplc`
@@ -262,7 +263,7 @@ ALTER TABLE `donation`
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
-  MODIFY `ItemID` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `ItemID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `itempost`
@@ -280,13 +281,13 @@ ALTER TABLE `pet`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-  MODIFY `PostID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `PostID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-  MODIFY `ServiceID` int(100) NOT NULL AUTO_INCREMENT;
+  MODIFY `ServiceID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
