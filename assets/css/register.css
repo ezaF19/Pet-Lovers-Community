@@ -1,0 +1,18 @@
+form * {
+    border-radius:0 !important;
+}
+
+form > fieldset > legend {
+    font-size:120%;
+}
+#homelogo{
+	border-top: 5px solid #353535;
+}
+img {
+    display: block;
+	height: 100px;
+	width: 350px;
+    margin-left: 470px;
+    margin-right: auto;
+
+}
