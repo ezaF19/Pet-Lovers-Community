@@ -194,12 +194,12 @@ class userpost_model extends CI_Model {
 
   public function read($id){
     $conn = new mysqli('localhost', 'root', '', 'plc_db');
-    $query = 'Select PetID, ServID, ItemID from post where PostID = "'.$id.'"';
+    $query = 'Select PetID, ServiceID, ItemID from post where PostID = "'.$id.'"';
     $result = $conn->query($query);
     if($result->num_rows > 0){
-      while($row=$result->fetch_assoc()){
+      while($row = $result->fetch_assoc()){
         $petid = $row['PetID'];
-        $servid = $row['ServID'];
+        $servid = $row['ServiceID'];
         $itemid = $row['ItemID'];
         if($petid =='0'){
           if($servid == '0'){

@@ -7,18 +7,20 @@ class donatepost extends CI_Controller {
 		parent::_construct();
 
 	}
-     public function create_post(){		
+     public function create_post(){
             $this->load->model('donate_model');
             $this->donate_model->create_post();
-			
+
             //redirect(base_url() . 'donations');
 			echo "<script>
 					alert('Donation Successful!');
-					</script>";		
+					window.location='donations';
+					</script>";
+			}
+			public function donations(){
+				redirect('donations');
 			}
 
-    
-   
-    
+
+
 }
-    

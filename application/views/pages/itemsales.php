@@ -3,7 +3,7 @@
 	<title>Pet Lovers Community</title>
 	</head>
 	<style>
-		#logged, #unlogged, #unlogged2{
+		#logged, #unlogged,#form_sale, #unlogged2{
 			display: none;
 		}
 	</style>
@@ -58,7 +58,7 @@
 	            <div class="row">
                         <div class="col-lg-3"></div>
 	                <div class="col-lg-6">
-	                    <div class ="block">
+	                    <div class ="block" id="form_sale">
 	                         <?php echo form_open_multipart('itempost/create_post');?>
                                     <div class="intro-text">
                                         <div class="container">
@@ -71,15 +71,15 @@
                                                    </div>
                                                  <div class="group row">
                                                      <div class="col-lg-12">
-                                                 <label for="exampleInput">Description</label>
+                                                 <label for="exampleInput">Description*</label>
                                                  <input type="text" class="form-control col-lg-12" name="description" id="exampleInput" aria-describedby="emailHelp" placeholder="Enter description" >
-                                                 <label for="exampleInput">Price</label>
+                                                 <label for="exampleInput">Price*</label>
                                                  <input type="number" class="form-control col-lg-12" name="price" id="exampleInput" placeholder="Price" >
-                                                  <label for="exampleInput">Contact Number</label>
+                                                  <label for="exampleInput">Contact Number*</label>
                                                   <input type="text" class="form-control col-lg-12" name="contact" id="exampleInput" aria-describedby="emailHelp" placeholder="Contact Number" >
-                                                 <label for="exampleInput">Location</label>
+                                                 <label for="exampleInput">Location*</label>
                                                  <input type="text" class="form-control col-lg-12" name="location" id="exampleInput" placeholder="Location" >
-                                                  <label for="exampleInput">Image</label>
+                                                  <label for="exampleInput">Image*</label>
                                                  <input required type="file" class="form-control col-lg-12" name="image" id="exampleInput">
                                                </div>
                                                </div>
@@ -141,6 +141,7 @@
  	 		document.getElementById('unlogged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
  	 		document.getElementById('logged').style.display = 'none';
+			document.getElementById('form_sale').style.display = 'none';
  	 		</script>";
  	 	}
  	 	else if($user == 'Mismatch!'){
@@ -148,11 +149,13 @@
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
  	 		document.getElementById('unlogged').style.display = 'none';
+			document.getElementById('form_sale').style.display = 'none';
  	 		</script>";
  	 	}
  	 	else{
  	 		echo "<script>
  	 		document.getElementById('logged').style.display = 'block';
+			document.getElementById('form_sale').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'none';
  	 		document.getElementById('unlogged').style.display = 'none';
  	 		</script>";
