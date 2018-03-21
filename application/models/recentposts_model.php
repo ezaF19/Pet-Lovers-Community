@@ -9,7 +9,7 @@ class recentposts_model extends CI_Model {
     $this->db->from('post');
     $this->db->order_by('PostDate', 'Desc');
     $query = $this->db->get();
-    return $query->result();
+    return $query->result_array();
     }
 }
 ?>

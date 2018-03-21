@@ -9,5 +9,21 @@ class plcrecent extends CI_Controller {
       $this->load->view('pages/recent', $data);
       $this->load->view('template/footer');
   }
+
+  public function featured(){
+    redirect('featured');
+  }
+
+  public function itemsales(){
+    redirect('itemsales');
+  }
+
+  public function adoptions(){
+    redirect('adoptions');
+  }
+
+  public function donations(){
+    redirect('donations');
+  }
 }
 ?>

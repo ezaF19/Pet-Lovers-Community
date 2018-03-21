@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 
+<?php $admin = $this->session->userdata('admin');
+if($admin != 'Admin'){
+	redirect('home');
+}
+?>
 	<title>Pet Lovers Community</title>
         <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
@@ -56,14 +61,14 @@
                         <li><a class="dropdown-item"  style="color:black;" href="">Notifications</a></li>
                         <li><a class="dropdown-item"  style="color:black;" href="">Activity Log</a></li>
 						<li><a class="dropdown-item"  style="color:black;" href="">Settings</a></li>
-						<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('home');?>">Sign Out</a></li>
+						<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('');?>logout">Sign Out</a></li>
 						</ul>
             </li>
           </ul>
         </div>
       </div>
-        
-	
+
+
   </nav>
   <div class="content-wrapper bg-secondary">
     <div class="container-fluid">
@@ -74,8 +79,6 @@
         </li>
         <li class="breadcrumb-item active">My Dashboard</li>
       </ol>
- 
- 
  <div class="btn-group btn-group-lg col-xl-12 pb-3">
   <button type="button" class="btn btn-warning btn-lg col-xl-4 " data-toggle="modal" data-target="#services" style="color: white">
     Create Services
@@ -85,13 +88,11 @@
   <div class="modal fade" id="services">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-      
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Create Services</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        
         <!-- Modal body -->
         <div class="modal-body">
           <div class="form-group">
@@ -119,7 +120,6 @@
 				<div class="pr-3">
 				<button type="button" class="btn btn-outline-dark pull-right">Submit</button>
 			</div><br>
-		
         <!-- Modal footer -->
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -128,7 +128,6 @@
       </div>
     </div>
   </div>
-  
   <button type="button" class="btn btn-primary btn-lg col-xl-4 " data-toggle="modal" data-target="#AddPet">
     Add Pet
   </button>
@@ -137,13 +136,11 @@
   <div class="modal fade" id="AddPet">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-      
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">ADD PET</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        
         <!-- Modal body -->
         <div class="modal-body">
 		<label>Pet Type</label>
@@ -236,7 +233,6 @@
     </div>
   </div>
   </div>
-     
 
 	 <!-- Area Chart Example-->
       <div class="card mb-3">
@@ -272,7 +268,7 @@
             </div>
             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
           </div>
-          
+
           <!-- /Card Columns-->
         </div>
         <div class="col-lg-4">
@@ -286,7 +282,7 @@
             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
           </div>
           <!-- Example Notifications Card-->
-        
+
         </div>
       </div>
       <!-- Example DataTables Card-->
@@ -787,3 +783,9 @@
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
     </a>
+	<script type="text/javascript" src="<?php echo base_url('assets/vendor/chart.js/Chart.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/vendor/datatables/jquery.dataTables.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/vendor/datatables/dataTables.bootstrap4.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/sb-admin.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/sb-admin-datatables.min.js'); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url('assets/js/sb-admin-charts.min.js'); ?>"></script>

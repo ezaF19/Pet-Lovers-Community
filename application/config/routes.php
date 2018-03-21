@@ -1,6 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+$route['user/read/(:any)'] = 'user/read/$1';
+$route['user'] = 'user/posts';
+$route['recent'] = 'plcrecent/posts';
+$route['user/delete/(:any)'] = 'user/delete/$1';
+$route['user/(:any)'] = 'user/posts';
 $route['user'] = 'plcpost/posting';
 $route['user'] = 'user/posts';
 $route['register'] ='register/index';
