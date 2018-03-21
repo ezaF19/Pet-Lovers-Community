@@ -129,7 +129,7 @@ a{
     background-color: rgba(255, 255, 255, 0.3);
     color:#FF8C00;
   }
- 
+
 }
 
 .masthead {
@@ -295,7 +295,7 @@ img::-moz-selection {
 }
 /*Now the styles*/
 * {
-    margin: 0; 
+    margin: 0;
 	padding: 0;
 }
 
@@ -311,7 +311,7 @@ default width = 800/5 = 160px;
 .accordian {
 	width: 805px; height: 320px;
 	overflow: hidden;
-	
+
 	/*Time for some styling*/
 	margin: 100px auto;
 	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
@@ -331,18 +331,18 @@ default width = 800/5 = 160px;
 	display: block;
 	width: 160px;
 	float: left;
-	
+
 	border-left: 1px solid #888;
-	
+
 	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-	
+
 	/*Transitions to give animation effect*/
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
-	/*If you hover on the images now you should be able to 
+	/*If you hover on the images now you should be able to
 	see the basic accordian*/
 }
 
@@ -361,8 +361,8 @@ default width = 800/5 = 160px;
 .image_title {
 	background: rgba(0, 0, 0, 0.5);
 	position: absolute;
-	left: 0; bottom: 0;	
-	width: 640px;	
+	left: 0; bottom: 0;
+	width: 640px;
 
 }
 .image_title a {
@@ -547,7 +547,7 @@ default width = 800/5 = 160px;
     height: 100%;
     padding: 0;
   }
- 
+
   .salehead .sale-body .brand-text {
       font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 23px;
@@ -565,7 +565,7 @@ default width = 800/5 = 160px;
     padding:20px;
     border-radius: 5px;
     text-align: left;
-     
+
   }
 }
 .salehead .border{

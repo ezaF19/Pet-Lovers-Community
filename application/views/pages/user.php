@@ -157,6 +157,7 @@
 									</div>
 								</div>
 							</div>
+              <?php ?>
               <div id="posting">
               <?php foreach($post as $cntnt):?>
               <div class="container">

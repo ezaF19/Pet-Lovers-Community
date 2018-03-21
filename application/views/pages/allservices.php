@@ -64,14 +64,14 @@
                                                    </div>
                                                  <div class="group row">
                                                      <div class="col-lg-12">
-                                                 <label for="exampleInput">Description</label>
+                                                 <label for="exampleInput">Description*</label>
                                                  <input required type="text" class="form-control col-lg-12" name="description" id="exampleInput" placeholder="Enter description" >
-                                                 <label for="exampleInput">Contact Number</label>
+                                                 <label for="exampleInput">Contact Number*</label>
                                                  <input required type="text" class="form-control col-lg-12" name="contact" id="exampleInput" placeholder="Contact Number" >
-                                                 <label for="exampleInput">Address</label>
+                                                 <label for="exampleInput">Address*</label>
                                                  <input required type="text" class="form-control col-lg-12" name="address" id="exampleInput" placeholder="Address" >
                                                  <div class="thumbnail">
-                                                 <label for="exampleInput">Image</label>
+                                                 <label for="exampleInput">Image*</label>
                                                  <input required type="file" class="form-control col-lg-12" name="image" id="exampleInput">
                                                  </div>
                                                      </div>
