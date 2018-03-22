@@ -79,11 +79,12 @@
 							<div class="row">
 									<div class="col-md-3"></div>
 									<div class="col-md-6"  id="itpost">
+										<label><?php echo $cntnt['AccountName'];?> posted: </label>
 											<label><?php echo $cntnt['PostComment'];?></label><br>
 											<label>Posted on: <?php echo $cntnt['PostDate'];?></label><br>
 											<button class='btn btn-success'>Paw</button>
 											<button class="btn btn-danger">Comment</button>
-											<button class="btn btn-success"><a href="<?php echo site_url('user/read/'.$cntnt['PostID']);?>">See More...</a></button>
+											<button class="btn btn-success"><a href="<?php echo site_url('plcrecent/read/'.$cntnt['PostID']);?>">See More...</a></button>
 									</div>
 
 									<div class="col-md-3"></div>

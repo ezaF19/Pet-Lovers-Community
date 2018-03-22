@@ -9,6 +9,11 @@ class plcrecent extends CI_Controller {
       $this->load->view('pages/recent', $data);
       $this->load->view('template/footer');
   }
+  public function read($id){
+    $this->load->model('userpost_model');
+    $result['data'] = $this->userpost_model->read($id);
+    $this->load->view('pages/see_more0', $result);
+  }
 
   public function featured(){
     redirect('featured');
