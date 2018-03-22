@@ -46,7 +46,7 @@
 									<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('');?>logout">Sign Out</a></li>
 									</ul>
 								</li>
-			<li class="nav-item" id="unlogged">
+						<li class="nav-item" id="unlogged">
 							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
 						</li>
           </ul>
