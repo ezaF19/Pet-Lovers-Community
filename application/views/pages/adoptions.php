@@ -104,18 +104,17 @@
                             <div class="row">
                                 <div class="col-md-3"></div>
                                 <div class="col-md-6"  id="itpost">
-																	<label><?php echo $post['AccountName'];?> posted: </label><br/>
-                                    <label><b>Breed: </b><?php echo $post['PetBreed'];?></label><br/>
-                                    <label><b>Type: </b><?php echo $post['PetType'];?></label><br/>
-                                    <label><b>Name: </b><?php echo $post['PetName'];?></label><br/>
-                                    <label><b>Age: </b><?php echo $post['PetAge'];?></label><br/>
-                                     <label><b>Record: </b><?php echo $post['PetRecord'];?></label><br/>
-                                     <label><b>Size: </b><?php echo $post['PetSize'];?></label><br/>
-                                     <label><b>Gender: </b><?php echo $post['PetGender'];?></label><br/>
-                                    <img src="data:image;base64,<?php echo $post['PetPic'];?>">
+                                    <label><b>Breed: </b><?php echo $post->PetBreed?></label><br/>
+                                    <label><b>Type: </b><?php echo $post->PetType?></label><br/>
+                                    <label><b>Name: </b><?php echo $post->PetName?></label><br/>
+                                    <label><b>Age: </b><?php echo $post->PetAge?></label><br/>
+                                     <label><b>Record: </b><?php echo $post->PetRecord?></label><br/>
+                                     <label><b>Size: </b><?php echo $post->PetSize?></label><br/>
+                                     <label><b>Gender: </b><?php echo $post->PetGender?></label><br/>
+                                    <img src="data:image;base64,<?php echo $post->PetPic?>">
                                      <div class="text-right">
                                          <form  action="<?php echo base_url('adoptpost/deletepost')?>" method="post">
-                                             <input type="hidden" value="<?php echo $post['PetID'];?>" name="PetID"/>
+                                             <input type="hidden" value="<?php echo $post->PetID?>" name="PetID"/>
                                              <input type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" value="Delete" />
                                              <div id="myModal" class="modal fade" role="dialog">
                                                 <div class="modal-dialog">
@@ -145,7 +144,7 @@
 	        </div>
                 </div><!-- .container close -->
 	    </section>
-
+    
 		<?php
  	 	if($user == ''){
  	 		echo "<script>
