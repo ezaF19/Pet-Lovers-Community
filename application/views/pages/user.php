@@ -146,7 +146,8 @@
 										<div class="card-footer">
                       <label class="mr-sm" for="inlineFormCustomSelect">Type*: </label>
                     <select class="custom-select col-lg-4" id="inlineFormCustomSelect" oninput="check()" name="category">
-                          <option selected>Pet</option>
+                          <option>...</option>
+						  <option>Pet</option>
                           <option>Item</option>
                           <option>Service</option>
                         </select>
