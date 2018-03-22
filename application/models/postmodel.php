@@ -4,7 +4,7 @@ class Postmodel extends CI_Model {
   public function _construct(){
     $this->load->database();
   }
-  
+
   public function create_post(){
       $file= base64_encode(file_get_contents(addslashes($_FILES['image']['tmp_name'])));
       $field= array(
@@ -16,12 +16,14 @@ class Postmodel extends CI_Model {
       );
       $query=$this->db->insert('service',$field);
       return true;
-      
+
   }
   public function getData(){
-	  $this->db->order_by('ServiceID', 'desc');
-      $query=$this->db->get('service');
-      return $query->result();
+	  $this->db->select('accbio.*, service.*');
+    $this->db->from('service');
+    $this->db->join('accbio', 'accbio.AccountID = service.AccountID');
+      $query=$this->db->get();
+      return $query->result_array();
   }
 
   public function getPost(){
@@ -44,9 +46,7 @@ class Postmodel extends CI_Model {
 	    else{
 	      return false;
 	    }
-  	}	
+  	}
 
-  	
+
 }
-
-

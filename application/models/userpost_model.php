@@ -1,3 +1,4 @@
+
 <?php
 
 class userpost_model extends CI_Model {
@@ -20,6 +21,7 @@ class userpost_model extends CI_Model {
       $this->db->insert('post', $field);
     }
   }
+
   public function disp_post(){
     $user = $this->session->userdata('username');
     $conn = new mysqli('localhost', 'root', '', 'plc_db');
@@ -144,6 +146,62 @@ class userpost_model extends CI_Model {
   }
   }
 
+  public function update_pet($id)
+  {
+    $field = array(
+      'PetType' => $this->input->post('pttyp'),
+      'PetName' => $this->input->post('ptnm'),
+      'PetBreed' => $this->input->post('ptbrd'),
+      'PetGender' => $this->input->post('ptgndr'),
+      'PetAge' => $this->input->post('ptage')
+    );
+    $this->db->where('PetID', $id);
+    $this->db->update('pet', $field);
+
+    $file = array(
+        'PostComment' => $this->input->post('ptstmt')
+    );
+    $this->db->where('PetID', $id);
+    $this->db->update('post', $file);
+  }
+
+  public function update_item($id)
+  {
+    $field = array(
+      'ItemType' => $this->input->post('itmtyp'),
+      'ItemPrice' => $this->input->post('itmprc'),
+      'ItemInfo' => $this->input->post('itminf')
+    );
+    $this->db->where('ItemID', $id);
+    $this->db->update('item', $field);
+
+    $file = array(
+        'PostComment' => $this->input->post('itmstmt')
+    );
+    $this->db->where('ItemID', $id);
+    $this->db->update('post', $file);
+
+    return true;
+  }
+
+  public function update_serv($id)
+  {
+    $field = array(
+      'ServType' => $this->input->post('srvctyp'),
+      'ServContact' => $this->input->post('srvccntct'),
+      'ServAddress' => $this->input->post('srvcadd'),
+      'ServName' => $this->input->post('srvcnm')
+    );
+    $this->db->where('ServiceID', $id);
+    $this->db->update('service', $field);
+
+    $file = array(
+        'PostComment' => $this->input->post('srvcstmt')
+    );
+    $this->db->where('ServiceID', $id);
+    $this->db->update('post', $file);
+  }
+
   public function save_post_serv()  {
     $user = $this->session->userdata('username');
     $conn = new mysqli('localhost', 'root', '', 'plc_db');
@@ -178,7 +236,7 @@ class userpost_model extends CI_Model {
         }
         $field = array(
           'AccountID' => $accid,
-          'ServiceID' => $petid,
+          'ServID' => $petid,
           'PostComment' => $this->input->post('usrpst')
         );
         $this->db->insert('post', $field);
@@ -197,34 +255,37 @@ class userpost_model extends CI_Model {
     $query = 'Select PetID, ServiceID, ItemID from post where PostID = "'.$id.'"';
     $result = $conn->query($query);
     if($result->num_rows > 0){
-      while($row = $result->fetch_assoc()){
+      while($row=$result->fetch_assoc()){
         $petid = $row['PetID'];
         $servid = $row['ServiceID'];
         $itemid = $row['ItemID'];
         if($petid =='0'){
           if($servid == '0'){
             if($itemid != '0'){
-              $this->db->select('*');
+              $this->db->select('item.*, post.*');
               $this->db->from('item');
-              $this->db->where('ItemID', $itemid);
+              $this->db->join('post', 'item.ItemID = post.ItemID');
+              $this->db->where('item.ItemID = '.$itemid.'');
               $query = $this->db->get();
               $this->session->set_userdata('id', 'ItemID');
               return $query->result_array();
             }
           }
           else{
-            $this->db->select('*');
+            $this->db->select('service.*, post.*');
             $this->db->from('service');
-            $this->db->where('ServiceID', $servid);
+            $this->db->join('post', 'service.ServiceID = post.ServiceID');
+            $this->db->where('service.ServiceID = '.$servid.'');
             $query = $this->db->get();
             $this->session->set_userdata('id', 'ServID');
             return $query->result_array();
           }
         }
         else{
-          $this->db->select('*');
+          $this->db->select('pet.*, post.*');
           $this->db->from('pet');
-          $this->db->where('PetID', $petid);
+          $this->db->join('post', 'pet.PetID = post.PetID');
+          $this->db->where('pet.PetID = '.$petid.'');
           $query = $this->db->get();
           $this->session->set_userdata('id', 'PetID');
           return $query->result_array();
