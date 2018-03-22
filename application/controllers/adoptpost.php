@@ -11,8 +11,8 @@ class Adoptpost extends CI_Controller {
      public function create_post(){
                $this->load->model('adoptmodel');
                $this->adoptmodel->create_post();
-              
-              
+
+
               redirect(base_url() . 'adoptsales/sales');
           }
           public function deletepost(){
@@ -20,10 +20,9 @@ class Adoptpost extends CI_Controller {
         $this->adoptmodel->deletepost($this->input->post('PetID'));
          redirect(base_url() . 'adoptsales/sales');
     }
-    
 
-    
-   
-    
+
+
+
+
 }
-    

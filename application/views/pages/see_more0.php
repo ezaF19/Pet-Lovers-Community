@@ -29,7 +29,7 @@
         <label> Service Address: <?php echo $read['ServAddress'];?></label>
       </div>
     <?php endforeach;?>
-    <button class="btn btn-dark"><a href="<?php echo base_url('user');?>">Back</a></button>
+    <button class="btn btn-dark"><a href="<?php echo base_url('recent');?>">Back</a></button>
   </body>
   <?php
   if($id != 'PetID'){

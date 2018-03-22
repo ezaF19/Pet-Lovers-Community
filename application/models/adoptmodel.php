@@ -4,27 +4,41 @@ class Adoptmodel extends CI_Model {
   public function _construct(){
     $this->load->database();
   }
-  
+
   public function create_post(){
-      $file= base64_encode(file_get_contents(addslashes($_FILES['image']['tmp_name'])));
-      $field= array(
-                'PetBreed'=>$this->input->post('petbreed'),
-                'PetPic'=>$file,
-                'PetType'=>$this->input->post('petype'),
-                'PetName'=>$this->input->post('petname'),
-                'PetAge'=>$this->input->post('petage'),
-                'PetRecord'=>$this->input->post('petrecord'),
-                'PetSize'=>$this->input->post('petsize'),
-                'PetGender'=>$this->input->post('petgender')
-      );
-      $query=$this->db->insert('pet',$field);
-      return true;
-      
+    $user = $this->session->userdata('username');
+
+    $conn = new mysqli('localhost', 'root', '', 'plc_db');
+    $query = 'Select AccountID from accbio where AccountName = "'.$user.'"';
+    $result = $conn->query($query);
+    if($result->num_rows>0){
+      while($row = $result->fetch_assoc()){
+        $id = $row['AccountID'];
+        $file= base64_encode(file_get_contents(addslashes($_FILES['image']['tmp_name'])));
+        $field= array(
+                  'AccountID' => $id,
+                  'PetBreed'=>$this->input->post('petbreed'),
+                  'PetPic'=>$file,
+                  'PetType'=>$this->input->post('petype'),
+                  'PetName'=>$this->input->post('petname'),
+                  'PetAge'=>$this->input->post('petage'),
+                  'PetRecord'=>$this->input->post('petrecord'),
+                  'PetSize'=>$this->input->post('petsize'),
+                  'PetGender'=>$this->input->post('petgender')
+        );
+        $query=$this->db->insert('pet',$field);
+        return true;
+
+      }
+    }
   }
   public function getData(){
+    $this->db->select('pet.*, accbio.AccountName');
+    $this->db->from('pet');
+    $this->db->join('accbio', 'pet.AccountID = accbio.AccountID');
 	  $this->db->order_by('PetID', 'desc');
-      $query=$this->db->get('pet');
-      return $query->result();
+      $query=$this->db->get();
+      return $query->result_array();
   }
 
   public function getPost(){
@@ -47,9 +61,7 @@ class Adoptmodel extends CI_Model {
 	    else{
 	      return false;
 	    }
-  	}	
+  	}
 
-  	
+
 }
-
-
