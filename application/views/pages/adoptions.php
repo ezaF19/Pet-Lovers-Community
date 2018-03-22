@@ -3,7 +3,7 @@
 	<title>Pet Lovers Community</title>
 	</head>
 	<style>
-		#logged, #unlogged, #unlogged2{
+		#logged, #unlogged, #form_adopt, #unlogged2{
 			display: none;
 		}
 	</style>
@@ -61,11 +61,11 @@
 	        <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-	                    <div class ="block">
+	                    <div class ="block" id="form_adopt">
 	                         <?php echo form_open_multipart('adoptpost/create_post');?>
                                     <div class="intro-text">
                                         <div class="container">
-                                                    <p class="brand-text">"POST A PET for ADOPTION"</p>
+                                                    <p class="brand-text">"POST A PET FOR ADOPTION"</p>
                                                    </div>
                                                  <div class="group row">
                                                      <div class="col-lg-6">
@@ -151,6 +151,7 @@
  	 		document.getElementById('unlogged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
  	 		document.getElementById('logged').style.display = 'none';
+			document.getElementById('form_adopt').style.display = 'none';
  	 		</script>";
  	 	}
  	 	else if($user == 'Mismatch!'){
@@ -158,6 +159,7 @@
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
  	 		document.getElementById('unlogged').style.display = 'none';
+			document.getElementById('form_adopt').style.display = 'none';
  	 		</script>";
  	 	}
  	 	else{
@@ -165,6 +167,7 @@
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'none';
  	 		document.getElementById('unlogged').style.display = 'none';
+			document.getElementById('form_adopt').style.display = 'none';
  	 		</script>";
  	 	}
 

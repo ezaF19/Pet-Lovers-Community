@@ -68,8 +68,12 @@
                                                     <p class="brand-text">POST AN ITEM FOR:</p>
                                                    <label class="col-lg-4" for="inlineFormCustomSelect"></label>
                                                    <select class="custom-select col-lg-4" id="inlineFormCustomSelect" name="category">
-                                                         <option selected>Dog</option>
-                                                         <option>Cat</option>
+                                                         <option selected>Dogs</option>
+                                                         <option>Cats</option>
+                                                         <option>Birds</option>
+                                                         <option>Hamsters</option>
+                                                         <option>Cats</option>
+														 <option>Others</option>
                                                        </select>
                                                    </div>
                                                  <div class="group row">

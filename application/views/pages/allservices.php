@@ -3,7 +3,7 @@
 	<title>Pet Lovers Community</title>
 	</head>
 	<style>
-		#logged, #unlogged, #unlogged2{
+		#logged, #unlogged, $form_service, #unlogged2{
 			display: none;
 		}
 	</style>
@@ -64,7 +64,7 @@
 	            <div class="row">
                         <div class="col-lg-3"></div>
 	                <div class="col-lg-6">
-	                    <div class ="block">
+	                    <div class ="block" id="form_service">
 	                         <?php echo form_open_multipart('allservicespost/create_post');?>
                                     <div class="intro-text">
                                         <div class="container">
@@ -75,6 +75,7 @@
                                                          <option>Training</option>
                                                          <option>Pet Sitting</option>
                                                          <option>Veterinary</option>
+                                                         <option>Others</option>
                                                        </select>
                                                    </div>
                                                  <div class="group row">
@@ -146,6 +147,7 @@
  	 		document.getElementById('unlogged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
  	 		document.getElementById('logged').style.display = 'none';
+			document.getElementById('form_service').style.display = 'none';
  	 		</script>";
  	 	}
  	 	else if($user == 'Mismatch!'){
@@ -153,6 +155,7 @@
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
  	 		document.getElementById('unlogged').style.display = 'none';
+			document.getElementById('form_service').style.display = 'none';
  	 		</script>";
  	 	}
  	 	else{
@@ -160,6 +163,7 @@
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'none';
  	 		document.getElementById('unlogged').style.display = 'none';
+			document.getElementById('form_service').style.display = 'none';
  	 		</script>";
  	 	}
 
