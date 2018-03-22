@@ -236,7 +236,7 @@ class userpost_model extends CI_Model {
         }
         $field = array(
           'AccountID' => $accid,
-          'ServID' => $petid,
+          'ServiceID' => $petid,
           'PostComment' => $this->input->post('usrpst')
         );
         $this->db->insert('post', $field);
