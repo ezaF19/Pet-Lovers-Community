@@ -90,14 +90,15 @@
                             <div class="row">
                                  <div class="col-lg-3"></div>
                                 <div class="col-md-6"  id="itpost">
-                                    <label><b><?php echo $post->ServType?></b></label><br/>
-                                    <label><?php echo $post->ServDesc?></label><br/>
-                                    <label><?php echo $post->ServContact?></label><br/>
-                                    <label><?php echo $post->ServAddress?></label><br/>
-                                    <img src="data:image;base64,<?php echo $post->ServImage?>">
+																		<label><?php echo $post['AccountName'];?> posted: </label><br/>
+                                    <label><b><?php echo $post['ServType'];?></b></label><br/>
+                                    <label><?php echo $post['ServDesc'];?></label><br/>
+                                    <label><?php echo $post['ServContact'];?></label><br/>
+                                    <label><?php echo $post['ServAddress'];?></label><br/>
+                                    <img src="data:image;base64,<?php echo $post['ServImage'];?>">
                                      <div class="text-right">
                                          <form action="<?php echo base_url('allservicespost/deletepost')?>" method="post">
-                                             <input type="hidden" value="<?php echo $post->ServiceID?>" name="ServiceID"/>
+                                             <input type="hidden" value="<?php echo $post['ServiceID'];?>" name="ServiceID"/>
                                               <input type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" value="Delete" />
                                              <div id="myModal" class="modal fade" role="dialog">
                                                 <div class="modal-dialog">

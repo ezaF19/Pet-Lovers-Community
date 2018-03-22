@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url('home');?>">Services</a>
+              <a class="nav-link" href="<?php echo base_url('allservices');?>">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('featured');?>">Community</a>
@@ -167,6 +167,7 @@
                           <label><?php echo $cntnt['PostComment'];?></label><br/>
                           <p>Posted on: <?php echo $cntnt['PostDate'];?></p>
                           <button class="btn btn-dark"><a href="<?php echo site_url('user/read/'.$cntnt['PostID']);?>">See More...</a></button>
+                          <button class="btn btn-success"><a href="<?php echo site_url('user/edit/'.$cntnt['PostID']);?>">Edit</a></button>
                           <button class="btn btn-danger"><a href="<?php echo site_url('user/delete/'.$cntnt['PostID']);?>">Delete</a></button>
                       </div>
                       <div class="col-md-3"></div>

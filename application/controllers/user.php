@@ -21,6 +21,35 @@ class User extends CI_Controller {
     }
   }
 
+  public function edit($id){
+      $this->load->model('userpost_model');
+      $result['dat'] = $this->userpost_model->read($id);
+      $this->load->view('pages/edit', $result);
+  }
+
+  public function update_pet($id)
+  {
+        $this->load->model('userpost_model');
+        $result['datum'] = $this->userpost_model->update_pet($id);
+        redirect('user');
+  }
+
+  public function update_item($id)
+  {
+        $this->load->model('userpost_model');
+        $result = $this->userpost_model->update_item($id);
+        if($result == true){
+          redirect('user');
+      }
+  }
+
+  public function update_serv($id)
+  {
+        $this->load->model('userpost_model');
+        $result['datum'] = $this->userpost_model->update_item($id);
+        redirect('user');
+  }
+
   public function read($id){
     $this->load->model('userpost_model');
     $result['data'] = $this->userpost_model->read($id);
