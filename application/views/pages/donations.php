@@ -23,16 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="featured">Featured Pets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="recent">Recent Posts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="adoptions">Adoptions</a>
+              <a class="nav-link" href="<?php echo base_url('featured');?>">Community</a>
             </li>
 						<li class="nav-item dropdown" id="logged">
 										<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
