@@ -1,3 +1,4 @@
+
 <?php
 
 class userpost_model extends CI_Model {

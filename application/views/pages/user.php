@@ -40,9 +40,6 @@
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('featured');?>">Community</a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url('adoptions');?>">Adopt</a>
-            </li>
 			<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
 			  <ul class="dropdown-menu">
@@ -117,46 +114,52 @@
 								<div class="row justify-content-center">
 									<div class="col-md-12" >
 										<br><div class="card card-primary text-right">
-                      <?php echo form_open('plcpost/posting');?>
+                      <?php echo form_open('plcpost/posting');?></br>
                       <form>
 										<div class="card-body text-center">
-										<input type="post" class="form-control" name="usrpst" placeholder="What are you up to?">
+										<input type="post" class="form-control" name="usrpst" placeholder="What are you up to?"></input>
 										</div>
-                    <div id="petpost">
-                      <h3>Pet Info: </h3>
-                      <label>Pet Type: </label><input type='text' name='pttyp' placeholder='Type'/>
-                      <label><br>Pet Name: </label><input type='text' name='ptnm' placeholder='Name'/>
-                      <label><br>Pet Breed: </label><input type='text' name='ptbrd' placeholder='Breed'/>
-                      <label><br>Pet Age: </label><input type='text' name='ptage' placeholder='Age'/>
-                      <label><br>Pet Gender: </label><input type='text' name='ptgndr' placeholder='Gender'/>
-                    </div>
-                    <div id="itempost">
-                        <h3>Item Info: </h3>
-                        <label>Item Type: </label><input type='text' name='itmtyp' placeholder='Type'/>
-                        <label><br>Item Price: </label><input type='text' name='itmprc' placeholder='Price'/>
-                        <label><br>Item Description: </label><input type='text' name='itminf' placeholder='Description'/>
-                      </div>
-                    <div id="servpost">
-                        <h3>Service Info: </h3>
-                        <label>Service Type: </label><input type='text' name='srvctyp' placeholder='Type'/>
-                        <label><br>Service Name: </label><input type='text' name='srvcnm' placeholder='Name'/>
-                        <label><br>Service Contact: </label><input type='text' name='srvccntct' placeholder='Contact'/>
-                        <label><br>Service Address: </label><input type='text' name='srvcadd' placeholder='Address'/>
-                      </div>
-										<div class="card-footer">
-                      <label class="mr-sm" for="inlineFormCustomSelect">Type*: </label>
-                    <select class="custom-select col-lg-4" id="inlineFormCustomSelect" oninput="check()" name="category">
-                          <option selected>Pet</option>
-                          <option>Item</option>
-                          <option>Service</option>
-                        </select>
+										<div class="card-body">
+										<label class="mr-sm" for="inlineFormCustomSelect">Post Type*: </label>
+											<select class="custom-select col-lg-2" id="inlineFormCustomSelect" oninput="check()" name="category">
+												<option selected>Pet</option>
+												<option>Item</option>
+												<option>Service</option>
+											</select>
 										<button type="submit" class="btn btn-dark btn-md">Post</button>
 										</div>
+                    <div id="petpost">
+
+                      <center><h3>Pet Info: </h3></center>
+                      <div class="col-md-8"><label>Pet Type: </label><input type='text' name='pttyp' placeholder='Type'/><br/>
+                      <label>Pet Name: </label><input type='text' name='ptnm' /><br/>
+                      <label>Pet Breed: </label><input type='text' name='ptbrd' /><br/>
+                      <label>Pet Age: </label><input type='text' name='ptage' /><br/>
+                      <label>Pet Gender: </label><input type='text' name='ptgndr' />
+                    </div></div>
+                    <div id="itempost">
+                      <center><h3>Item Info: </h3></center>
+					  <div class="col-md-8">
+                        <label>Item Type: </label><input type='text' name='itmtyp' /><br/>
+                        <label><br>Item Price: </label><input type='text' name='itmprc' /></br>
+                        <label><br>Item Description: </label><input type='text' name='itminf' /></br>
+                      </div></div>
+                    <div id="servpost">
+                      <center><h3>Service Info: </h3></center>
+					  <div class="col-md-8">
+                        <label>Service Type: </label><input type='text' name='srvctyp' /><br/>
+                        <label>Service Name: </label><input type='text' name='srvcnm' /><br/>		
+                        <label>Service Contact: </label><input type='text' name='srvccntct' /><br/>
+                        <label>Service Address: </label><input type='text' name='srvcadd'/><br/>
+                      </div>
+                      </div>
+										
                   </form>
 										</div><br>
 									</div>
 								</div>
 							</div>
+              <?php ?>
               <div id="posting">
               <?php foreach($post as $cntnt):?>
               <div class="container">
