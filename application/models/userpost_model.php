@@ -61,6 +61,7 @@ class userpost_model extends CI_Model {
   // }
   // }
   public function save_post_pet(){
+    // $file= base64_encode(file_get_contents(addslashes($_FILES['image']['tmp_name'])));
       $user = $this->session->userdata('username');
       $conn = new mysqli('localhost', 'root', '', 'plc_db');
   		$query = 'Select AccountID from accbio where AccountName = "'.$user.'"';
@@ -71,11 +72,13 @@ class userpost_model extends CI_Model {
         }
         $field = array(
           'AccountID' => $accid,
-          'PetBreed' => $this->input->post('ptbrd'),
-          'PetType' => $this->input->post('pttyp'),
-          'PetName' => $this->input->post('ptnm'),
-          'PetAge' => $this->input->post('ptage'),
-          'PetGender' => $this->input->post('ptgndr')
+          'PetRecord' => $this->input->post('petrecord'),
+          'PetSize' => $this->input->post('petsize'),
+          'PetBreed' => $this->input->post('petbreed'),
+          'PetType' => $this->input->post('petype'),
+          'PetName' => $this->input->post('petname'),
+          'PetAge' => $this->input->post('petage'),
+          'PetGender' => $this->input->post('petgender')
         );
         $this->db->insert('pet', $field);
     }
@@ -96,7 +99,7 @@ class userpost_model extends CI_Model {
           $field = array(
             'AccountID' => $accid,
             'PetID' => $petid,
-            'PostComment' => $this->input->post('usrpst')
+            'PostComment' => $this->input->post('caption')
           );
           $this->db->insert('post', $field);
           return "true";
@@ -105,6 +108,7 @@ class userpost_model extends CI_Model {
   }
 
   public function save_post_item()  {
+    // $file= base64_encode(file_get_contents(addslashes($_FILES['mage']['tmp_name'])));
     $user = $this->session->userdata('username');
     $conn = new mysqli('localhost', 'root', '', 'plc_db');
     $query = 'Select AccountID from accbio where AccountName = "'.$user.'"';
@@ -113,13 +117,15 @@ class userpost_model extends CI_Model {
       while($row = $result->fetch_assoc()){
         $accid = $row['AccountID'];
       }
-      $field = array(
-        'AccountID' => $accid,
-        'ItemType' => $this->input->post('itmtyp'),
-        'ItemPrice' => $this->input->post('itmprc'),
-        'ItemInfo' => $this->input->post('itminf')
-      );
-      $this->db->insert('item', $field);
+          $field= array(
+                    'AccountID ' => $accid,
+                    'ItemType'=>$this->input->post('category'),
+                    'ItemInfo'=>$this->input->post('description'),
+                    'ItemPrice'=>$this->input->post('price'),
+                    'ItemContact'=>$this->input->post('contact'),
+                    'ItemLocation'=>$this->input->post('location')
+          );
+          $query=$this->db->insert('item',$field);
   }
   $conn = new mysqli('localhost', 'root', '', 'plc_db');
   $query = 'Select AccountID from accbio where AccountName = "'.$user.'"';
@@ -138,7 +144,7 @@ class userpost_model extends CI_Model {
         $field = array(
           'AccountID' => $accid,
           'ItemID' => $petid,
-          'PostComment' => $this->input->post('usrpst')
+          'PostComment' => $this->input->post('caption')
         );
         $this->db->insert('post', $field);
         return "true";
@@ -153,7 +159,9 @@ class userpost_model extends CI_Model {
       'PetName' => $this->input->post('ptnm'),
       'PetBreed' => $this->input->post('ptbrd'),
       'PetGender' => $this->input->post('ptgndr'),
-      'PetAge' => $this->input->post('ptage')
+      'PetAge' => $this->input->post('ptage'),
+      'PetSize' => $this->input->post('ptsz'),
+      'PetRecord' => $this->input->post('ptrcrd')
     );
     $this->db->where('PetID', $id);
     $this->db->update('pet', $field);
@@ -170,7 +178,9 @@ class userpost_model extends CI_Model {
     $field = array(
       'ItemType' => $this->input->post('itmtyp'),
       'ItemPrice' => $this->input->post('itmprc'),
-      'ItemInfo' => $this->input->post('itminf')
+      'ItemInfo' => $this->input->post('itminf'),
+      'ItemContact' => $this->input->post('itmcntct'),
+      'ItemLocation' => $this->input->post('itmadd')
     );
     $this->db->where('ItemID', $id);
     $this->db->update('item', $field);
@@ -190,7 +200,8 @@ class userpost_model extends CI_Model {
       'ServType' => $this->input->post('srvctyp'),
       'ServContact' => $this->input->post('srvccntct'),
       'ServAddress' => $this->input->post('srvcadd'),
-      'ServName' => $this->input->post('srvcnm')
+      'ServName' => $this->input->post('srvcnm'),
+      'ServDesc' => $this->input->post('srvcdsc')
     );
     $this->db->where('ServiceID', $id);
     $this->db->update('service', $field);
@@ -203,6 +214,7 @@ class userpost_model extends CI_Model {
   }
 
   public function save_post_serv()  {
+    // $file= base64_encode(file_get_contents(addslashes($_FILES['image']['tmp_name'])));
     $user = $this->session->userdata('username');
     $conn = new mysqli('localhost', 'root', '', 'plc_db');
     $query = 'Select AccountID from accbio where AccountName = "'.$user.'"';
@@ -213,10 +225,11 @@ class userpost_model extends CI_Model {
       }
       $field = array(
         'AccountID' => $accid,
-        'ServType' => $this->input->post('srvctyp'),
-        'ServContact' => $this->input->post('srvccntct'),
-        'ServAddress' => $this->input->post('srvcadd'),
-        'ServName' => $this->input->post('srvcnm')
+        'ServType' => $this->input->post('service'),
+        'ServContact' => $this->input->post('contact'),
+        'ServAddress' => $this->input->post('address'),
+        'ServDesc'=> $this->input->post('description'),
+        'ServName' => $this->input->post('name')
       );
       $this->db->insert('service', $field);
   }
@@ -236,8 +249,8 @@ class userpost_model extends CI_Model {
         }
         $field = array(
           'AccountID' => $accid,
-          'ServID' => $petid,
-          'PostComment' => $this->input->post('usrpst')
+          'ServiceID' => $petid,
+          'PostComment' => $this->input->post('caption')
         );
         $this->db->insert('post', $field);
         return "true";
@@ -245,9 +258,49 @@ class userpost_model extends CI_Model {
   }
   }
   public function get_delete($id){
-    $this->db->where('PostID', $id);
-    $this->db->delete('post');
-    return true;
+    // $this->db->where('PostID', $id);
+    // $this->db->delete('post');
+    // return true;
+    $conn = new mysqli('localhost','root','','plc_db');
+    $query = 'Select PetID, ServiceID, ItemID from post where PostID = "'.$id.'"';
+    $result = $conn->query($query);
+    if($result->num_rows > 0){
+      while($row = $result->fetch_assoc()){
+        $pet = $row['PetID'];
+        $item = $row['ItemID'];
+        $serv = $row['ServiceID'];
+        if($pet == '0'){
+          if($item == '0'){
+            if($serv != '0'){
+              $conn = new mysqli('localhost','root','','plc_db');
+              $query = 'DELETE FROM service WHERE ServiceID = "'.$serv.'"';
+              $conn->query($query);
+            }
+          }
+          else{
+            $conn = new mysqli('localhost','root','','plc_db');
+            $query = 'DELETE FROM item WHERE ItemID = "'.$item.'"';
+            $conn->query($query);
+              // $this->db->where('PostID', $id);
+              // $this->db->delete('post');
+              // return true;
+          }
+        }
+        else{
+          $conn = new mysqli('localhost','root','','plc_db');
+          $query = 'DELETE FROM pet WHERE PetID = "'.$pet.'"';
+          $conn->query($query);
+          // $this->db->where('PetID', $pet);
+          // $$this->db->delete('pet');
+          // $this->db->where('PostID', $id);
+          // $this->db->delete('post');
+          // return true;
+        }
+        $this->db->where('PostID', $id);
+        $this->db->delete('post');
+        return true;
+      }
+    }
   }
 
   public function read($id){

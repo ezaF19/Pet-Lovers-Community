@@ -17,7 +17,10 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/usertab.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css'); ?>" />
   <style>
-    #petpost, #itempost, #servpost{
+    #petpost{
+      display: block;
+      }
+      #itempost, #servpost{
       display: none;
     }
   </style>
@@ -114,10 +117,10 @@
 								<div class="row justify-content-center">
 									<div class="col-md-12" >
 										<br><div class="card card-primary text-right">
-                      <?php echo form_open('plcpost/posting');?></br>
+                      <!-- <?php echo form_open('plcpost/posting');?></br>
                       <form>
 										<div class="card-body text-center">
-										<input type="post" class="form-control" name="usrpst" placeholder="What are you up to?"></input>
+										<input type="post" class="form-control" name="caption" placeholder="What are you up to?"></input>
 										</div>
 										<div class="card-body">
 										<label class="mr-sm" for="inlineFormCustomSelect">Post Type*: </label>
@@ -129,37 +132,118 @@
 										<button type="submit" class="btn btn-dark btn-md">Post</button>
 										</div>
                     <div id="petpost">
-
-                      <center><h3>Pet Info: </h3></center>
+                        <div class="container">
+                                    <p class="brand-text">"POST A PET FOR ADOPTION"</p>
+                                   </div>
+                                 <div class="group row">
+                                     <div class="col-lg-6">
+                                 <label for="exampleInput">Breed*</label>
+                                 <input type="text" class="form-control col-lg-12" name="petbreed" id="exampleInput" placeholder="" >
+                                 <label for="exampleInput">Type*</label>
+                                 <input type="text" class="form-control col-lg-12" name="petype" id="exampleInput" placeholder="" >
+                                 <label for="exampleInput">Name*</label>
+                                 <input type="text" class="form-control col-lg-12" name="petname" id="exampleInput" placeholder="" >
+                                 <label for="exampleInput">Age*</label>
+                                 <input type="text" class="form-control col-lg-12" name="petage" id="exampleInput" placeholder="" >
+                                 </div>
+                                     <div class="col-lg-6">
+                                 <label for="exampleInput">Record*</label>
+                                 <input type="text" class="form-control col-lg-12" name="ptrcrd" id="exampleInput" placeholder="" >
+                                 <label for="exampleInput">Size*</label>
+                                 <input type="text" class="form-control col-lg-12" name="petsize" id="exampleInput" placeholder="" >
+                                 <label for="exampleInput">Gender*</label>
+                                 <input type="text" class="form-control col-lg-12" name="petgender" id="exampleInput" placeholder="" >
+                                 <div class="thumbnail">
+                                 <label for="exampleInput">Image</label>
+                                 <input type="file" class="form-control col-lg-12" name="image" id="exampleInput">
+                                 </div>
+                                 </div>
+                               </div>
+                      <!-- <center><h3>Pet Info: </h3></center>
                       <div class="col-md-8"><label>Pet Type: </label><input type='text' name='pttyp' placeholder='Type'/><br/>
                       <label>Pet Name: </label><input type='text' name='ptnm' /><br/>
                       <label>Pet Breed: </label><input type='text' name='ptbrd' /><br/>
                       <label>Pet Age: </label><input type='text' name='ptage' /><br/>
                       <label>Pet Gender: </label><input type='text' name='ptgndr' />
-                    </div></div>
+                    </div> -->
+                  <!-- </div>
                     <div id="itempost">
-                      <center><h3>Item Info: </h3></center>
+                                     <div class="container">
+                                                 <p class="brand-text">POST AN ITEM FOR:</p>
+                                                <label class="col-lg-4" for="inlineFormCustomSelect"></label>
+                                                <select class="custom-select col-lg-4" id="inlineFormCustomSelect" name="ctgry">
+                                                      <option selected>Dogs</option>
+                                                      <option>Cats</option>
+                                                      <option>Birds</option>
+                                                      <option>Hamsters</option>
+                                                     <option>Others</option>
+                                                    </select>
+                                                </div>
+                                              <div class="group row">
+                                                  <div class="col-lg-12">
+                                              <label for="exampleInput">Description*</label>
+                                              <input type="text" class="form-control col-lg-12" name="description" id="exampleInput" aria-describedby="emailHelp" placeholder="Enter description" >
+                                              <label for="exampleInput">Price*</label>
+                                              <input type="number" class="form-control col-lg-12" name="price" id="exampleInput" placeholder="Price" >
+                                               <label for="exampleInput">Contact Number*</label>
+                                               <input type="text" class="form-control col-lg-12" name="contact" id="exampleInput" aria-describedby="emailHelp" placeholder="Contact Number" >
+                                              <label for="exampleInput">Location*</label>
+                                              <input type="text" class="form-control col-lg-12" name="location" id="exampleInput" placeholder="Location" >
+                                               <label for="exampleInput">Image*</label>
+                                              <input type="file" class="form-control col-lg-12" name="mage" id="exampleInput">
+                                            </div>
+                                            </div> -->
+                      <!-- <center><h3>Item Info: </h3></center>
 					  <div class="col-md-8">
                         <label>Item Type: </label><input type='text' name='itmtyp' /><br/>
                         <label><br>Item Price: </label><input type='text' name='itmprc' /></br>
                         <label><br>Item Description: </label><input type='text' name='itminf' /></br>
-                      </div></div>
+                      </div> -->
+                    <!-- </div>
                     <div id="servpost">
-                      <center><h3>Service Info: </h3></center>
+                      <div class="container">
+                                  <p class="brand-text">WHAT SERVICE WOULD YOU LIKE TO POST?</p>
+                                 <label class="col-lg-4" for="inlineFormCustomSelect"></label>
+                                 <select required class="custom-select col-lg-4" id="inlineCustomSelect" name="service">
+                                       <option selected>Grooming</option>
+                                       <option>Training</option>
+                                       <option>Pet Sitting</option>
+                                       <option>Veterinary</option>
+                                       <option>Others</option>
+                                     </select>
+                                 </div>
+                               <div class="group row">
+                                   <div class="col-lg-12">
+                               <label for="exampleInput">Caption*</label>
+                               <input required type="text" class="form-control col-lg-12" name="caption" id="exampleInput" placeholder="Enter Caption" >
+                           <label for="exampleInput">Name*</label>
+                           <input required type="text" class="form-control col-lg-12" name="name" id="exampleInput" placeholder="Enter Name" >
+                               <label for="exampleInput">Description*</label>
+                               <input required type="text" class="form-control col-lg-12" name="description" id="exampleInput" placeholder="Enter description" >
+                               <label for="exampleInput">Contact Number*</label>
+                               <input required type="text" class="form-control col-lg-12" name="contact" id="exampleInput" placeholder="Contact Number" >
+                               <label for="exampleInput">Address*</label>
+                               <input required type="text" class="form-control col-lg-12" name="address" id="exampleInput" placeholder="Address" >
+                               <div class="thumbnail">
+                               <label for="exampleInput">Image*</label>
+                               <input type="file" class="form-control col-lg-12" name="image" id="exampleInput">
+                               </div>
+                                   </div>
+                             </div> -->
+                      <!-- <center><h3>Service Info: </h3></center>
 					  <div class="col-md-8">
                         <label>Service Type: </label><input type='text' name='srvctyp' /><br/>
-                        <label>Service Name: </label><input type='text' name='srvcnm' /><br/>		
+                        <label>Service Name: </label><input type='text' name='srvcnm' /><br/>
                         <label>Service Contact: </label><input type='text' name='srvccntct' /><br/>
                         <label>Service Address: </label><input type='text' name='srvcadd'/><br/>
                       </div>
-                      </div>
-										
-                  </form>
+                      </div> -->
+
+                  <!-- </form>  -->
 										</div><br>
 									</div>
 								</div>
 							</div>
-              <?php ?>
               <div id="posting">
               <?php foreach($post as $cntnt):?>
               <div class="container">
@@ -178,12 +262,12 @@
               </div>
               <?php endforeach;?>
             </div>
-							<div id="settings" class="tab-pane">
+							<!-- <div id="settings" class="tab-pane">
 								<h4>Photos</h4>
 							</div>
 							<div id="email" class="tab-pane">
 								<h4>Messages</h4>
-							</div>
+							</div> -->
 						</div>
 					</div>
 			</div>
@@ -207,11 +291,6 @@
     document.getElementById('petpost').style.display = 'none';
     document.getElementById('itempost').style.display = 'none';
     document.getElementById('servpost').style.display = 'block';
-  }
-  if(document.getElementById('inlineFormCustomSelect').value == 'Choose...'){
-    document.getElementById('petpost').style.display = 'none';
-    document.getElementById('itempost').style.display = 'none';
-    document.getElementById('servpost').style.display = 'none';
   }
 }
 </script>

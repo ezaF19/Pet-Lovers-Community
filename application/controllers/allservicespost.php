@@ -10,8 +10,8 @@ class Allservicespost extends CI_Controller {
 	}
 
      public function create_post(){
-               $this->load->model('postmodel');
-               $this->postmodel->create_post();
+               $this->load->model('userpost_model');
+               $this->userpost_model->save_post_serv();
               redirect(base_url() . 'allservices/index');
           }
     public function deletepost(){
@@ -19,8 +19,7 @@ class Allservicespost extends CI_Controller {
         $this->postmodel->deletepost($this->input->post('ServiceID'));
          redirect(base_url() . 'allservices/index');
     }
-    
-   
-    
+
+
+
 }
-    

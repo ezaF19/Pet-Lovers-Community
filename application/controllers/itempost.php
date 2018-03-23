@@ -11,8 +11,8 @@ class Itempost extends CI_Controller {
      public function create_post(){
                $this->load->model('itempostmodel');
                $this->itempostmodel->create_post();
-              
-              
+
+
               redirect(base_url() . 'itemsales/sales');
           }
 
@@ -21,7 +21,6 @@ class Itempost extends CI_Controller {
         $this->itempostmodel->deletepost($this->input->post('itempostid'));
          redirect(base_url() . 'itemsales/sales');
     }
-   
-    
+
+
 }
-    
