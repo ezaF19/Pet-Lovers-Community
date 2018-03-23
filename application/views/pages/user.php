@@ -1,4 +1,4 @@
-      <?php $user = $this->session->userdata('username');
+<?php $user = $this->session->userdata('username');
             if($user == ''){
               echo "<script>
                 alert('Login first!');
