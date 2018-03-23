@@ -3,7 +3,7 @@
 	<title>Pet Lovers Community</title>
 	</head>
 	<style>
-		#logged, #unlogged,#form_sale, #unlogged2{
+		#logged, #unlogged,#delete,#form_sale, #unlogged2{
 			display: none;
 		}
 	</style>
@@ -62,7 +62,7 @@
                         <div class="col-lg-3"></div>
 	                <div class="col-lg-6">
 	                    <div class ="block" id="form_sale">
-	                         <?php echo form_open_multipart('itempost/create_post');?>
+	                         <?php echo form_open_multipart('plcpost/save_item');?>
                                     <div class="intro-text">
                                         <div class="container">
                                              <p class="text-success brand-text"><?php echo $this->session->flashdata('posted');?></p>
@@ -74,14 +74,15 @@
                                                          <option>Cats</option>
                                                          <option>Birds</option>
                                                          <option>Hamsters</option>
-                                                         <option>Cats</option>
-                                                         <option>Others</option>
+														 													 	<option>Others</option>
                                                        </select>
                                                    </div>
                                                  <div class="group row">
                                                      <div class="col-lg-12">
-                                                 <label for="exampleInput">Description*</label>
-                                                 <input type="text" class="form-control col-lg-12" name="description" id="exampleInput" aria-describedby="emailHelp" placeholder="Enter description" >
+                                                 <label for="exampleInput">Caption*</label>
+                                                 <input type="text" class="form-control col-lg-12" name="caption" id="exampleInput" aria-describedby="emailHelp" placeholder="Enter caption" >
+																						 <label for="exampleInput">Description*</label>
+																						 <input type="text" class="form-control col-lg-12" name="description" id="exampleInput" aria-describedby="emailHelp" placeholder="Enter description" >
                                                  <label for="exampleInput">Price*</label>
                                                  <input type="number" class="form-control col-lg-12" name="price" id="exampleInput" placeholder="Price" >
                                                   <label for="exampleInput">Contact Number*</label>
@@ -89,7 +90,7 @@
                                                  <label for="exampleInput">Location*</label>
                                                  <input type="text" class="form-control col-lg-12" name="location" id="exampleInput" placeholder="Location" >
                                                   <label for="exampleInput">Image*</label>
-                                                 <input required type="file" class="form-control col-lg-12" name="image" id="exampleInput">
+                                                 <input type="file" class="form-control col-lg-12" name="image" id="exampleInput">
                                                </div>
                                                </div>
                                                    <div class="text-center">
@@ -106,15 +107,16 @@
                             <div class="row">
                                  <div class="col-lg-3"></div>
                                 <div class="col-md-6"  id="itpost">
-                                    <label><?php echo $post->petype?></label><br/>
-                                    <label><?php echo $post->itemdesc?></label><br/>
-                                    <label><?php echo $post->itemprc?></label><br/>
-                                    <label><?php echo $post->cont?></label><br/>
-                                    <label><?php echo $post->loc?></label>
-                                    <img src="data:image;base64,<?php echo $post->image?>">
+                                    <label><?php echo $post['AccountName'];?> posted:</label><br/></br>
+                                    <label>Type: <?php echo $post['ItemType'];?></label><br/>
+                                    <label>Info: <?php echo $post['ItemInfo'];?></label><br/>
+                                    <label>Price: <?php echo $post['ItemPrice'];?></label><br/>
+                                    <label>Contact: <?php echo $post['ItemContact'];?></label><br/>
+                                    <label>Address: <?php echo $post['ItemLocation'];?></label>
+                                    <img src="data:image;base64,<?php echo $post['ItemPic'];?>">
                                      <div class="text-right">
-                                         <form action="<?php echo base_url('itempost/deletepost')?>" method="post">
-                                             <input type="hidden" value="<?php echo $post->ItemID?>" name="ItemID"/>
+                                         <form action="<?php echo base_url('itempost/deletepost')?>" method="post" id="delete">
+                                             <input type="hidden" value="<?php echo $post['ItemID'];?>" name="itempostid"/>
                                               <input type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" value="Delete" />
                                              <div id="myModal" class="modal fade" role="dialog">
                                                 <div class="modal-dialog">
@@ -149,6 +151,7 @@
  	 		echo "<script>
  	 		document.getElementById('unlogged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
+ 	 		document.getElementById('delete').style.display = 'none';
  	 		document.getElementById('logged').style.display = 'none';
 			document.getElementById('form_sale').style.display = 'none';
  	 		</script>";
@@ -157,6 +160,7 @@
  	 		echo "<script>
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
+ 	 		document.getElementById('delete').style.display = 'none';
  	 		document.getElementById('unlogged').style.display = 'none';
 			document.getElementById('form_sale').style.display = 'none';
  	 		</script>";
@@ -165,6 +169,7 @@
  	 		echo "<script>
  	 		document.getElementById('logged').style.display = 'block';
 			document.getElementById('form_sale').style.display = 'block';
+ 	 		document.getElementById('delete').style.display = 'none';
  	 		document.getElementById('unlogged2').style.display = 'none';
  	 		document.getElementById('unlogged').style.display = 'none';
  	 		</script>";

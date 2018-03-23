@@ -11,8 +11,7 @@ class Itempost extends CI_Controller {
      public function create_post(){
                $this->load->model('itempostmodel');
                $this->itempostmodel->create_post();
-              
-              $this->session->set_flashdata('posted', 'You successfully posted an post!'); 
+              $this->session->set_flashdata('posted', 'Successfully posted.'); 
               redirect(base_url() . 'itemsales/sales');
           }
 
@@ -22,7 +21,6 @@ class Itempost extends CI_Controller {
          $this->session->set_flashdata('deleted', 'You successfully deleted an post!');
          redirect(base_url() . 'itemsales/sales');
     }
-   
-    
+
+
 }
-    

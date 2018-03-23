@@ -3,7 +3,7 @@
 	<title>Pet Lovers Community</title>
 	</head>
 	<style>
-		#logged, #unlogged, #form_adopt, #unlogged2{
+		#logged, #unlogged, #form_adopt, #unlogged2, #delete{
 			display: none;
 		}
 	</style>
@@ -62,7 +62,7 @@
                     <div class="row">
                         <div class="col-lg-12">
 	                    <div class ="block" id="form_adopt">
-	                         <?php echo form_open_multipart('adoptpost/create_post');?>
+	                         <?php echo form_open('plcpost/save_adopt');?>
                                     <div class="intro-text">
                                         <div class="container">
                                              <p class="text-success brand-text"><?php echo $this->session->flashdata('posted');?></p>
@@ -71,6 +71,8 @@
                                                    </div>
                                                  <div class="group row">
                                                      <div class="col-lg-6">
+                                                 <label for="exampleInput">Caption*</label>
+                                                 <input required type="text" class="form-control col-lg-12" name="caption" id="exampleInput" placeholder="" >
                                                  <label for="exampleInput">Breed*</label>
                                                  <input required type="text" class="form-control col-lg-12" name="petbreed" id="exampleInput" placeholder="" >
                                                  <label for="exampleInput">Type*</label>
@@ -106,7 +108,7 @@
                             <div class="row">
                                 <div class="col-md-3"></div>
                                 <div class="col-md-6"  id="itpost">
-																		<label><?php echo $post['AccountName'];?> posted: </label><br/>
+																		<label><?php echo $post['AccountName']; ?> posted: </label><br/>
                                     <label><b>Breed: </b><?php echo $post['PetBreed'];?></label><br/>
                                     <label><b>Type: </b><?php echo $post['PetType'];?></label><br/>
                                     <label><b>Name: </b><?php echo $post['PetName'];?></label><br/>
@@ -116,7 +118,7 @@
                                      <label><b>Gender: </b><?php echo $post['PetGender'];?></label><br/>
                                     <img src="data:image;base64,<?php echo $post['PetPic'];?>">
                                      <div class="text-right">
-                                         <form  action="<?php echo base_url('adoptpost/deletepost')?>" method="post">
+                                         <form  action="<?php echo base_url('adoptpost/deletepost')?>" method="post" id="delete">
                                              <input type="hidden" value="<?php echo $post['PetID'];?>" name="PetID"/>
                                              <input type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" value="Delete" />
                                              <div id="myModal" class="modal fade" role="dialog">
@@ -153,6 +155,7 @@
  	 		echo "<script>
  	 		document.getElementById('unlogged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
+ 	 		document.getElementById('delete').style.display = 'none';
  	 		document.getElementById('logged').style.display = 'none';
 			document.getElementById('form_adopt').style.display = 'none';
  	 		</script>";
@@ -162,6 +165,7 @@
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
  	 		document.getElementById('unlogged').style.display = 'none';
+ 	 		document.getElementById('delete').style.display = 'none';
 			document.getElementById('form_adopt').style.display = 'none';
  	 		</script>";
  	 	}
@@ -170,6 +174,7 @@
 			document.getElementById('form_adopt').style.display = 'block';
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'none';
+ 	 		document.getElementById('delete').style.display = 'none';
  	 		document.getElementById('unlogged').style.display = 'none';
  	 		</script>";
  	 	}

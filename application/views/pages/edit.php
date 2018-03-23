@@ -21,6 +21,8 @@
       <label>Pet Age: </label><input type="text" name="ptage" value='<?php echo $post['PetAge'];?>'><br/>
       <label>Pet Breed: </label><input type="text" name="ptbrd" value='<?php echo $post['PetBreed'];?>'><br/>
       <label>Pet Gender: </label><input type="text" name="ptgndr" value='<?php echo $post['PetGender'];?>'><br/>
+      <label>Pet Record: </label><input type="text" name="ptrcrd" value='<?php echo $post['PetRecord'];?>'><br/>
+      <label>Pet Size: </label><input type="text" name="ptsz" value='<?php echo $post['PetSize'];?>'><br/>
       <button type="submit" class="btn btn-success">Update</button>
       <button class="btn btn-dark"><a href="<?php echo base_url('user');?>">Back</a></button>
     </form>
@@ -33,6 +35,8 @@
       <label>Item Type: </label><input type="text" name="itmtyp" value='<?php echo $post['ItemType'];?>'></input><br/>
       <label>Item Price: </label><input type="text" name="itmprc" value='<?php echo $post['ItemPrice'];?>'></input><br/>
       <label>Item Info: </label><input type="text" name="itminf" value='<?php echo $post['ItemInfo'];?>'></input><br/>
+      <label>Item Contact: </label><input type="text" name="itmcntct" value='<?php echo $post['ItemContact'];?>'></input><br/>
+      <label>Item Address: </label><input type="text" name="itmadd" value='<?php echo $post['ItemLocation'];?>'></input><br/>
       <button type="submit" class="btn btn-success">Update</button>
       <button class="btn btn-dark"><a href="<?php echo base_url('user');?>">Back</a></button>
     </form>
@@ -46,6 +50,7 @@
       <label>Service Type: </label><input type="text" name="srvctyp" value='<?php echo $post['ServType'];?>'></input><br/>
       <label>Service Contact: </label><input type="text" name="srvccntct" value='<?php echo $post['ServContact'];?>'></input><br/>
       <label>Service Address: </label><input type="text" name="srvcadd" value='<?php echo $post['ServAddress'];?>'></input><br/>
+      <label>Service Info: </label><input type="text" name="srvcdsc" value='<?php echo $post['ServDesc'];?>'></input><br/>
       <button type="submit" class="btn btn-success">Update</button>
       <button class="btn btn-dark"><a href="<?php echo base_url('user');?>">Back</a></button>
     </form>

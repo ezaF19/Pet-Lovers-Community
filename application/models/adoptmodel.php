@@ -33,12 +33,12 @@ class Adoptmodel extends CI_Model {
     }
   }
   public function getData(){
-    $this->db->select('pet.*, accbio.AccountName');
+    $this->db->select('pet.*, accbio.*');
     $this->db->from('pet');
-    $this->db->join('accbio', 'pet.AccountID = accbio.AccountID');
+    $this->db->join('accbio', 'accbio.AccountID=pet.AccountID');
 	  $this->db->order_by('PetID', 'desc');
-      $query=$this->db->get();
-      return $query->result_array();
+    $query=$this->db->get();
+    return $query->result_array();
   }
 
   public function getPost(){

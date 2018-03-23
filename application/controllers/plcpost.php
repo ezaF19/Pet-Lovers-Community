@@ -32,6 +32,27 @@ class Plcpost extends CI_Controller {
   }
   }
 
+public function save_adopt()
+{
+  $this->load->model('userpost_model');
+  $this->userpost_model->save_post_pet();
+  redirect(base_url() . 'user/posts');
+}
+
+public function save_item()
+{
+  $this->load->model('userpost_model');
+  $this->userpost_model->save_post_item();
+  redirect(base_url() . 'user/posts');
+}
+
+  public function service_post()
+  {
+  $this->load->model('userpost_model');
+  $this->userpost_model->save_post_serv();
+  redirect(base_url() . 'user/posts');
+  }
+
   public function user(){
     redirect(base_url().'user/savepet');
   }

@@ -3,7 +3,7 @@
 	<title>Pet Lovers Community</title>
 	</head>
 	<style>
-		#logged, #unlogged, #form_service, #unlogged2{
+		#logged, #unlogged, #form_service, #unlogged2, #delete{
 			display: none;
 		}
 	</style>
@@ -65,7 +65,7 @@
                         <div class="col-lg-3"></div>
 	                <div class="col-lg-6">
 	                    <div class ="block" id="form_service">
-	                         <?php echo form_open_multipart('allservicespost/create_post');?>
+	                         <?php echo form_open_multipart('plcpost/service_post');?>
                                     <div class="intro-text">
                                         <div class="container">
                                              <p class="text-success brand-text"><?php echo $this->session->flashdata('posted');?></p>
@@ -82,6 +82,10 @@
                                                    </div>
                                                  <div class="group row">
                                                      <div class="col-lg-12">
+                                                 <label for="exampleInput">Caption*</label>
+                                                 <input required type="text" class="form-control col-lg-12" name="caption" id="exampleInput" placeholder="Enter Caption" >
+																						 <label for="exampleInput">Name*</label>
+																						 <input required type="text" class="form-control col-lg-12" name="name" id="exampleInput" placeholder="Enter Name" >
                                                  <label for="exampleInput">Description*</label>
                                                  <input required type="text" class="form-control col-lg-12" name="description" id="exampleInput" placeholder="Enter description" >
                                                  <label for="exampleInput">Contact Number*</label>
@@ -90,7 +94,7 @@
                                                  <input required type="text" class="form-control col-lg-12" name="address" id="exampleInput" placeholder="Address" >
                                                  <div class="thumbnail">
                                                  <label for="exampleInput">Image*</label>
-                                                 <input required type="file" class="form-control col-lg-12" name="image" id="exampleInput">
+                                                 <input type="file" class="form-control col-lg-12" name="image" id="exampleInput">
                                                  </div>
                                                      </div>
                                                </div>
@@ -109,13 +113,13 @@
                                  <div class="col-lg-3"></div>
                                 <div class="col-md-6"  id="itpost">
 																		<label><?php echo $post['AccountName'];?> posted: </label><br/>
-                                    <label><b><?php echo $post['ServType'];?></b></label><br/>
-                                    <label><?php echo $post['ServDesc'];?></label><br/>
-                                    <label><?php echo $post['ServContact'];?></label><br/>
-                                    <label><?php echo $post['ServAddress'];?></label><br/>
+                                    <label>Type:<b> <?php echo $post['ServType'];?></b></label><br/>
+                                    <label>Decription: <?php echo $post['ServDesc'];?></label><br/>
+                                    <label>Contact: <?php echo $post['ServContact'];?></label><br/>
+                                    <label>Address: <?php echo $post['ServAddress'];?></label><br/>
                                     <img src="data:image;base64,<?php echo $post['ServImage'];?>">
                                      <div class="text-right">
-                                         <form action="<?php echo base_url('allservicespost/deletepost')?>" method="post">
+                                         <form action="<?php echo base_url('allservicespost/deletepost')?>" method="post" id="delete">
                                              <input type="hidden" value="<?php echo $post['ServiceID'];?>" name="ServiceID"/>
                                               <input type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" value="Delete" />
                                              <div id="myModal" class="modal fade" role="dialog">
@@ -150,6 +154,7 @@
  	 		document.getElementById('unlogged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
  	 		document.getElementById('logged').style.display = 'none';
+ 	 		document.getElementById('delete').style.display = 'none';
 			document.getElementById('form_service').style.display = 'none';
  	 		</script>";
  	 	}
@@ -158,6 +163,7 @@
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'block';
  	 		document.getElementById('unlogged').style.display = 'none';
+ 	 		document.getElementById('delete').style.display = 'none';
 			document.getElementById('form_service').style.display = 'none';
  	 		</script>";
  	 	}
@@ -166,6 +172,7 @@
 			document.getElementById('form_service').style.display = 'block';
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'none';
+ 	 		document.getElementById('delete').style.display = 'none';
  	 		document.getElementById('unlogged').style.display = 'none';
  	 		</script>";
  	 	}

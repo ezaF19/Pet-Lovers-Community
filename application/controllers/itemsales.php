@@ -12,35 +12,23 @@ class Itemsales extends CI_Controller {
 
     }
 	public function featured(){
-        $this->load->model('itempostmodel');
-         $data['item']=$this->itempostmodel->getData();
-         $this->load->view('template/header');
-         $this->load->view('pages/featured', $data);
-         $this->load->view('template/footer');
+        redirect('featured');
 
     }
 	public function recent(){
-        $this->load->model('itempostmodel');
-         $data['item']=$this->itempostmodel->getData();
-         $this->load->view('template/header');
-         $this->load->view('pages/recent', $data);
-         $this->load->view('template/footer');
+        redirect('recent');
 
     }
 	public function adoptions(){
-        $this->load->model('itempostmodel');
-         $data['item']=$this->itempostmodel->getData();
-         $this->load->view('template/header');
-         $this->load->view('pages/adoptions', $data);
-         $this->load->view('template/footer');
+        redirect('adoptions');
 
     }
 	public function donations(){
-        $this->load->model('itempostmodel');
-         $data['item']=$this->itempostmodel->getData();
-         $this->load->view('template/header');
-         $this->load->view('pages/donations', $data);
-         $this->load->view('template/footer');
+        redirect('donations');
 
+    }
+    public function allservices()
+    {
+      redirect('allservices');
     }
 }

@@ -15,18 +15,25 @@
         <label> Pet Type: <?php echo $read['PetType'];?></label><br>
         <label> Pet Age: <?php echo $read['PetAge'];?></label><br>
         <label> Pet Breed: <?php echo $read['PetBreed'];?></label><br>
-        <label> Pet Gender: <?php echo $read['PetGender'];?></label>
+        <label> Pet Size: <?php echo $read['PetSize'];?></label><br>
+        <label> Pet Record: <?php echo $read['PetRecord'];?></label><br>
+        <label><?php echo $read['PetPic'];?></label>
       </div>
       <div id="item">
         <label> Item Type: <?php echo $read['ItemType'];?></label><br>
         <label> Item Price: <?php echo $read['ItemPrice'];?></label><br>
-        <label> Item Info: <?php echo $read['ItemInfo'];?></label>
+        <label> Item Info: <?php echo $read['ItemInfo'];?></label><br>
+        <label> Item Contact: <?php echo $read['ItemContact'];?></label><br>
+        <label> Item Address: <?php echo $read['ItemLocation'];?></label><br>
+        <label><?php echo $read['ItemPic'];?></label>
       </div>
       <div id="serv">
         <label> Service Name: <?php echo $read['ServName'];?></label><br>
         <label> Service Type: <?php echo $read['ServType'];?></label><br>
         <label> Service Contact: <?php echo $read['ServContact'];?></label><br>
-        <label> Service Address: <?php echo $read['ServAddress'];?></label>
+        <label> Service Address: <?php echo $read['ServAddress'];?></label><br>
+        <label> Service Info: <?php echo $read['ServDesc'];?></label><br>
+        <label> <?php echo $read['ServImage'];?></label>
       </div>
     <?php endforeach;?>
     <button class="btn btn-dark"><a href="<?php echo base_url('recent');?>">Back</a></button>

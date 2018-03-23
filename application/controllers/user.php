@@ -46,7 +46,7 @@ class User extends CI_Controller {
   public function update_serv($id)
   {
         $this->load->model('userpost_model');
-        $result['datum'] = $this->userpost_model->update_item($id);
+        $result['datum'] = $this->userpost_model->update_serv($id);
         redirect('user');
   }
 
