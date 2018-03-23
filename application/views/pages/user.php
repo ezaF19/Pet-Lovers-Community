@@ -35,9 +35,6 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url('allservices');?>">Services</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('featured');?>">Community</a>
             </li>
 			<li class="nav-item dropdown">
