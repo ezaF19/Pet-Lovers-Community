@@ -16,14 +16,14 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/user.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/usertab.css'); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css'); ?>" />
-  <style>
+  <!-- <style>
     #petpost{
       display: block;
       }
       #itempost, #servpost{
       display: none;
     }
-  </style>
+  </style> -->
 	</head>
 
      <body style="background-color: #E0E0E0">
@@ -38,15 +38,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url('allservices');?>">Services</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('featured');?>">Community</a>
             </li>
 			<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
 			  <ul class="dropdown-menu">
-						<li><a class="dropdown-item"  style="color:black;" href="">Donations</a></li>
+						<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('donations'); ?>">Donations</a></li>
                         <li><a class="dropdown-item"  style="color:black;" href="">Notifications</a></li>
                         <li><a class="dropdown-item"  style="color:black;" href="">Activity Log</a></li>
 						<li><a class="dropdown-item"  style="color:black;" href="">Settings</a></li>
@@ -276,7 +273,7 @@
 	</div>
 <br>
 <br>
-<script>
+<!-- <script>
   function check(){
   if(document.getElementById('inlineFormCustomSelect').value == 'Pet'){
     document.getElementById('petpost').style.display = 'block';
@@ -293,5 +290,5 @@
     document.getElementById('itempost').style.display = 'none';
     document.getElementById('servpost').style.display = 'block';
   }
-}
+} -->
 </script>

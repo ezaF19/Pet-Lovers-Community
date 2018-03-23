@@ -39,7 +39,7 @@
 										<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
 						<ul class="dropdown-menu">
 									<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('user');?>">My Profile</a></li>
-									<li><a class="dropdown-item"  style="color:black;" href="">Donations</a></li>
+									<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('donations'); ?>">Donations</a></li>
 															<li><a class="dropdown-item"  style="color:black;" href="">Notifications</a></li>
 															<li><a class="dropdown-item"  style="color:black;" href="">Activity Log</a></li>
 									<li><a class="dropdown-item"  style="color:black;" href="">Settings</a></li>

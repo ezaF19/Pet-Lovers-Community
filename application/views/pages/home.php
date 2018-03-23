@@ -39,7 +39,7 @@
 			              <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
 						<ul class="dropdown-menu">
 									<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('user');?>">My Profile</a></li>
-									<li><a class="dropdown-item"  style="color:black;" href="">Donations</a></li>
+									<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('donations'); ?>">Donations</a></li>
 			                        <li><a class="dropdown-item"  style="color:black;" href="">Notifications</a></li>
 			                        <li><a class="dropdown-item"  style="color:black;" href="">Activity Log</a></li>
 									<li><a class="dropdown-item"  style="color:black;" href="">Settings</a></li>
@@ -131,7 +131,7 @@
 			<a href="<?php echo base_url('adoptions');?>">
 				<img src="<?php echo base_url('assets/img/community4.jpg');?>">
 			</a>
-		</li>	
+		</li>
 	</ul>
 	</div>
 	</div>
@@ -152,40 +152,40 @@
 		<div class="pbox">
 		<div class="photo"><a href="<?php echo base_url('allservices');?>">
 		<img src="assets/img/grooming.jpg" href="#" width="100%" class="photox"></a>
-		
+
 		<div class="middle">
 			<div class="text">View</div>
-		</div>	
-	
+		</div>
+
 		<h3>Grooming</h3>
 		<p>Make your furrbaby shine!</p>
 		</div>
 
 		<div class="photo"><a href="<?php echo base_url('allservices');?>">
 		<img src="assets/img/Training.jpg" href="#" width="100%" class="photox"></a>
-		
+
 		<div class="middle">
 			<div class="text">View</div>
-		</div>	
+		</div>
 		<h3>Training</h3>
 		<p>Have fun and get your pet a new skill!</p>
 		</div>
 		<div class="photo"><a href="<?php echo base_url('allservices');?>">
 		<img src="assets/img/sitting.jpg" href="#" width="100%" class="photox"></a>
-		
+
 		<div class="middle">
 			<div class="text">View</div>
-		</div>	
+		</div>
 		<h3>Pet Sitting</h3>
 		<p>Busy day? Check us out!</p>
 		</div>
 
 		<div class="photo"><a href="<?php echo base_url('allservices');?>">
 		<img src="assets/img/veterinary.jpg" href="#" width="100%" class="photox"></a>
-		
+
 		<div class="middle">
 			<div class="text">View</div>
-		</div>	
+		</div>
 		<h3>Veterinary</h3>
 		<p>Get that monthly check-up here!</p>
 		</div>

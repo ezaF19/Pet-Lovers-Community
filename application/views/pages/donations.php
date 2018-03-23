@@ -7,7 +7,7 @@
 		#logged, #unlogged, #unlogged2{
 			display: none;
 		}
-	
+
 	</style>
   <body id="page-top">
 
@@ -29,7 +29,6 @@
 										<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
 						<ul class="dropdown-menu">
 									<li><a class="dropdown-item"  style="color:black;" href="<?php echo base_url('user');?>">My Profile</a></li>
-									<li><a class="dropdown-item"  style="color:black;" href="">Donations</a></li>
 									<li><a class="dropdown-item"  style="color:black;" href="">Notifications</a></li>
 									<li><a class="dropdown-item"  style="color:black;" href="">Activity Log</a></li>
 									<li><a class="dropdown-item"  style="color:black;" href="">Settings</a></li>
@@ -69,20 +68,20 @@
                                                          <option>P100.00</option>
                                                          <option>P500.00</option>
                                                          <option>P1000.00</option>
-                                                       </select>										   
+                                                       </select>
                                         </div>
                                                  <div class="group row">
-                                                     <div class="col-lg-12">	 
+                                                     <div class="col-lg-12">
                                                  <input type="text" class="form-control col-lg-12" name="firstname" id="exampleInput" aria-describedby="emailHelp" placeholder="First Name*" >
-                                                 
+
                                                  <input type="text" class="form-control col-lg-12" name="lastname" id="exampleInput" placeholder="Last Name*" >
-                                                 
+
                                                  <input type="text" class="form-control col-lg-12" name="email" id="exampleInput" aria-describedby="emailHelp" placeholder="Email*" >
-                                                 
-                                                 <input type="number" class="form-control col-lg-12" name="contactnumber" id="exampleInput" placeholder="Contact Number*" >  
-												 
+
+                                                 <input type="number" class="form-control col-lg-12" name="contactnumber" id="exampleInput" placeholder="Contact Number*" >
+
                                                  <input type="text" class="form-control col-lg-12" name="comment" id="exampleInput" placeholder="Comment or Message" >
-                                               
+
                                                </div>
                                                </div>
                                                    <div class="text-center">
