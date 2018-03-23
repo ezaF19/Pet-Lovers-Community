@@ -3,7 +3,7 @@
 	<title>Pet Lovers Community</title>
 	</head>
 	<style>
-		#logged, #unlogged, $form_service, #unlogged2{
+		#logged, #unlogged, #form_service, #unlogged2{
 			display: none;
 		}
 	</style>
@@ -68,6 +68,8 @@
 	                         <?php echo form_open_multipart('allservicespost/create_post');?>
                                     <div class="intro-text">
                                         <div class="container">
+                                             <p class="text-success brand-text"><?php echo $this->session->flashdata('posted');?></p>
+                                             <p class="text-success  brand-text"><?php echo $this->session->flashdata('deleted');?></p>
                                                     <p class="brand-text">WHAT SERVICE WOULD YOU LIKE TO POST?</p>
                                                    <label class="col-lg-4" for="inlineFormCustomSelect"></label>
                                                    <select required class="custom-select col-lg-4" id="inlineFormCustomSelect" name="service">
@@ -161,10 +163,10 @@
  	 	}
  	 	else{
  	 		echo "<script>
+			document.getElementById('form_service').style.display = 'block';
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'none';
  	 		document.getElementById('unlogged').style.display = 'none';
-			document.getElementById('form_service').style.display = 'none';
  	 		</script>";
  	 	}
 
