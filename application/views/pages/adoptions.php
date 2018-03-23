@@ -21,19 +21,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="featured">Featured</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('featured'); ?>">Featured</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="recent">Recent</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('recent'); ?>">Recent</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
+                <a class="nav-link js-scroll-trigger" href="<?php echo base_url('itemsales'); ?>">Item Sales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="adoptions">Adopt</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('adoptions'); ?>">Adopt</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="allservices">Services</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('allservices'); ?>">Services</a>
             </li>
 						<li class="nav-item dropdown" id="logged">
 										<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
@@ -65,7 +65,9 @@
 	                         <?php echo form_open('plcpost/save_adopt');?>
                                     <div class="intro-text">
                                         <div class="container">
-                                                    <p class="brand-text">"POST A PET FOR ADOPTION"</p>
+                                             <p class="text-success brand-text"><?php echo $this->session->flashdata('posted');?></p>
+                                             <p class="text-success  brand-text"><?php echo $this->session->flashdata('deleted');?></p>
+                                                    <p class="brand-text" >"POST A PET FOR ADOPTION"</p>
                                                    </div>
                                                  <div class="group row">
                                                      <div class="col-lg-6">

@@ -411,8 +411,7 @@ default width = 800/5 = 160px;
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/featbg.jpg") no-repeat bottom center scroll;
-  background-color: black;
+  background: url("../img/background.png") no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -460,7 +459,7 @@ default width = 800/5 = 160px;
   padding: 200px 0;
   text-align: center;
   color: white;
-  background: url("../img/recbg.jpg") no-repeat bottom center scroll;
+  background: url("../img/recbg.jpg") no-repeat center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -471,7 +470,6 @@ default width = 800/5 = 160px;
   display: table-cell;
   vertical-align: middle;
 }
-
 
 
 @media (min-width: 768px) {
@@ -528,10 +526,12 @@ default width = 800/5 = 160px;
   padding: 200px 0;
   text-align: center;
   color: white;
+  background: url("../img/background.png") no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .salehead .sale-body {

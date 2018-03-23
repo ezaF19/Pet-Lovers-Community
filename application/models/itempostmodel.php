@@ -7,6 +7,8 @@ class Itempostmodel extends CI_Model {
 
   public function create_post(){
       $file= base64_encode(file_get_contents(addslashes($_FILES['image']['tmp_name'])));
+      $user = $this->session->userdata('username');
+      $id=$this->db->where('AccountName',$user)->get('accbio')->row_array()['AccountID'];
       $field= array(
                 'ItemType'=>$this->input->post('category'),
                 'ItemPic'=>$file,
@@ -29,8 +31,8 @@ class Itempostmodel extends CI_Model {
   }
 
   public function getPost(){
-	    $this->db->order_by('itempostid', 'desc');
-	    $query = $this->db->get('itempost');
+	    $this->db->order_by('ItemID', 'desc');
+	    $query = $this->db->get('item');
 	    if($query->num_rows() > 0){
 	      	return $query->result();
 	    }

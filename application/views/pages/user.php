@@ -1,4 +1,4 @@
-      <?php $user = $this->session->userdata('username');
+<?php $user = $this->session->userdata('username');
             if($user == ''){
               echo "<script>
                 alert('Login first!');
@@ -125,7 +125,8 @@
 										<div class="card-body">
 										<label class="mr-sm" for="inlineFormCustomSelect">Post Type*: </label>
 											<select class="custom-select col-lg-2" id="inlineFormCustomSelect" oninput="check()" name="category">
-												<option selected>Pet</option>
+												<option selected>Choose...</option>
+												<option>Pet</option>
 												<option>Item</option>
 												<option>Service</option>
 											</select>

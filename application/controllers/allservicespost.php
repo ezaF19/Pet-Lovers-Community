@@ -11,12 +11,13 @@ class Allservicespost extends CI_Controller {
 
      public function create_post(){
                $this->load->model('userpost_model');
-               $this->userpost_model->save_post_serv();
+                $this->session->set_flashdata('posted', 'Successfully posted!'); 
               redirect(base_url() . 'allservices/index');
           }
     public function deletepost(){
         $this->load->model('postmodel');
         $this->postmodel->deletepost($this->input->post('ServiceID'));
+         $this->session->set_flashdata('deleted', 'You successfully deleted a post!');
          redirect(base_url() . 'allservices/index');
     }
 
