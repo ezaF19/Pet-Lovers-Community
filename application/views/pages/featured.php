@@ -55,11 +55,12 @@
     </nav>
 
     <!-- Intro Header -->
-    <section class="feathead">
-            <div class="feat-body">
+    <section class="rechead">
+            <div class="rec-body">
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-md-6">
+				<div class="col-md-3"></div>
+	                <div class="col-md-7">
 	                    <div class ="block">
 	                        <h1 class="brand-heading" ><b>FEATURED PETS</b></h1>
 	                        <p class="intro-text">"TOP 10 PETS THAT GOT THE MOST PAWS"</p>

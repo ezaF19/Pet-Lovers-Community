@@ -67,7 +67,7 @@
                                         <div class="container">
                                              <p class="text-success brand-text"><?php echo $this->session->flashdata('posted');?></p>
                                              <p class="text-success  brand-text"><?php echo $this->session->flashdata('deleted');?></p>
-                                                    <p class="brand-text">"POST A PET FOR ADOPTION"</p>
+                                                    <p class="brand-text" >"POST A PET FOR ADOPTION"</p>
                                                    </div>
                                                  <div class="group row">
                                                      <div class="col-lg-6">

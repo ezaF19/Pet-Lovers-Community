@@ -66,10 +66,11 @@
             <div class="rec-body">
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-md-6">
+				<div class="col-md-3"></div>
+	                <div class="col-md-7">
 	                    <div class ="block">
-	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
-	                        <p class="intro-text">"RECENT POSTS"</p>
+	                        <h1 class="brand-heading" ><b>RECENT POSTS</b></h1>
+	                        <p class="intro-text">"CHECK OUT THE FRESHEST POSTS FROM OUR COMMUNITY"</p>
 	                    </div>
 	                </div>
 	            </div>
