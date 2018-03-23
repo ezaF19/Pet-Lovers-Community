@@ -1,4 +1,4 @@
-      <?php $user = $this->session->userdata('username');
+<?php $user = $this->session->userdata('username');
             if($user == ''){
               echo "<script>
                 alert('Login first!');
@@ -34,6 +34,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo base_url('allservices');?>">Services</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url('featured');?>">Community</a>
             </li>
@@ -119,7 +122,8 @@
 										<div class="card-body">
 										<label class="mr-sm" for="inlineFormCustomSelect">Post Type*: </label>
 											<select class="custom-select col-lg-2" id="inlineFormCustomSelect" oninput="check()" name="category">
-												<option selected>Pet</option>
+												<option selected>Choose...</option>
+												<option>Pet</option>
 												<option>Item</option>
 												<option>Service</option>
 											</select>

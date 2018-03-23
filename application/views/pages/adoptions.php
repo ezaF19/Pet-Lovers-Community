@@ -21,19 +21,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="featured">Featured</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('featured'); ?>">Featured</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="recent">Recent</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('recent'); ?>">Recent</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
+                <a class="nav-link js-scroll-trigger" href="<?php echo base_url('itemsales'); ?>">Item Sales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="adoptions">Adopt</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('adoptions'); ?>">Adopt</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="allservices">Services</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('allservices'); ?>">Services</a>
             </li>
 						<li class="nav-item dropdown" id="logged">
 										<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
@@ -65,7 +65,9 @@
 	                         <?php echo form_open_multipart('adoptpost/create_post');?>
                                     <div class="intro-text">
                                         <div class="container">
-                                                    <p class="brand-text">"POST A PET FOR ADOPTION"</p>
+                                             <p class="text-success brand-text"><?php echo $this->session->flashdata('posted');?></p>
+                                             <p class="text-success  brand-text"><?php echo $this->session->flashdata('deleted');?></p>
+                                                    <p class="brand-text" >"POST A PET FOR ADOPTION"</p>
                                                    </div>
                                                  <div class="group row">
                                                      <div class="col-lg-6">
@@ -104,17 +106,18 @@
                             <div class="row">
                                 <div class="col-md-3"></div>
                                 <div class="col-md-6"  id="itpost">
-                                    <label><b>Breed: </b><?php echo $post->PetBreed?></label><br/>
-                                    <label><b>Type: </b><?php echo $post->PetType?></label><br/>
-                                    <label><b>Name: </b><?php echo $post->PetName?></label><br/>
-                                    <label><b>Age: </b><?php echo $post->PetAge?></label><br/>
-                                     <label><b>Record: </b><?php echo $post->PetRecord?></label><br/>
-                                     <label><b>Size: </b><?php echo $post->PetSize?></label><br/>
-                                     <label><b>Gender: </b><?php echo $post->PetGender?></label><br/>
-                                    <img src="data:image;base64,<?php echo $post->PetPic?>">
+																		<label><?php echo $post['AccountName'];?> posted: </label><br/>
+                                    <label><b>Breed: </b><?php echo $post['PetBreed'];?></label><br/>
+                                    <label><b>Type: </b><?php echo $post['PetType'];?></label><br/>
+                                    <label><b>Name: </b><?php echo $post['PetName'];?></label><br/>
+                                    <label><b>Age: </b><?php echo $post['PetAge'];?></label><br/>
+                                     <label><b>Record: </b><?php echo $post['PetRecord'];?></label><br/>
+                                     <label><b>Size: </b><?php echo $post['PetSize'];?></label><br/>
+                                     <label><b>Gender: </b><?php echo $post['PetGender'];?></label><br/>
+                                    <img src="data:image;base64,<?php echo $post['PetPic'];?>">
                                      <div class="text-right">
                                          <form  action="<?php echo base_url('adoptpost/deletepost')?>" method="post">
-                                             <input type="hidden" value="<?php echo $post->PetID?>" name="PetID"/>
+                                             <input type="hidden" value="<?php echo $post['PetID'];?>" name="PetID"/>
                                              <input type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" value="Delete" />
                                              <div id="myModal" class="modal fade" role="dialog">
                                                 <div class="modal-dialog">
@@ -144,7 +147,7 @@
 	        </div>
                 </div><!-- .container close -->
 	    </section>
-    
+
 		<?php
  	 	if($user == ''){
  	 		echo "<script>
@@ -164,10 +167,10 @@
  	 	}
  	 	else{
  	 		echo "<script>
+			document.getElementById('form_adopt').style.display = 'block';
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'none';
  	 		document.getElementById('unlogged').style.display = 'none';
-			document.getElementById('form_adopt').style.display = 'none';
  	 		</script>";
  	 	}
 

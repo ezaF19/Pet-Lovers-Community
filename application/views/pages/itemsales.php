@@ -21,19 +21,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="featured">Featured</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('featured'); ?>">Featured</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="recent">Recent</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('recent'); ?>">Recent</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
+                <a class="nav-link js-scroll-trigger" href="<?php echo base_url('itemsales'); ?>">Item Sales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="adoptions">Adopt</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('adoptions'); ?>">Adopt</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="allservices">Services</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('allservices'); ?>">Services</a>
             </li>
 						<li class="nav-item dropdown" id="logged">
 										<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
@@ -65,6 +65,8 @@
 	                         <?php echo form_open_multipart('itempost/create_post');?>
                                     <div class="intro-text">
                                         <div class="container">
+                                             <p class="text-success brand-text"><?php echo $this->session->flashdata('posted');?></p>
+                                             <p class="text-success  brand-text"><?php echo $this->session->flashdata('deleted');?></p>
                                                     <p class="brand-text">POST AN ITEM FOR:</p>
                                                    <label class="col-lg-4" for="inlineFormCustomSelect"></label>
                                                    <select class="custom-select col-lg-4" id="inlineFormCustomSelect" name="category">
@@ -73,7 +75,7 @@
                                                          <option>Birds</option>
                                                          <option>Hamsters</option>
                                                          <option>Cats</option>
-														 <option>Others</option>
+                                                         <option>Others</option>
                                                        </select>
                                                    </div>
                                                  <div class="group row">
@@ -112,7 +114,7 @@
                                     <img src="data:image;base64,<?php echo $post->image?>">
                                      <div class="text-right">
                                          <form action="<?php echo base_url('itempost/deletepost')?>" method="post">
-                                             <input type="hidden" value="<?php echo $post->itempostid?>" name="itempostid"/>
+                                             <input type="hidden" value="<?php echo $post->ItemID?>" name="ItemID"/>
                                               <input type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary" value="Delete" />
                                              <div id="myModal" class="modal fade" role="dialog">
                                                 <div class="modal-dialog">

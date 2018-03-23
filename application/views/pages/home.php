@@ -131,15 +131,7 @@
 			<a href="<?php echo base_url('adoptions');?>">
 				<img src="<?php echo base_url('assets/img/community4.jpg');?>">
 			</a>
-		</li>
-		<li>
-			<div class="image_title">
-				<a href="<?php echo base_url('donations');?>">Donations</a>
-			</div>
-			<a href="<?php echo base_url('donations');?>">
-				<img src="<?php echo base_url('assets/img/community5.jpg');?>">
-			</a>
-		</li>
+		</li>	
 	</ul>
 	</div>
 	</div>

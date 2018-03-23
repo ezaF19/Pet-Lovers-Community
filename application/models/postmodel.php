@@ -7,14 +7,17 @@ class Postmodel extends CI_Model {
 
   public function create_post(){
       $file= base64_encode(file_get_contents(addslashes($_FILES['image']['tmp_name'])));
+      $user = $this->session->userdata('username');
+      $id=$this->db->where('AccountName',$user)->get('accbio')->row_array()['AccountID'];
       $field= array(
                 'ServType'=>$this->input->post('service'),
                 'ServImage'=>$file,
+                'AccountID'=>$id,
                 'ServDesc'=>$this->input->post('description'),
                 'ServContact'=>$this->input->post('contact'),
                 'ServAddress'=>$this->input->post('address')
       );
-      $query=$this->db->insert('service',$field);
+      $query=$this->db->insert('service', $field);
       return true;
 
   }

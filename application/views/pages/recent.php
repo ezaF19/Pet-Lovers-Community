@@ -21,19 +21,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="featured">Featured</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('featured'); ?>">Featured</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="recent">Recent</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('recent'); ?>">Recent</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
+                <a class="nav-link js-scroll-trigger" href="<?php echo base_url('itemsales'); ?>">Item Sales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="adoptions">Adopt</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('adoptions'); ?>">Adopt</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="allservices">Services</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('allservices'); ?>">Services</a>
             </li>
 						<li class="nav-item dropdown" id="logged">
 										<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
@@ -66,10 +66,11 @@
             <div class="rec-body">
 	        <div class="container">
 	            <div class="row">
-	                <div class="col-md-6">
+				<div class="col-md-3"></div>
+	                <div class="col-md-7">
 	                    <div class ="block">
-	                        <h1 class="brand-heading" ><b>PET LOVERS COMMUNITY</b></h1>
-	                        <p class="intro-text">"RECENT POSTS"</p>
+	                        <h1 class="brand-heading" ><b>RECENT POSTS</b></h1>
+	                        <p class="intro-text">"CHECK OUT THE FRESHEST POSTS FROM OUR COMMUNITY"</p>
 	                    </div>
 	                </div>
 	            </div>

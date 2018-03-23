@@ -3,7 +3,7 @@
 	<title>Pet Lovers Community</title>
 	</head>
 	<style>
-		#logged, #unlogged, $form_service, #unlogged2{
+		#logged, #unlogged, #form_service, #unlogged2{
 			display: none;
 		}
 	</style>
@@ -21,19 +21,19 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="featured">Featured</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('featured'); ?>">Featured</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="recent">Recent</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('recent'); ?>">Recent</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="itemsales">Item Sales</a>
+                <a class="nav-link js-scroll-trigger" href="<?php echo base_url('itemsales'); ?>">Item Sales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="adoptions">Adopt</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('adoptions'); ?>">Adopt</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="allservices">Services</a>
+              <a class="nav-link js-scroll-trigger" href="<?php echo base_url('allservices'); ?>">Services</a>
             </li>
 						<li class="nav-item dropdown" id="logged">
 										<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="user"><?php echo $user;?></a>
@@ -50,7 +50,7 @@
 							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('sign'); ?>">Login</a>
 						</li>
 			<li class="nav-item" id="unlogged2">
-							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('rgstr'); ?>">Register</a>
+							<a class="nav-link js-scroll-trigger" href="<?php echo base_url('rgstr'); ?>"></a>
 						</li>
           </ul>
         </div>
@@ -68,6 +68,8 @@
 	                         <?php echo form_open_multipart('allservicespost/create_post');?>
                                     <div class="intro-text">
                                         <div class="container">
+                                             <p class="text-success brand-text"><?php echo $this->session->flashdata('posted');?></p>
+                                             <p class="text-success  brand-text"><?php echo $this->session->flashdata('deleted');?></p>
                                                     <p class="brand-text">WHAT SERVICE WOULD YOU LIKE TO POST?</p>
                                                    <label class="col-lg-4" for="inlineFormCustomSelect"></label>
                                                    <select required class="custom-select col-lg-4" id="inlineFormCustomSelect" name="service">
@@ -161,10 +163,10 @@
  	 	}
  	 	else{
  	 		echo "<script>
+			document.getElementById('form_service').style.display = 'block';
  	 		document.getElementById('logged').style.display = 'block';
  	 		document.getElementById('unlogged2').style.display = 'none';
  	 		document.getElementById('unlogged').style.display = 'none';
-			document.getElementById('form_service').style.display = 'none';
  	 		</script>";
  	 	}
 
